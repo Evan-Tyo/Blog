@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Setting Up Hugo</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.cb53f1bee2b8900cb4f082afbf00175d6618f281cf9a2fe8619e3b52d20b5721.css" integrity="sha256-y1PxvuK4kAy08IKvvwAXXWYY8oHPmi/oYZ47UtILVyE=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Posts
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/documents">
+                    Documents
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/drafts">
+                    Drafts
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/notes">
+                    Notes
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#overview" class="nav-overview">
+									Overview
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#prerequisites" class="nav-prerequisites">
+									Prerequisites
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#installing-hugo" class="nav-installing-hugo">
+									Installing Hugo
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#creating-a-site" class="nav-creating-a-site">
+									Creating a site
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#add-content" class="nav-add-content">
+									Add Content
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#front-matter" class="nav-front-matter">
+									Front Matter
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#markdown" class="nav-markdown">
+									Markdown
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#adding-markdown" class="nav-adding-markdown">
+									Adding Markdown
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#run-the-server" class="nav-run-the-server">
+									Run the Server
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#configure-the-site" class="nav-configure-the-site">
+									Configure the Site
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#publish-the-site" class="nav-publish-the-site">
+									Publish the Site
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#summary" class="nav-summary">
+									Summary
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#references" class="nav-references">
+									References
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#hugo-documents" class="nav-hugo-documents">
+									Hugo Documents
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#hugo-methods" class="nav-hugo-methods">
+									Hugo Methods
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#markdown-1" class="nav-markdown-1">
+									Markdown
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#installs" class="nav-installs">
+									Installs
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            Tyo Talks
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">Tyo Talks</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Setting Up Hugo
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2024-06-01 16:03
+                        </time>
+                        
+
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <style>
+.file-color {
+    color: #3067FF;
+}
+</style>
+<hr>
+<h1 id="overview">Overview</h1>
+<p>This is not intended to replace the hugo quick start page, however it will follow the same flow.<br>
+All information here relates to my process in setting up hugo.</p>
+<hr>
+<h1 id="prerequisites">Prerequisites</h1>
+<p>Navigate to the <a href="https://gohugo.io/getting-started/quick-start/">hugo quick start page</a></p>
+<ul>
+<li><a href="https://gohugo.io/installation/windows/">Install Hugo</a></li>
+<li><a href="https://www.git-scm.com/download/win">Install Git</a></li>
+</ul>
+<p>Git and GitBash were already installed prior to hugo setup.</p>
+<hr>
+<h1 id="installing-hugo">Installing Hugo</h1>
+<p>Navigate to the <a href="https://gohugo.io/installation/windows/">hugo installation page for windows</a></p>
+<ul>
+<li>I opted for the extended edition of hugo</li>
+<li>Git was already installed</li>
+<li>Go was then installed in order to use <a href="https://gohugo.io/hugo-modules/">Hugo Modules</a></li>
+<li>Dart Sass was not installed, but might be at a later time</li>
+</ul>
+<p><a href="https://go.dev/doc/install">Go installation Page</a></p>
+<p>I used the Package Manager option for downloading the extended edition of hugo.</p>
+<ul>
+<li>Scoop was installed</li>
+<li>The command <code>scoop install hugo-extended</code> was ran</li>
+</ul>
+<p><a href="https://scoop.sh/">Scoop installation Page</a></p>
+<p>Hugo was now installed</p>
+<hr>
+<h1 id="creating-a-site">Creating a site</h1>
+<p>Navigate back to the <a href="https://gohugo.io/getting-started/quick-start/">hugo quick start page</a></p>
+<p>It is recommended not to use Command Prompt or Windows PowerShell for hugo setup.<br>
+I decided to use Git Bash as it was already installed.</p>
+<p>These are the recommended commands to run for quickly setting up an example hugo site:</p>
+<pre tabindex="0"><code>hugo new site quickstart
+cd quickstart
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+echo &#34;theme = &#39;ananke&#39;&#34; &gt;&gt; hugo.toml
+hugo server
+</code></pre><p>By running these commands:</p>
+<ul>
+<li>A new project will be created</li>
+<li>It will be initialized as a git repository</li>
+<li>The &lsquo;ananke&rsquo; theme <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> will be downloaded</li>
+<li>The hugo server will be ran</li>
+</ul>
+<p>I named my site &lsquo;blog&rsquo; rather than &lsquo;quickstart&rsquo; but otherwise I ran the same commands.</p>
+<pre tabindex="0"><code>hugo new site blog
+...
+</code></pre><hr>
+<h1 id="add-content">Add Content</h1>
+<p>The following command will add a new page to the site.</p>
+<pre tabindex="0"><code>hugo new content posts/my-first-post.md
+</code></pre><p>This command will create two things:</p>
+<ul>
+<li>A posts directory, if one does not already exist</li>
+<li>A markdown file titled &ldquo;My First Post&rdquo;</li>
+</ul>
+<p>Multiple pages can be created if running the command again but with a different page name.<br>
+For instance, I ran the following which created two pages under my posts directory:</p>
+<pre tabindex="0"><code>hugo new content posts/setting-up-hugo.md
+hugo new content posts/notes.md
+</code></pre><h3 id="front-matter">Front Matter</h3>
+<p>Open any one of the page files.  Notice there are a few auto populated fields at the top of each file.<br>
+These fields compose the <a href="https://gohugo.io/content-management/front-matter/">Front Matter</a>, which is used to add metadata to the page.</p>
+<pre tabindex="0"><code>+++
+title = &#39;Setting Up Hugo&#39;
+date = 2024-06-01T16:03:07-04:00
+draft = true
++++
+</code></pre><p>The <a href="https://gohugo.io/methods/page/title/">title</a> and <a href="https://gohugo.io/methods/page/date/">date</a> fields add their respective details to the page.</p>
+<p>The <a href="https://gohugo.io/methods/page/draft/">draft</a> field is used to tell hugo whether or not this page is a draft.<br>
+By default, draft pages are not published when the site gets built.</p>
+<p>More fields can be added to the <a href="https://gohugo.io/content-management/front-matter/">Front Matter</a> but for now these are the default fields.</p>
+<h3 id="markdown">Markdown</h3>
+<p>Markdown is the primary language for formatting the .md files used for these pages.<br>
+Check out the <a href="https://www.markdownguide.org/getting-started/">Markdown Getting Started</a> guide for more information.</p>
+<blockquote>
+<p>In Hugo we&rsquo;ll mostly be using Markdown.  However, using HTML is also an option.  This would allow us to use JavaScript through script tags, use CSS through style tags, handle additional formatting, and more.  By default, HTML is unavailable but we are able to use other markdown processors in order to enable it.  I&rsquo;ll include how I did that in a separate post.</p>
+</blockquote>
+<p>I created a <a href="http://localhost:1313/documents/markdown-example/">Markdown Example</a> page with examples of markdown formatting.</p>
+<h3 id="adding-markdown">Adding Markdown</h3>
+<p>Add some markdown to the nearly created page file.<br>
+Make sure to keep <code>draft = true</code> while working on a draft page.</p>
+<p>Here is an example of what I added from the top of this page.</p>
+<pre tabindex="0"><code>+++
+title = &#39;Setting Up Hugo&#39;
+date = 2024-06-01T16:03:07-04:00
+draft = true
++++
+# Prerequisites
+Navigate to the [hugo quick start page](https://gohugo.io/getting-started/quick-start/)
+
+- [Install Hugo](https://gohugo.io/installation/windows/)
+- [Install Git](https://www.git-scm.com/download/win)
+
+Git and GitBash were already installed prior to hugo setup.
+</code></pre><h3 id="run-the-server">Run the Server</h3>
+<p>Save the changes and start the Hugo development server.</p>
+<p>To include draft pages run either of the following commands:</p>
+<pre tabindex="0"><code>hugo server --buildDrafts
+hugo server -D
+</code></pre><p>To exclude draft pages run the following command:</p>
+<pre tabindex="0"><code>hugo server
+</code></pre><p>The site URL will be printed in the terminal.<br>
+Navigate to the site and continue working while keeping the server running.  The site will update live as changes are made.</p>
+<p><strong>From the Hugo Quick Start page:</strong><br>
+<em>Hugo’s rendering engine conforms to the <a href="https://spec.commonmark.org/">CommonMark specification</a> for Markdown. The CommonMark organization provides a useful <a href="https://spec.commonmark.org/dingus/">live testing tool</a> powered by the reference implementation.</em></p>
+<hr>
+<h1 id="configure-the-site">Configure the Site</h1>
+<p>At the root of this project, open the <span class="file-color">hugo.toml</span> file. This file handles the <a href="https://gohugo.io/getting-started/configuration/">hugo configuration</a> fields for the site.<br>
+It was auto generated when we ran the <code>hugo new site</code> command in the <a href="#creating-a-site">Creating a Site</a> section of this page.</p>
+<p>These are the base fields added to the file:</p>
+<pre tabindex="0"><code>baseURL = &#39;https://example.org/&#39;
+languageCode = &#39;en-us&#39;
+title = &#39;My New Hugo Site&#39;
+theme = &#39;ananke&#39;
+</code></pre><p>It is recommended to change the following fields when starting:</p>
+<ul>
+<li><a href="https://gohugo.io/methods/site/baseurl/">baseUrl</a>: Must begin with the protocol and end with a slash.  Customize it however desired.</li>
+<li><a href="https://gohugo.io/methods/site/language/">languageCode</a>: Set this to your local launguage and region or a desired one.</li>
+<li><a href="https://gohugo.io/methods/site/title/">title</a>: Update this to reflect on your site as the main title.</li>
+</ul>
+<p>Here are the values I currently have in my configuration file:</p>
+<pre tabindex="0"><code>baseURL = &#39;https://tyotalks.org/&#39;
+languageCode = &#39;en-us&#39;
+title = &#39;Tyo Talks&#39;
+theme = &#39;diary&#39;
+enableEmoji = true
+</code></pre><p>Notice I changed the theme <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and added a new field to enable emojis.</p>
+<p>To see the changes take effect, start the server once again.</p>
+<pre tabindex="0"><code>hugo server -D
+</code></pre><hr>
+<h1 id="publish-the-site">Publish the Site</h1>
+<p>In order to deploy the site it will first need to be published.<br>
+Publishing the site and deploying the site are not the same thing.</p>
+<p>To publish the site run the following command:</p>
+<pre tabindex="0"><code>hugo
+</code></pre><p>When you publish your site:</p>
+<ul>
+<li>The entire static site gets created in the public directory</li>
+<li><a href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content">Draft, future, or expired pages</a> should not be included</li>
+</ul>
+<hr>
+<h1 id="summary">Summary</h1>
+<p>In this document we:</p>
+<ul>
+<li>Installed Hugo and software</li>
+<li>Created a new site project</li>
+<li>Added page content to the site</li>
+<li>Briefly discussed front matter</li>
+<li>Introduced markdown</li>
+<li>Added markdown to a page</li>
+<li>Ran the local server</li>
+<li>Configured the site</li>
+<li>Published the site</li>
+</ul>
+<p>Uploading and deploying the site will be in separate posts.<br>
+Thank you for following along and I hope this document was helpful!</p>
+<hr>
+<h1 id="references">References</h1>
+<p>A comprehensive list of page references</p>
+<h3 id="hugo-documents">Hugo Documents</h3>
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/">Hugo Quick Start</a></li>
+<li><a href="https://gohugo.io/hugo-modules/">Hugo Modules</a></li>
+<li><a href="https://gohugo.io/content-management/front-matter/">Front Matter</a></li>
+<li><a href="https://gohugo.io/getting-started/configuration/">Configure Hugo</a></li>
+<li><a href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content">Draft, Future, and Expired Content</a></li>
+</ul>
+<h3 id="hugo-methods">Hugo Methods</h3>
+<ul>
+<li><a href="https://gohugo.io/methods/page/title/">Title Page Method</a></li>
+<li><a href="https://gohugo.io/methods/page/date/">Date Page Method</a></li>
+<li><a href="https://gohugo.io/methods/page/draft/">Draft Page Method</a></li>
+<li><a href="https://gohugo.io/methods/site/baseurl/">BaseURL Site Method</a></li>
+<li><a href="https://gohugo.io/methods/site/language/">Language Site Method</a></li>
+<li><a href="https://gohugo.io/methods/site/title/">Title Site Method</a></li>
+</ul>
+<h3 id="markdown-1">Markdown</h3>
+<ul>
+<li><a href="https://www.markdownguide.org/getting-started/">Markdown Getting Started</a></li>
+<li><a href="http://localhost:1313/documents/markdown-example/">Markdown Example</a></li>
+<li><a href="https://spec.commonmark.org/">CommonMark Specification</a></li>
+<li><a href="https://spec.commonmark.org/dingus/">CommonMark Live Testing Tool</a></li>
+</ul>
+<h3 id="installs">Installs</h3>
+<ul>
+<li><a href="https://gohugo.io/installation/windows/">Install Hugo</a></li>
+<li><a href="https://go.dev/doc/install">Install Go</a></li>
+<li><a href="https://scoop.sh/">Install Scoop</a></li>
+<li><a href="https://www.git-scm.com/download/win">Install Git</a></li>
+<li><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.oracle.com/webfolder/technetwork/tutorials/ocis/ocis_fundamental/gitbash-inst.pdf">Installing Git Bash</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The chosen theme can easily be changed later.  I changed my theme to the diary theme, but I&rsquo;ll have a separate post explaining that process.  To start, it&rsquo;s worth getting familiar with the ananke theme.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2024-06-01</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="/documents/markdown-example/">
+			Next<br>Markdown Example
+                </a>
+                
+                
+                
+                <a class="older-posts">
+			Previous<br>No older posts.
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            Tyo Talks
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Posts
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/documents">
+                Documents
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/drafts">
+                Drafts
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/notes">
+                Notes
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	2024 Tyo Talks
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#overview" class="nav-overview">
+									Overview
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#prerequisites" class="nav-prerequisites">
+									Prerequisites
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#installing-hugo" class="nav-installing-hugo">
+									Installing Hugo
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#creating-a-site" class="nav-creating-a-site">
+									Creating a site
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#add-content" class="nav-add-content">
+									Add Content
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#front-matter" class="nav-front-matter">
+									Front Matter
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#markdown" class="nav-markdown">
+									Markdown
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#adding-markdown" class="nav-adding-markdown">
+									Adding Markdown
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#run-the-server" class="nav-run-the-server">
+									Run the Server
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#configure-the-site" class="nav-configure-the-site">
+									Configure the Site
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#publish-the-site" class="nav-publish-the-site">
+									Publish the Site
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#summary" class="nav-summary">
+									Summary
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#references" class="nav-references">
+									References
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#hugo-documents" class="nav-hugo-documents">
+									Hugo Documents
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#hugo-methods" class="nav-hugo-methods">
+									Hugo Methods
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#markdown-1" class="nav-markdown-1">
+									Markdown
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#installs" class="nav-installs">
+									Installs
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	2024 Tyo Talks
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
+</html>
