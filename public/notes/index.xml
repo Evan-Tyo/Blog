@@ -6,7 +6,35 @@
     <description>Recent content in Notes on Tyo Talks</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2024 21:58:02 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Template</title>
+      <link>http://localhost:1313/notes/template/</link>
+      <pubDate>Sat, 08 Jun 2024 21:58:02 -0400</pubDate>
+      <guid>http://localhost:1313/notes/template/</guid>
+      <description>Overview Information about this page&#xA;Section 1 Information about this section&#xA;Subsection 1 Content&#xA;Subsection 2 Content&#xA;Section 2 Information about this section&#xA;Subsection 1 Content&#xA;Subsection 2 Content&#xA;Summary Summary list of this page&#xA;References A comprehensive list of page references&#xA;Section 1 List of section items&#xA;Section 2 List of section items</description>
+    </item>
+    <item>
+      <title>Site Nav</title>
+      <link>http://localhost:1313/notes/site-nav/</link>
+      <pubDate>Sat, 08 Jun 2024 21:28:57 -0400</pubDate>
+      <guid>http://localhost:1313/notes/site-nav/</guid>
+      <description>Overview This page will be a directory of the site for personal use.&#xA;Posts Posts created and published to this site.&#xA;To be public.&#xA;Includes:&#xA;Blog posts Process documentation Findings Documents Written documentation for frequent reference.&#xA;To be public.&#xA;Includes:&#xA;Examples of code or processes Frequently referenced documentation &amp;ldquo;Cheat sheets&amp;rdquo; Drafts Page drafts before being published.&#xA;To be private.&#xA;Includes:&#xA;Pages currently being worked on Pages that are not ready to be published Notes Any site related notes like this page.</description>
+    </item>
+    <item>
+      <title>Completion Dates</title>
+      <link>http://localhost:1313/notes/completion-dates/</link>
+      <pubDate>Sat, 08 Jun 2024 21:22:21 -0400</pubDate>
+      <guid>http://localhost:1313/notes/completion-dates/</guid>
+      <description> Overview A page to keep track of page completion dates.&#xA;This does not mean pages cannot be updated later.&#xA;4 - Template Template&#xA;Completion Date 8 June 2024 3 - Site Nav Site Nav&#xA;Completion Date 8 June 2024 2 - Setting up Hugo Setting up Hugo&#xA;Completion Date 8 June 2024 1 - Markdown Example Markdown Example&#xA;Completion Date 7 June 2024 </description>
+    </item>
+    <item>
+      <title>Notes</title>
+      <link>http://localhost:1313/notes/notes/</link>
+      <pubDate>Wed, 05 Jun 2024 23:24:48 -0400</pubDate>
+      <guid>http://localhost:1313/notes/notes/</guid>
+      <description>Overview A page filled with general notes and ideas.&#xA;General Notes Changing the theme Include both themes info and what failed / worked&#xA;Exploring HTML To set up html needed to add goldmark&#xA;Random stuff graphql web component Used Paint 3D to resize png with transparent&#xA;Pages to create Setting up Hugo Changing the theme for hugo Exploring markdown and html Setting up static gitlabs pages (uploaded to github) Project ideas Mock Discord A webpage with the ability to make a new category, a new channel, and new posts.</description>
+    </item>
   </channel>
 </rss>
