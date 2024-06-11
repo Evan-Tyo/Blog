@@ -31,7 +31,7 @@ Used Paint 3D to resize png with transparent
 - ~~Setting up Hugo~~
 - Changing the theme for hugo
 - Exploring markdown and html
-- Setting up static github pages
+- Setting up static gitlabs pages (uploaded to github)
 
 ---
 

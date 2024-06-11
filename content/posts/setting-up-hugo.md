@@ -264,6 +264,5 @@ A comprehensive list of page references
 - [Install Go](https://go.dev/doc/install)
 - [Install Scoop](https://scoop.sh/)
 - [Install Git](https://www.git-scm.com/download/win)
-- [Installing Git Bash](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.oracle.com/webfolder/technetwork/tutorials/ocis/ocis_fundamental/gitbash-inst.pdf)
 
 [^1]: The chosen theme can easily be changed later.  I changed my theme to the diary theme, but I'll have a separate post explaining that process.  To start, it's worth getting familiar with the ananke theme.
