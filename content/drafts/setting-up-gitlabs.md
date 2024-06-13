@@ -45,7 +45,7 @@ Navigate to the [gitlab home page](https://about.gitlab.com/)
 
 You should now have an account set up with GitLabs.
 
-### Initial Creation Of Resources
+### Skipping Resource Setup
 GitLabs will immediately ask if you want to create or import a new Group and a new Project.
 
 > Personally, I don't like being asked to create a new resource with a new account. I would rather first explore how the service operates then create resources at my own pace. Since I didn't understand what a Group or Project was in regards to GitLabs, I decided to create new ones in order to get past account creation, then delete them.
@@ -63,11 +63,26 @@ Groups and Projects will be explained in more detail in the following sections.
 
 ---
 
-# GitLabs Resources
-Here I'll explain what Groups and Projects are, as well as anything else that might become relevant during the creation of this post. Also explain the different types of projects that can be created. And what a group is.
+# Explaining GitLabs Resources
+This section is meant to breifly explain what Groups and Projects are.
 
 ### Groups
-`Content`
+Groups are used to categorize one or more projects together that have a shared purpose.
+
+There are many different ways to structure a group, but there is no single correct way.\
+Here are a few common group structures:
+- <u>Simple</u>: One group including all projects
+- <u>Team</u>: Each team has their own group
+- <u>Client</u>: Each client has their own group
+- <u>Functionality</u>: Each functionality has it's own group
+
+Using groups allows for:
+- Managing permissions for projects included in the group
+- Viewing all issues, requests, and analytics for projects in the group
+- Communicate with all group members within a group
+- Creating subgroups for additional structuring
+
+For more details involving groups navigate to the [GitLabs Groups](https://docs.gitlab.com/ee/user/group/) page.
 
 ### Projects
 `Content`
@@ -114,3 +129,4 @@ Here I'll explain my process for creating a group and a project and my reasons f
 - [GitLab account](https://about.gitlab.com/)
 - [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 - [Setting Up Hugo]({{< ref "setting-up-hugo" >}})
+- [GitLabs Groups](https://docs.gitlab.com/ee/user/group/)

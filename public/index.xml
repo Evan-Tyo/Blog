@@ -52,7 +52,7 @@ If this has not been completed, take a look at my &lt;a href=&#34;http://localho
 &lt;li&gt;Enter the code to complete account creation&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You should now have an account set up with GitLabs.&lt;/p&gt;
-&lt;h3 id=&#34;initial-creation-of-resources&#34;&gt;Initial Creation Of Resources&lt;/h3&gt;
+&lt;h3 id=&#34;skipping-resource-setup&#34;&gt;Skipping Resource Setup&lt;/h3&gt;
 &lt;p&gt;GitLabs will immediately ask if you want to create or import a new Group and a new Project.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Personally, I don&amp;rsquo;t like being asked to create a new resource with a new account. I would rather first explore how the service operates then create resources at my own pace. Since I didn&amp;rsquo;t understand what a Group or Project was in regards to GitLabs, I decided to create new ones in order to get past account creation, then delete them.&lt;/p&gt;
@@ -69,10 +69,26 @@ If this has not been completed, take a look at my &lt;a href=&#34;http://localho
 &lt;p&gt;Once finished there should be no groups or projects associated with the GitLabs account.&lt;br&gt;
 Groups and Projects will be explained in more detail in the following sections.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;gitlabs-resources&#34;&gt;GitLabs Resources&lt;/h1&gt;
-&lt;p&gt;Here I&amp;rsquo;ll explain what Groups and Projects are, as well as anything else that might become relevant during the creation of this post. Also explain the different types of projects that can be created. And what a group is.&lt;/p&gt;
+&lt;h1 id=&#34;explaining-gitlabs-resources&#34;&gt;Explaining GitLabs Resources&lt;/h1&gt;
+&lt;p&gt;This section is meant to breifly explain what Groups and Projects are.&lt;/p&gt;
 &lt;h3 id=&#34;groups&#34;&gt;Groups&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Groups are used to categorize one or more projects together that have a shared purpose.&lt;/p&gt;
+&lt;p&gt;There are many different ways to structure a group, but there is no single correct way.&lt;br&gt;
+Here are a few common group structures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;Simple&lt;/u&gt;: One group including all projects&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Team&lt;/u&gt;: Each team has their own group&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Client&lt;/u&gt;: Each client has their own group&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Functionality&lt;/u&gt;: Each functionality has it&amp;rsquo;s own group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using groups allows for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Managing permissions for projects included in the group&lt;/li&gt;
+&lt;li&gt;Viewing all issues, requests, and analytics for projects in the group&lt;/li&gt;
+&lt;li&gt;Communicate with all group members within a group&lt;/li&gt;
+&lt;li&gt;Creating subgroups for additional structuring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more details involving groups navigate to the &lt;a href=&#34;https://docs.gitlab.com/ee/user/group/&#34;&gt;GitLabs Groups&lt;/a&gt; page.&lt;/p&gt;
 &lt;h3 id=&#34;projects&#34;&gt;Projects&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -104,6 +120,7 @@ Groups and Projects will be explained in more detail in the following sections.&
 &lt;li&gt;&lt;a href=&#34;https://about.gitlab.com/&#34;&gt;GitLab account&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;Hugo Quick Start&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/setting-up-hugo/&#34;&gt;Setting Up Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gitlab.com/ee/user/group/&#34;&gt;GitLabs Groups&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 - http://localhost:1313/drafts/setting-up-gitlabs/ - </description>
         </item>
