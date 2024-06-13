@@ -45,7 +45,7 @@ Navigate to the [gitlab home page](https://about.gitlab.com/)
 
 You should now have an account set up with GitLabs.
 
-### Skipping Resource Setup
+### Skipping Initial Resource Setup
 GitLabs will immediately ask if you want to create or import a new Group and a new Project.
 
 > Personally, I don't like being asked to create a new resource with a new account. I would rather first explore how the service operates then create resources at my own pace. Since I didn't understand what a Group or Project was in regards to GitLabs, I decided to create new ones in order to get past account creation, then delete them.
@@ -85,17 +85,40 @@ Using groups allows for:
 For more details involving groups navigate to the [GitLabs Groups](https://docs.gitlab.com/ee/user/group/) page.
 
 ### Projects
-`Content`
+Projects are used to host the data related to the associated development work.
+
+They provide a variety of great benefits to help streamline the development process.\
+Using projects allows for:
+- Collaboration between project members
+- Version control for more secure releases
+- Project management to assist with planning
+- The use of a dedicated environment
+
+While all projects have the same functionality, there are different ways to create a project.\
+A few ways to create a project are by:
+- Creating a blank project
+- Using a template
+- Utilizing Git push
+- Including SHA-256 hashing
+
+For more details involving projects navigate to the [GitLabs Projects](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html) page.\
+Additionally, the [GitLabs Create a Project](https://docs.gitlab.com/ee/user/project/index.html) page provides more information on project creation.
 
 ---
 
-# Group and Project Creation
-Here I'll explain my process for creating a group and a project and my reasons for why.
+# Creating GitLabs Resources
+With a basic understanding of Groups and Projects, and neither
 
-### Subsection 1
+- Create a new group
+- Create a new project
+- Connect project to github CI/CD
+
+https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html
+
+### Group Creation
 `Content`
 
-### Subsection 2
+### Project Creation
 `Content`
 
 ---
@@ -130,3 +153,5 @@ Here I'll explain my process for creating a group and a project and my reasons f
 - [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 - [Setting Up Hugo]({{< ref "setting-up-hugo" >}})
 - [GitLabs Groups](https://docs.gitlab.com/ee/user/group/)
+- [GitLabs Projects](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html)
+- [GitLabs Create a Project](https://docs.gitlab.com/ee/user/project/index.html)
