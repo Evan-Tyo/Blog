@@ -22,7 +22,7 @@ Which is interesting, so I guess I'll deploy it as is and add this after it's de
 ---
 
 # Prerequisites
-Navigate to the [host on gitlab page](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/)
+Navigate to the [host on gitlab page](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/).
 
 - Have familiarity with Git versioning
 - Create a [GitLab account](https://about.gitlab.com/)
@@ -34,7 +34,7 @@ If this has not been completed, take a look at my [Setting Up Hugo]({{< ref "set
 ---
 
 # Creating A GitLab Account
-Navigate to the [gitlab home page](https://about.gitlab.com/)
+Navigate to the [gitlab home page](https://about.gitlab.com/).
 
 ### Account Creation
 - Click the <span class="direction-color">Sign in</span> button on the top right
@@ -59,7 +59,7 @@ My steps:
 6. Repeat steps 2 - 5, replacing "projects" with "groups"
 
 Once finished there should be no groups or projects associated with the GitLabs account.\
-Groups and Projects will be explained in more detail in the following sections.
+Groups and Projects will be explained in more detail in the following section.
 
 ---
 
@@ -107,18 +107,29 @@ Additionally, the [GitLabs Create a Project](https://docs.gitlab.com/ee/user/pro
 ---
 
 # Creating GitLabs Resources
-With a basic understanding of Groups and Projects, and neither
+Navigate back to the [gitlab home page](https://about.gitlab.com/).
 
-- Create a new group
-- Create a new project
-- Connect project to github CI/CD
-
-https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html
+As explained above, Groups and Projects have many use cases.\
+The resources being created here will be made to connect a GitHub repository to GitLabs.\
+This will utilize a GitLabs CI/CD project in order to create that connection.
 
 ### Group Creation
 `Content`
 
 ### Project Creation
+`Content`
+
+https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html
+
+---
+
+# Configure CI/CD
+`Information about this section`
+
+### Subsection 1
+`Content`
+
+### Subsection 2
 `Content`
 
 ---
