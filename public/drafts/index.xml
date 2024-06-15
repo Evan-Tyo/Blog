@@ -13,7 +13,7 @@
       <link>http://localhost:1313/drafts/setting-up-gitlabs/</link>
       <pubDate>Mon, 10 Jun 2024 20:51:59 -0400</pubDate>
       <guid>http://localhost:1313/drafts/setting-up-gitlabs/</guid>
-      <description>Overview This post will document my process in setting up GitLabs using this project.&#xA;Which is interesting, so I guess I&amp;rsquo;ll deploy it as is and add this after it&amp;rsquo;s deployed.&#xA;Prerequisites Navigate to the host on gitlab page.&#xA;Have familiarity with Git versioning Create a GitLab account Complete Hugo Quick Start Completing the hugo quick start turtorial will produce a local, ready to publish, Hugo website.&#xA;If this has not been completed, take a look at my Setting Up Hugo page for more information.</description>
+      <description>Overview This post will document my process in setting up GitLabs.&#xA;Prerequisites Navigate to the host on gitlab page.&#xA;Have familiarity with Git versioning Create a GitLab account Complete Hugo Quick Start Completing the hugo quick start turtorial will produce a local, ready to publish, Hugo website.&#xA;If this has not been completed, take a look at my Setting Up Hugo page for more information.&#xA;Creating A GitLab Account Navigate to the gitlab home page.</description>
     </item>
     <item>
       <title>Changing the Theme</title>

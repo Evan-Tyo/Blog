@@ -243,8 +243,8 @@
 						
 						
 							<li>
-								<a href="#explaining-gitlabs-resources" class="nav-explaining-gitlabs-resources">
-									Explaining GitLabs Resources
+								<a href="#understanding-gitlab-groups-and-projects" class="nav-understanding-gitlab-groups-and-projects">
+									Understanding GitLab Groups and Projects
 								</a>
 							</li>
 						
@@ -313,8 +313,8 @@
 						
 						
 							<li>
-								<a href="#creating-gitlabs-resources" class="nav-creating-gitlabs-resources">
-									Creating GitLabs Resources
+								<a href="#creating-gitlab-groups-and-projects" class="nav-creating-gitlab-groups-and-projects">
+									Creating GitLab Groups and Projects
 								</a>
 							</li>
 						
@@ -680,21 +680,20 @@
 </style>
 <hr>
 <h1 id="overview">Overview</h1>
-<p>This post will document my process in setting up GitLabs using this project.<br>
-Which is interesting, so I guess I&rsquo;ll deploy it as is and add this after it&rsquo;s deployed.</p>
+<p>This post will document my process in setting up GitLabs.</p>
 <hr>
 <h1 id="prerequisites">Prerequisites</h1>
 <p>Navigate to the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/">host on gitlab page</a>.</p>
 <ul>
 <li>Have familiarity with Git versioning</li>
-<li>Create a <a href="https://about.gitlab.com/">GitLab account</a></li>
+<li>Create a <a href="https://gitlab.com/">GitLab account</a></li>
 <li>Complete <a href="https://gohugo.io/getting-started/quick-start/">Hugo Quick Start</a></li>
 </ul>
 <p>Completing the hugo quick start turtorial will produce a local, ready to publish, Hugo website.<br>
 If this has not been completed, take a look at my <a href="http://localhost:1313/posts/setting-up-hugo/">Setting Up Hugo</a> page for more information.</p>
 <hr>
 <h1 id="creating-a-gitlab-account">Creating A GitLab Account</h1>
-<p>Navigate to the <a href="https://about.gitlab.com/">gitlab home page</a>.</p>
+<p>Navigate to the <a href="https://gitlab.com/">gitlab home page</a>.</p>
 <h3 id="account-creation">Account Creation</h3>
 <ul>
 <li>Click the <span class="direction-color">Sign in</span> button on the top right</li>
@@ -707,7 +706,7 @@ If this has not been completed, take a look at my <a href="http://localhost:1313
 <h3 id="skipping-initial-resource-setup">Skipping Initial Resource Setup</h3>
 <p>GitLabs will immediately ask if you want to create or import a new Group and a new Project.</p>
 <blockquote>
-<p>Personally, I don&rsquo;t like being asked to create a new resource with a new account. I would rather first explore how the service operates then create resources at my own pace. Since I didn&rsquo;t understand what a Group or Project was in regards to GitLabs, I decided to create new ones in order to get past account creation, then delete them.</p>
+<p>Personally, I don&rsquo;t like being asked to create a new resource with a new account. I would rather first explore how the service operates then create resources at my own pace. Since I didn&rsquo;t understand what a Group or Project was in regards to GitLabs, I created the required ones in order to get past account creation, then decided to delete them.</p>
 </blockquote>
 <p>My steps:</p>
 <ol>
@@ -721,7 +720,7 @@ If this has not been completed, take a look at my <a href="http://localhost:1313
 <p>Once finished there should be no groups or projects associated with the GitLabs account.<br>
 Groups and Projects will be explained in more detail in the following section.</p>
 <hr>
-<h1 id="explaining-gitlabs-resources">Explaining GitLabs Resources</h1>
+<h1 id="understanding-gitlab-groups-and-projects">Understanding GitLab Groups and Projects</h1>
 <p>This section is meant to breifly explain what Groups and Projects are.</p>
 <h3 id="groups">Groups</h3>
 <p>Groups are used to categorize one or more projects together that have a shared purpose.</p>
@@ -759,22 +758,55 @@ A few ways to create a project are by:</p>
 <li>Utilizing Git push</li>
 <li>Including SHA-256 hashing</li>
 </ul>
-<p>For more details involving projects navigate to the <a href="https://docs.gitlab.com/ee/user/get_started/get_started_projects.html">GitLabs Projects</a> page.<br>
+<p>For more general details involving projects navigate to the <a href="https://docs.gitlab.com/ee/user/get_started/get_started_projects.html">GitLabs Projects</a> page.<br>
 Additionally, the <a href="https://docs.gitlab.com/ee/user/project/index.html">GitLabs Create a Project</a> page provides more information on project creation.</p>
 <hr>
-<h1 id="creating-gitlabs-resources">Creating GitLabs Resources</h1>
-<p>Navigate back to the <a href="https://about.gitlab.com/">gitlab home page</a>.</p>
-<p>As explained above, Groups and Projects have many use cases.<br>
-The resources being created here will be made to connect a GitHub repository to GitLabs.<br>
-This will utilize a GitLabs CI/CD project in order to create that connection.</p>
+<h1 id="creating-gitlab-groups-and-projects">Creating GitLab Groups and Projects</h1>
+<p>Navigate back to the <a href="https://gitlab.com/">gitlab home page</a>.</p>
+<p>Sign in, if not already, and the page will redirect to the account&rsquo;s projects page.<br>
+This is where Groups and Projects can be created.</p>
 <h3 id="group-creation">Group Creation</h3>
-<p><code>Content</code></p>
+<p>A group can either be created or imported.</p>
+<p>The following steps outline creating a new group.<br>
+Importing a group will not be discussed in this post.</p>
+<p>Steps to create a group:<br>
+<em>More details on each step will be listed below.</em></p>
+<ul>
+<li>Click the <span class="direction-color">Create a group</span> button</li>
+<li>Click the <span class="direction-color">Create group</span> button</li>
+<li>Choose a Group name</li>
+<li>Choose a Group URL</li>
+<li>Pick a Visibility level</li>
+<li>Add your Role</li>
+<li>Pick Who will be using this group</li>
+<li>Explain What will you use this group for</li>
+<li>When finished, click the <span class="direction-color">Create group</span> button</li>
+</ul>
+<p>Group URL - Some info<br>
+Visiblity Level - Some info<br>
+Who using group - Some info</p>
 <h3 id="project-creation">Project Creation</h3>
-<p><code>Content</code></p>
-<p><a href="https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html">https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html</a></p>
 <hr>
 <h1 id="configure-cicd">Configure CI/CD</h1>
-<p><code>Information about this section</code></p>
+<p>The resources being created here will be made to connect a GitHub repository to GitLabs.<br>
+This will utilize a GitLabs CI/CD project in order to make that connection.</p>
+<blockquote>
+<p>I already have a GitHub account with multiple repositories created.<br>
+I don&rsquo;t plan to create any docs on setting that up, but if I do I&rsquo;ll reference that here.<br>
+Either way I suggest setting up a GitHub account and aiming to use it frequently.</p>
+</blockquote>
+<ol>
+<li>Create a Group</li>
+<li>Create a Project</li>
+<li>Conect With Personal Access Token<br>
+<a href="https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html">https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html</a></li>
+<li>Configure GitLab CI/CD<br>
+Can skip setting up runners since using GitLab.com<br>
+<a href="https://docs.gitlab.com/ee/ci/quick_start/index.html">https://docs.gitlab.com/ee/ci/quick_start/index.html</a></li>
+<li>BaseURL</li>
+<li>Push your Hugo website to GitLab</li>
+<li>Wait for your page to build</li>
+</ol>
 <h3 id="subsection-1">Subsection 1</h3>
 <p><code>Content</code></p>
 <h3 id="subsection-2">Subsection 2</h3>
@@ -798,7 +830,7 @@ This will utilize a GitLabs CI/CD project in order to create that connection.</p
 <p><code>List of section items</code></p>
 <ul>
 <li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/">host on gitlab page</a></li>
-<li><a href="https://about.gitlab.com/">GitLab account</a></li>
+<li><a href="https://gitlab.com/">GitLab Home Page</a></li>
 <li><a href="https://gohugo.io/getting-started/quick-start/">Hugo Quick Start</a></li>
 <li><a href="http://localhost:1313/posts/setting-up-hugo/">Setting Up Hugo</a></li>
 <li><a href="https://docs.gitlab.com/ee/user/group/">GitLabs Groups</a></li>
@@ -1054,8 +1086,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#explaining-gitlabs-resources" class="nav-explaining-gitlabs-resources">
-									Explaining GitLabs Resources
+								<a href="#understanding-gitlab-groups-and-projects" class="nav-understanding-gitlab-groups-and-projects">
+									Understanding GitLab Groups and Projects
 								</a>
 							</li>
 						
@@ -1124,8 +1156,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#creating-gitlabs-resources" class="nav-creating-gitlabs-resources">
-									Creating GitLabs Resources
+								<a href="#creating-gitlab-groups-and-projects" class="nav-creating-gitlab-groups-and-projects">
+									Creating GitLab Groups and Projects
 								</a>
 							</li>
 						
