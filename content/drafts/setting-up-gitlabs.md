@@ -16,7 +16,8 @@ draft = true
 ---
 
 # Overview
-This post will document my process in setting up GitLabs.
+A page to document my process in setting up a GitLabs account, creating a Group, and creating a Project.\
+Includes information on Groups and Projects. Not meant to replace GitLabs documentation. 
 
 ---
 
@@ -125,54 +126,32 @@ Steps to create a group:\
 - Choose a Group URL
 - Pick a Visibility level
 - Add your Role
-- Pick Who will be using this group
-- Explain What will you use this group for
+- Pick who will be using this group
+- Choose what will you use this group for
 - When finished, click the <span class="direction-color">Create group</span> button
 
-Group URL - Some info\
-Visiblity Level - Some info\
-Who using group - Some info
+Details on each step:
+| Step                                                                            | Details                                                               |
+| ------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Group Name                                     | The name of the group. Some are [reserved names](https://docs.gitlab.com/ee/user/reserved_names.html). |
+| Group URL ( [Namespace](https://docs.gitlab.com/ee/user/namespace/index.html) ) | The path for the group. If not specified, it will use the group name. |
+| [Visibility Level](https://docs.gitlab.com/ee/user/public_access.html)          | Limits who has group access. Private, Internal, or Public visibility. |
+| Add your Role                                                                   | Team Role or Job Title.                                               |
+| Who will be using this group                                                    | For company, team, or personal use.                                   |
+| What will you use this group for                                                | Choose from a selection of generalized uses.                          |
 
 ### Project Creation
 
 
 ---
 
-# Configure CI/CD
-The resources being created here will be made to connect a GitHub repository to GitLabs.\
-This will utilize a GitLabs CI/CD project in order to make that connection.
-
-> I already have a GitHub account with multiple repositories created.\
-I don't plan to create any docs on setting that up, but if I do I'll reference that here.\
-Either way I suggest setting up a GitHub account and aiming to use it frequently.
-
-1) Create a Group
-2) Create a Project
-3) Conect With Personal Access Token\
-https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html
-4) Configure GitLab CI/CD\
-Can skip setting up runners since using GitLab.com\
-https://docs.gitlab.com/ee/ci/quick_start/index.html
-5) BaseURL
-6) Push your Hugo website to GitLab
-7) Wait for your page to build
-
-
-### Subsection 1
-`Content`
-
-### Subsection 2
-`Content`
-
----
-
-# Section 2
+# -My Group and Project Choices-
 `Information about this section`
 
-### Subsection 1
+### -My Group Choices-
 `Content`
 
-### Subsection 2
+### -My Project Choices-
 `Content`
 
 ---
@@ -198,3 +177,6 @@ https://docs.gitlab.com/ee/ci/quick_start/index.html
 - [GitLabs Groups](https://docs.gitlab.com/ee/user/group/)
 - [GitLabs Projects](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html)
 - [GitLabs Create a Project](https://docs.gitlab.com/ee/user/project/index.html)
+- [Group and Project Reserved Names](https://docs.gitlab.com/ee/user/reserved_names.html)
+- [Group Namespace](https://docs.gitlab.com/ee/user/namespace/index.html)
+- [Group Visibility Level](https://docs.gitlab.com/ee/user/public_access.html)

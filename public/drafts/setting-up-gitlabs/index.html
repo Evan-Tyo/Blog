@@ -383,8 +383,8 @@
 						
 						
 							<li>
-								<a href="#configure-cicd" class="nav-configure-cicd">
-									Configure CI/CD
+								<a href="#-my-group-and-project-choices-" class="nav--my-group-and-project-choices-">
+									-My Group and Project Choices-
 								</a>
 							</li>
 						
@@ -411,8 +411,8 @@
 						
 						
 							<li>
-								<a href="#subsection-1" class="nav-subsection-1">
-									Subsection 1
+								<a href="#-my-group-choices-" class="nav--my-group-choices-">
+									-My Group Choices-
 								</a>
 							</li>
 						
@@ -429,78 +429,8 @@
 						
 						
 							<li>
-								<a href="#subsection-2" class="nav-subsection-2">
-									Subsection 2
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-							
-								</ul>
-							
-								</ul>
-							
-						
-						
-						
-							<li>
-								<a href="#section-2" class="nav-section-2">
-									Section 2
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-							
-								
-									<ul>
-								
-							
-								
-									<ul>
-								
-							
-						
-						
-							<li>
-								<a href="#subsection-1-1" class="nav-subsection-1-1">
-									Subsection 1
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#subsection-2-1" class="nav-subsection-2-1">
-									Subsection 2
+								<a href="#-my-project-choices-" class="nav--my-project-choices-">
+									-My Project Choices-
 								</a>
 							</li>
 						
@@ -587,7 +517,7 @@
 						
 						
 							<li>
-								<a href="#section-2-1" class="nav-section-2-1">
+								<a href="#section-2" class="nav-section-2">
 									Section 2
 								</a>
 							</li>
@@ -680,7 +610,8 @@
 </style>
 <hr>
 <h1 id="overview">Overview</h1>
-<p>This post will document my process in setting up GitLabs.</p>
+<p>A page to document my process in setting up a GitLabs account, creating a Group, and creating a Project.<br>
+Includes information on Groups and Projects. Not meant to replace GitLabs documentation.</p>
 <hr>
 <h1 id="prerequisites">Prerequisites</h1>
 <p>Navigate to the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/">host on gitlab page</a>.</p>
@@ -778,45 +709,52 @@ Importing a group will not be discussed in this post.</p>
 <li>Choose a Group URL</li>
 <li>Pick a Visibility level</li>
 <li>Add your Role</li>
-<li>Pick Who will be using this group</li>
-<li>Explain What will you use this group for</li>
+<li>Pick who will be using this group</li>
+<li>Choose what will you use this group for</li>
 <li>When finished, click the <span class="direction-color">Create group</span> button</li>
 </ul>
-<p>Group URL - Some info<br>
-Visiblity Level - Some info<br>
-Who using group - Some info</p>
+<p>Details on each step:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group Name</td>
+<td>The name of the group. Some are <a href="https://docs.gitlab.com/ee/user/reserved_names.html">reserved names</a>.</td>
+</tr>
+<tr>
+<td>Group URL ( <a href="https://docs.gitlab.com/ee/user/namespace/index.html">Namespace</a> )</td>
+<td>The path for the group. If not specified, it will use the group name.</td>
+</tr>
+<tr>
+<td><a href="https://docs.gitlab.com/ee/user/public_access.html">Visibility Level</a></td>
+<td>Limits who has group access. Private, Internal, or Public visibility.</td>
+</tr>
+<tr>
+<td>Add your Role</td>
+<td>Team Role or Job Title.</td>
+</tr>
+<tr>
+<td>Who will be using this group</td>
+<td>For company, team, or personal use.</td>
+</tr>
+<tr>
+<td>What will you use this group for</td>
+<td>Choose from a selection of generalized uses.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="project-creation">Project Creation</h3>
 <hr>
-<h1 id="configure-cicd">Configure CI/CD</h1>
-<p>The resources being created here will be made to connect a GitHub repository to GitLabs.<br>
-This will utilize a GitLabs CI/CD project in order to make that connection.</p>
-<blockquote>
-<p>I already have a GitHub account with multiple repositories created.<br>
-I don&rsquo;t plan to create any docs on setting that up, but if I do I&rsquo;ll reference that here.<br>
-Either way I suggest setting up a GitHub account and aiming to use it frequently.</p>
-</blockquote>
-<ol>
-<li>Create a Group</li>
-<li>Create a Project</li>
-<li>Conect With Personal Access Token<br>
-<a href="https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html">https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html</a></li>
-<li>Configure GitLab CI/CD<br>
-Can skip setting up runners since using GitLab.com<br>
-<a href="https://docs.gitlab.com/ee/ci/quick_start/index.html">https://docs.gitlab.com/ee/ci/quick_start/index.html</a></li>
-<li>BaseURL</li>
-<li>Push your Hugo website to GitLab</li>
-<li>Wait for your page to build</li>
-</ol>
-<h3 id="subsection-1">Subsection 1</h3>
-<p><code>Content</code></p>
-<h3 id="subsection-2">Subsection 2</h3>
-<p><code>Content</code></p>
-<hr>
-<h1 id="section-2">Section 2</h1>
+<h1 id="-my-group-and-project-choices-">-My Group and Project Choices-</h1>
 <p><code>Information about this section</code></p>
-<h3 id="subsection-1-1">Subsection 1</h3>
+<h3 id="-my-group-choices-">-My Group Choices-</h3>
 <p><code>Content</code></p>
-<h3 id="subsection-2-1">Subsection 2</h3>
+<h3 id="-my-project-choices-">-My Project Choices-</h3>
 <p><code>Content</code></p>
 <hr>
 <h1 id="summary">Summary</h1>
@@ -826,7 +764,7 @@ Can skip setting up runners since using GitLab.com<br>
 <p><code>A comprehensive list of page references</code></p>
 <h3 id="section-1">Section 1</h3>
 <p><code>List of section items</code></p>
-<h3 id="section-2-1">Section 2</h3>
+<h3 id="section-2">Section 2</h3>
 <p><code>List of section items</code></p>
 <ul>
 <li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/">host on gitlab page</a></li>
@@ -836,6 +774,9 @@ Can skip setting up runners since using GitLab.com<br>
 <li><a href="https://docs.gitlab.com/ee/user/group/">GitLabs Groups</a></li>
 <li><a href="https://docs.gitlab.com/ee/user/get_started/get_started_projects.html">GitLabs Projects</a></li>
 <li><a href="https://docs.gitlab.com/ee/user/project/index.html">GitLabs Create a Project</a></li>
+<li><a href="https://docs.gitlab.com/ee/user/reserved_names.html">Group and Project Reserved Names</a></li>
+<li><a href="https://docs.gitlab.com/ee/user/namespace/index.html">Group Namespace</a></li>
+<li><a href="https://docs.gitlab.com/ee/user/public_access.html">Group Visibility Level</a></li>
 </ul>
 
                     
@@ -1226,8 +1167,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#configure-cicd" class="nav-configure-cicd">
-									Configure CI/CD
+								<a href="#-my-group-and-project-choices-" class="nav--my-group-and-project-choices-">
+									-My Group and Project Choices-
 								</a>
 							</li>
 						
@@ -1254,8 +1195,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#subsection-1" class="nav-subsection-1">
-									Subsection 1
+								<a href="#-my-group-choices-" class="nav--my-group-choices-">
+									-My Group Choices-
 								</a>
 							</li>
 						
@@ -1272,78 +1213,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#subsection-2" class="nav-subsection-2">
-									Subsection 2
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-							
-								</ul>
-							
-								</ul>
-							
-						
-						
-						
-							<li>
-								<a href="#section-2" class="nav-section-2">
-									Section 2
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-							
-								
-									<ul>
-								
-							
-								
-									<ul>
-								
-							
-						
-						
-							<li>
-								<a href="#subsection-1-1" class="nav-subsection-1-1">
-									Subsection 1
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#subsection-2-1" class="nav-subsection-2-1">
-									Subsection 2
+								<a href="#-my-project-choices-" class="nav--my-project-choices-">
+									-My Project Choices-
 								</a>
 							</li>
 						
@@ -1430,7 +1301,7 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#section-2-1" class="nav-section-2-1">
+								<a href="#section-2" class="nav-section-2">
 									Section 2
 								</a>
 							</li>
