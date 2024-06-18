@@ -7,7 +7,7 @@ draft = true
 ---
 
 # Overview
-A page to keep track of page completion dates.\
+Tracking page completion dates.\
 This does not mean pages cannot be updated later.
 
 ---

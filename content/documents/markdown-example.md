@@ -7,7 +7,7 @@ draft = false
 ---
 
 # Overview
-This page provides examples of Markdown elements supported by Hugo.\
+Examples of Markdown elements supported by Hugo.\
 Highlight, Subscript, and Superscript are not supported elements.\
 HTML is supported but is not included on this page.
 

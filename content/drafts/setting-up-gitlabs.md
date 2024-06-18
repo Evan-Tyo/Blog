@@ -16,8 +16,8 @@ draft = true
 ---
 
 # Overview
-A page to document my process in setting up a GitLabs account, creating a Group, and creating a Project.\
-Includes information on Groups and Projects. Not meant to replace GitLabs documentation. 
+Documenting my process in setting up a GitLabs account, creating a Group, and creating a Project.\
+Includes additional information on Groups and Projects.
 
 ---
 
@@ -63,7 +63,7 @@ Groups and Projects will be explained in more detail in the following section.
 
 ---
 
-# Understanding GitLab Groups and Projects
+# Understanding Groups and Projects
 This section is meant to breifly explain what Groups and Projects are.
 
 ### Groups
@@ -81,6 +81,10 @@ Using groups allows for:
 - Viewing all issues, requests, and analytics for projects in the group
 - Communicate with all group members within a group
 - Creating subgroups for additional structuring
+
+There are two options for creating a group:
+- Create Group: Design a group from scratch
+- Import Group: Pull in a group from another GitLab instance
 
 For more details involving groups navigate to the [GitLabs Groups](https://docs.gitlab.com/ee/user/group/) page.
 
@@ -106,41 +110,40 @@ Additionally, the [GitLabs Create a Project](https://docs.gitlab.com/ee/user/pro
 
 ---
 
-# Creating GitLab Groups and Projects
+# Creating Groups and Projects
 Navigate back to the [gitlab home page](https://gitlab.com/).
 
 Sign in, if not already, and the page will redirect to the account's projects page.\
 This is where Groups and Projects can be created.
 
 ### Group Creation
-A group can either be created or imported.
-
 The following steps outline creating a new group.\
 Importing a group will not be discussed in this post.
 
 Steps to create a group:\
-*More details on each step will be listed below.*
+*More details on each field will be listed below.*
 - Click the <span class="direction-color">Create a group</span> button
 - Click the <span class="direction-color">Create group</span> button
 - Choose a Group name
 - Choose a Group URL
 - Pick a Visibility level
-- Add your Role
+- Add a Role
 - Pick who will be using this group
 - Choose what will you use this group for
 - When finished, click the <span class="direction-color">Create group</span> button
 
-Details on each step:
-| Step                                                                            | Details                                                               |
-| ------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Group Name                                     | The name of the group. Some are [reserved names](https://docs.gitlab.com/ee/user/reserved_names.html). |
-| Group URL ( [Namespace](https://docs.gitlab.com/ee/user/namespace/index.html) ) | The path for the group. If not specified, it will use the group name. |
-| [Visibility Level](https://docs.gitlab.com/ee/user/public_access.html)          | Limits who has group access. Private, Internal, or Public visibility. |
-| Add your Role                                                                   | Team Role or Job Title.                                               |
-| Who will be using this group                                                    | For company, team, or personal use.                                   |
-| What will you use this group for                                                | Choose from a selection of generalized uses.                          |
+Details on each field:
+| Field                                                                            | Details                                                               |
+| -------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Group Name                                      | The name of the group. Some are [reserved names](https://docs.gitlab.com/ee/user/reserved_names.html). |
+| Group URL ( [Namespace](https://docs.gitlab.com/ee/user/namespace/index.html) )  | The path for the group. If not specified, it will use the group name. |
+| [Visibility Level](https://docs.gitlab.com/ee/user/public_access.html)           | Limits who has group access. Private, Internal, or Public visibility. |
+| Add your Role                                                                    | Team Role or Job Title.                                               |
+| Who will be using this group                                                     | For company, team, or personal use.                                   |
+| What will you use this group for                                                 | Choose from a selection of generalized uses.                          |
 
 ### Project Creation
+The following steps outline creating a new project.\
 
 
 ---
@@ -149,7 +152,16 @@ Details on each step:
 `Information about this section`
 
 ### -My Group Choices-
-`Content`
+These are the choices I made when creating my first Group.
+
+| Field                            | Choices                                      |
+| -------------------------------- | -------------------------------------------- |
+| Group Name                       | Tyo Blogs                                    |
+| Group URL                        | https://gitlab.com/tyo-blogs                 |
+| Visibility Level                 | Private Developer                            |
+| Add your Role                    | Software                                     |
+| Who will be using this group     | Just me                                      |
+| What will you use this group for | I want to use CI with my existing repository |
 
 ### -My Project Choices-
 `Content`
@@ -170,13 +182,13 @@ Details on each step:
 ### Section 2
 `List of section items`
 
-- [host on gitlab page](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/)
+- [Hosting on GitLab](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/)
 - [GitLab Home Page](https://gitlab.com/)
 - [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 - [Setting Up Hugo]({{< ref "setting-up-hugo" >}})
-- [GitLabs Groups](https://docs.gitlab.com/ee/user/group/)
-- [GitLabs Projects](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html)
-- [GitLabs Create a Project](https://docs.gitlab.com/ee/user/project/index.html)
+- [GitLab Groups](https://docs.gitlab.com/ee/user/group/)
+- [GitLab Projects](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html)
+- [GitLab Create a Project](https://docs.gitlab.com/ee/user/project/index.html)
 - [Group and Project Reserved Names](https://docs.gitlab.com/ee/user/reserved_names.html)
 - [Group Namespace](https://docs.gitlab.com/ee/user/namespace/index.html)
 - [Group Visibility Level](https://docs.gitlab.com/ee/user/public_access.html)

@@ -7,7 +7,7 @@ draft = true
 ---
 
 # Overview
-This page will be a directory of the site for personal use.
+Directory of the site for personal use.
 
 ---
 

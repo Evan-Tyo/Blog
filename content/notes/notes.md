@@ -7,7 +7,7 @@ draft = true
 ---
 
 # Overview
-A page filled with general notes and ideas.
+General notes and ideas for personal use.
 
 ---
 

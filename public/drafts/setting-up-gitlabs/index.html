@@ -243,8 +243,8 @@
 						
 						
 							<li>
-								<a href="#understanding-gitlab-groups-and-projects" class="nav-understanding-gitlab-groups-and-projects">
-									Understanding GitLab Groups and Projects
+								<a href="#understanding-groups-and-projects" class="nav-understanding-groups-and-projects">
+									Understanding Groups and Projects
 								</a>
 							</li>
 						
@@ -313,8 +313,8 @@
 						
 						
 							<li>
-								<a href="#creating-gitlab-groups-and-projects" class="nav-creating-gitlab-groups-and-projects">
-									Creating GitLab Groups and Projects
+								<a href="#creating-groups-and-projects" class="nav-creating-groups-and-projects">
+									Creating Groups and Projects
 								</a>
 							</li>
 						
@@ -610,8 +610,8 @@
 </style>
 <hr>
 <h1 id="overview">Overview</h1>
-<p>A page to document my process in setting up a GitLabs account, creating a Group, and creating a Project.<br>
-Includes information on Groups and Projects. Not meant to replace GitLabs documentation.</p>
+<p>Documenting my process in setting up a GitLabs account, creating a Group, and creating a Project.<br>
+Includes additional information on Groups and Projects.</p>
 <hr>
 <h1 id="prerequisites">Prerequisites</h1>
 <p>Navigate to the <a href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/">host on gitlab page</a>.</p>
@@ -651,7 +651,7 @@ If this has not been completed, take a look at my <a href="http://localhost:1313
 <p>Once finished there should be no groups or projects associated with the GitLabs account.<br>
 Groups and Projects will be explained in more detail in the following section.</p>
 <hr>
-<h1 id="understanding-gitlab-groups-and-projects">Understanding GitLab Groups and Projects</h1>
+<h1 id="understanding-groups-and-projects">Understanding Groups and Projects</h1>
 <p>This section is meant to breifly explain what Groups and Projects are.</p>
 <h3 id="groups">Groups</h3>
 <p>Groups are used to categorize one or more projects together that have a shared purpose.</p>
@@ -669,6 +669,11 @@ Here are a few common group structures:</p>
 <li>Viewing all issues, requests, and analytics for projects in the group</li>
 <li>Communicate with all group members within a group</li>
 <li>Creating subgroups for additional structuring</li>
+</ul>
+<p>There are two options for creating a group:</p>
+<ul>
+<li>Create Group: Design a group from scratch</li>
+<li>Import Group: Pull in a group from another GitLab instance</li>
 </ul>
 <p>For more details involving groups navigate to the <a href="https://docs.gitlab.com/ee/user/group/">GitLabs Groups</a> page.</p>
 <h3 id="projects">Projects</h3>
@@ -692,32 +697,31 @@ A few ways to create a project are by:</p>
 <p>For more general details involving projects navigate to the <a href="https://docs.gitlab.com/ee/user/get_started/get_started_projects.html">GitLabs Projects</a> page.<br>
 Additionally, the <a href="https://docs.gitlab.com/ee/user/project/index.html">GitLabs Create a Project</a> page provides more information on project creation.</p>
 <hr>
-<h1 id="creating-gitlab-groups-and-projects">Creating GitLab Groups and Projects</h1>
+<h1 id="creating-groups-and-projects">Creating Groups and Projects</h1>
 <p>Navigate back to the <a href="https://gitlab.com/">gitlab home page</a>.</p>
 <p>Sign in, if not already, and the page will redirect to the account&rsquo;s projects page.<br>
 This is where Groups and Projects can be created.</p>
 <h3 id="group-creation">Group Creation</h3>
-<p>A group can either be created or imported.</p>
 <p>The following steps outline creating a new group.<br>
 Importing a group will not be discussed in this post.</p>
 <p>Steps to create a group:<br>
-<em>More details on each step will be listed below.</em></p>
+<em>More details on each field will be listed below.</em></p>
 <ul>
 <li>Click the <span class="direction-color">Create a group</span> button</li>
 <li>Click the <span class="direction-color">Create group</span> button</li>
 <li>Choose a Group name</li>
 <li>Choose a Group URL</li>
 <li>Pick a Visibility level</li>
-<li>Add your Role</li>
+<li>Add a Role</li>
 <li>Pick who will be using this group</li>
 <li>Choose what will you use this group for</li>
 <li>When finished, click the <span class="direction-color">Create group</span> button</li>
 </ul>
-<p>Details on each step:</p>
+<p>Details on each field:</p>
 <table>
 <thead>
 <tr>
-<th>Step</th>
+<th>Field</th>
 <th>Details</th>
 </tr>
 </thead>
@@ -749,11 +753,46 @@ Importing a group will not be discussed in this post.</p>
 </tbody>
 </table>
 <h3 id="project-creation">Project Creation</h3>
+<p>The following steps outline creating a new project.\</p>
 <hr>
 <h1 id="-my-group-and-project-choices-">-My Group and Project Choices-</h1>
 <p><code>Information about this section</code></p>
 <h3 id="-my-group-choices-">-My Group Choices-</h3>
-<p><code>Content</code></p>
+<p>These are the choices I made when creating my first Group.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Choices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group Name</td>
+<td>Tyo Blogs</td>
+</tr>
+<tr>
+<td>Group URL</td>
+<td><a href="https://gitlab.com/tyo-blogs">https://gitlab.com/tyo-blogs</a></td>
+</tr>
+<tr>
+<td>Visibility Level</td>
+<td>Private Developer</td>
+</tr>
+<tr>
+<td>Add your Role</td>
+<td>Software</td>
+</tr>
+<tr>
+<td>Who will be using this group</td>
+<td>Just me</td>
+</tr>
+<tr>
+<td>What will you use this group for</td>
+<td>I want to use CI with my existing repository</td>
+</tr>
+</tbody>
+</table>
 <h3 id="-my-project-choices-">-My Project Choices-</h3>
 <p><code>Content</code></p>
 <hr>
@@ -767,13 +806,13 @@ Importing a group will not be discussed in this post.</p>
 <h3 id="section-2">Section 2</h3>
 <p><code>List of section items</code></p>
 <ul>
-<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/">host on gitlab page</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/">Hosting on GitLab</a></li>
 <li><a href="https://gitlab.com/">GitLab Home Page</a></li>
 <li><a href="https://gohugo.io/getting-started/quick-start/">Hugo Quick Start</a></li>
 <li><a href="http://localhost:1313/posts/setting-up-hugo/">Setting Up Hugo</a></li>
-<li><a href="https://docs.gitlab.com/ee/user/group/">GitLabs Groups</a></li>
-<li><a href="https://docs.gitlab.com/ee/user/get_started/get_started_projects.html">GitLabs Projects</a></li>
-<li><a href="https://docs.gitlab.com/ee/user/project/index.html">GitLabs Create a Project</a></li>
+<li><a href="https://docs.gitlab.com/ee/user/group/">GitLab Groups</a></li>
+<li><a href="https://docs.gitlab.com/ee/user/get_started/get_started_projects.html">GitLab Projects</a></li>
+<li><a href="https://docs.gitlab.com/ee/user/project/index.html">GitLab Create a Project</a></li>
 <li><a href="https://docs.gitlab.com/ee/user/reserved_names.html">Group and Project Reserved Names</a></li>
 <li><a href="https://docs.gitlab.com/ee/user/namespace/index.html">Group Namespace</a></li>
 <li><a href="https://docs.gitlab.com/ee/user/public_access.html">Group Visibility Level</a></li>
@@ -1027,8 +1066,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#understanding-gitlab-groups-and-projects" class="nav-understanding-gitlab-groups-and-projects">
-									Understanding GitLab Groups and Projects
+								<a href="#understanding-groups-and-projects" class="nav-understanding-groups-and-projects">
+									Understanding Groups and Projects
 								</a>
 							</li>
 						
@@ -1097,8 +1136,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#creating-gitlab-groups-and-projects" class="nav-creating-gitlab-groups-and-projects">
-									Creating GitLab Groups and Projects
+								<a href="#creating-groups-and-projects" class="nav-creating-groups-and-projects">
+									Creating Groups and Projects
 								</a>
 							</li>
 						
