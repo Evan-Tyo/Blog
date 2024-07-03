@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/setting-up-hugo/</link>
       <pubDate>Sat, 01 Jun 2024 16:03:07 -0400</pubDate>
       <guid>http://localhost:1313/posts/setting-up-hugo/</guid>
-      <description>Overview This is not intended to replace the hugo quick start page, however it will follow the same flow.&#xA;All information here relates to my process in setting up hugo.&#xA;Prerequisites Navigate to the hugo quick start page&#xA;Install Hugo Install Git Git and GitBash were already installed prior to hugo setup.&#xA;Installing Hugo Navigate to the hugo installation page for windows&#xA;I opted for the extended edition of hugo Git was already installed Go was then installed in order to use Hugo Modules Dart Sass was not installed, but might be at a later time Go installation Page</description>
+      <description>Overview Documenting my process in setting up Hugo.&#xA;Includes additional information on Content Front Matter and Markdown.&#xA;Prerequisites Navigate to the hugo quick start page&#xA;Install Hugo Install Git Git and GitBash were already installed prior to hugo setup.&#xA;Installing Hugo Navigate to the hugo installation page for windows&#xA;I opted for the extended edition of hugo Git was already installed Go was then installed in order to use Hugo Modules Dart Sass was not installed, but might be at a later time Go installation Page</description>
     </item>
   </channel>
 </rss>

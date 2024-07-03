@@ -11,9 +11,10 @@ draft = false
 </style>
 
 ---
+
 # Overview
-This is not intended to replace the hugo quick start page, however it will follow the same flow.\
-All information here relates to my process in setting up hugo.
+Documenting my process in setting up Hugo.\
+Includes additional information on Content Front Matter and Markdown.
 
 ---
 
@@ -230,7 +231,6 @@ In this document we:
 - Configured the site
 - Published the site
 
-Uploading and deploying the site will be in separate posts.\
 Thank you for following along and I hope this document was helpful!
 
 ---

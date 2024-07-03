@@ -7,8 +7,17 @@ draft = true
 ---
 
 # Overview
-A page to keep track of page completion dates.\
+Tracking page completion dates.\
 This does not mean pages cannot be updated later.
+
+---
+
+### 5 - Setting Up GitLab
+
+[Setting Up GitLab]({{< ref "setting-up-gitlabs" >}})
+
+| Completion Date | 7 July 2024 |
+| --------------- | ----------- |
 
 ---
 
