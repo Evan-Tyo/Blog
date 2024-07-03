@@ -81,3 +81,31 @@ https://docs.gitlab.com/ee/ci/quick_start/index.html
 `Content`
 
 ---
+
+# -My Group and Project Choices-
+`Information about this section`
+
+### -My Group Choices-
+These are the choices I made when creating my Group.
+
+| Field                            | Choices                                      |
+| -------------------------------- | -------------------------------------------- |
+| Group Name                       | Tyo Blogs                                    |
+| Group URL                        | https://gitlab.com/tyo-blogs                 |
+| Visibility Level                 | Private Developer                            |
+| Add your Role                    | Software                                     |
+| Who will be using this group     | Just me                                      |
+| What will you use this group for | I want to use CI with my existing repository |
+
+### -My Project Choices-
+These are the choices I made when creating my Project.
+
+| Field               | Choices                                                 |
+| ------------------- | ------------------------------------------------------- |
+| Git repository URL  | https://github.com/Tyocelot/Blog                        |
+| Username            | Not necessary                                           |
+| Password            | Not necessary                                           |
+| Project name        | Tyo Talks                                               |
+| Project URL         | https://gitlab.com/tyo-blogs/tyo-talks                  |
+| Project description | A blog for documenting my projects, findings, and posts |
+| Visibility Level    | Private                                                 |

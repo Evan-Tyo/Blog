@@ -1,5 +1,5 @@
 +++
-title = 'Setting Up GitLabs'
+title = 'Setting Up GitLab'
 date = 2024-06-10T20:51:59-04:00
 draft = true
 +++
@@ -16,7 +16,7 @@ draft = true
 ---
 
 # Overview
-Documenting my process in setting up a GitLabs account, creating a Group, and creating a Project.\
+Documenting my process in setting up a GitLab account, creating a Group, and creating a Project.\
 Includes additional information on Groups and Projects.
 
 ---
@@ -43,12 +43,12 @@ Navigate to the [gitlab home page](https://gitlab.com/).
 - Locate the code sent to your registered email
 - Enter the code to complete account creation
 
-You should now have an account set up with GitLabs.
+You should now have an account set up with GitLab.
 
 ### Skipping Initial Resource Setup
-GitLabs will immediately ask if you want to create or import a new Group and a new Project.
+GitLab will immediately ask if you want to create or import a new Group and a new Project.
 
-> Personally, I don't like being asked to create a new resource with a new account. I would rather first explore how the service operates then create resources at my own pace. Since I didn't understand what a Group or Project was in regards to GitLabs, I created the required ones in order to get past account creation, then decided to delete them.
+> Personally, I don't like being asked to create a new resource with a new account. I would rather first explore how the service operates then create resources at my own pace. Since I didn't understand what a Group or Project was in regards to GitLab, I created the required ones in order to get past account creation, then decided to delete them.
 
 My steps:
 1. Create a group titled "Group" and a project titled "Project"
@@ -58,7 +58,7 @@ My steps:
 5. At the very bottom click <span class="direction-color">Delete project</span> and complete the deletion
 6. Repeat steps 2 - 5, replacing "projects" with "groups"
 
-Once finished there should be no groups or projects associated with the GitLabs account.\
+Once finished there should be no groups or projects associated with the GitLab account.\
 Groups and Projects will be explained in more detail in the following section.
 
 ---
@@ -86,7 +86,7 @@ There are two options for creating a group:
 - Create Group: Design a group from scratch
 - Import Group: Pull in a group from another GitLab instance
 
-For more details involving groups navigate to the [GitLabs Groups](https://docs.gitlab.com/ee/user/group/) page.
+For more details involving groups navigate to the [GitLab Groups](https://docs.gitlab.com/ee/user/group/) page.
 
 ### Projects
 Projects are used to host the data related to the associated development work.
@@ -105,8 +105,8 @@ A few ways to create a project are by:
 - Utilizing Git push
 - Including SHA-256 hashing
 
-For more general details involving projects navigate to the [GitLabs Projects](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html) page.\
-Additionally, the [GitLabs Create a Project](https://docs.gitlab.com/ee/user/project/index.html) page provides more information on project creation.
+For more general details involving projects navigate to the [GitLab Projects](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html) page.\
+Additionally, the [GitLab Create a Project](https://docs.gitlab.com/ee/user/project/index.html) page provides more information on project creation.
 
 ---
 
@@ -117,8 +117,8 @@ Sign in, if not already, and the page will redirect to the account's projects pa
 This is where Groups and Projects can be created.
 
 ### Group Creation
-The following steps outline creating a new group.\
-Importing a group will not be discussed in this post.
+The following steps outline my process in creating a group.\
+For my purposes, I'll be creating a new group.
 
 Steps to create a group:\
 *More details on each field will be listed below.*
@@ -132,10 +132,10 @@ Steps to create a group:\
 - Choose what will you use this group for
 - When finished, click the <span class="direction-color">Create group</span> button
 
-Details on each field:
+Brief details on each field:
 | Field                                                                            | Details                                                               |
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Group Name                                      | The name of the group. Some are [reserved names](https://docs.gitlab.com/ee/user/reserved_names.html). |
+| Group name                                      | The name of the group. Some are [reserved names](https://docs.gitlab.com/ee/user/reserved_names.html). |
 | Group URL ( [Namespace](https://docs.gitlab.com/ee/user/namespace/index.html) )  | The path for the group. If not specified, it will use the group name. |
 | [Visibility Level](https://docs.gitlab.com/ee/user/public_access.html)           | Limits who has group access. Private, Internal, or Public visibility. |
 | Add your Role                                                                    | Team Role or Job Title.                                               |
@@ -143,49 +143,59 @@ Details on each field:
 | What will you use this group for                                                 | Choose from a selection of generalized uses.                          |
 
 ### Project Creation
-The following steps outline creating a new project.\
+The following steps outline my process in creating a project.\
+For my purposes, I'll be connecting this project to an external GitHub repository.
 
+Steps to create a project:\
+*More details on each field will be listed below.*
+- Click the <span class="direction-color">Create new project</span> button
+- Click the <span class="direction-color">Run CI/CD for external repository</span> button
+- Click the <span class="direction-color">Repository by URL</span> button
+- Add a Git Repository URL
+- Add a Username (optional)
+- Add a Password (optional)
+- Set a Project name
+- Set a Project slug
+- Provide a Project description (optional)
+- Pick a Visibility level
+- When finished, click the <span class="direction-color">Create project</span> button
 
----
-
-# -My Group and Project Choices-
-`Information about this section`
-
-### -My Group Choices-
-These are the choices I made when creating my first Group.
-
-| Field                            | Choices                                      |
-| -------------------------------- | -------------------------------------------- |
-| Group Name                       | Tyo Blogs                                    |
-| Group URL                        | https://gitlab.com/tyo-blogs                 |
-| Visibility Level                 | Private Developer                            |
-| Add your Role                    | Software                                     |
-| Who will be using this group     | Just me                                      |
-| What will you use this group for | I want to use CI with my existing repository |
-
-### -My Project Choices-
-`Content`
+Brief details on each field:
+| Field                                                                             | Details                                                                 |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Git repository URL                                                                | For the git repository to be connected.                                 |
+| Username                                                                          | If the git repository is not public, add the username.                  |
+| Password                                                                          | If the git repository is not public, add the password.                  |
+| Project name                                      | The name of the group. Some are [reserved names](https://docs.gitlab.com/ee/user/reserved_names.html).  |
+| Project URL ( [Namespace](https://docs.gitlab.com/ee/user/namespace/index.html) ) | The path for the project. If not specified, it will use the group name. |
+| Project description                                                               | An optional description for the project.                                |
+| [Visibility Level](https://docs.gitlab.com/ee/user/public_access.html)            | Limits who has project access. Private, Internal, or Public visibility. |
 
 ---
 
 # Summary
-`Summary list of this page`
+In this document we:
+- Created a GitLab account
+- Briefly discussed groups and projects
+- Created a new Group
+- Created a new Project
+
+Thank you for following along and I hope this document was helpful!
 
 ---
 
 # References
-`A comprehensive list of page references`
+A comprehensive list of page references
 
-### Section 1
-`List of section items`
-
-### Section 2
-`List of section items`
-
-- [Hosting on GitLab](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/)
-- [GitLab Home Page](https://gitlab.com/)
+### Hugo
 - [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 - [Setting Up Hugo]({{< ref "setting-up-hugo" >}})
+
+### GitLab Documents
+- [Hosting on GitLab](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/)
+- [GitLab Home Page](https://gitlab.com/)
+
+### GitLab Groups / Projects
 - [GitLab Groups](https://docs.gitlab.com/ee/user/group/)
 - [GitLab Projects](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html)
 - [GitLab Create a Project](https://docs.gitlab.com/ee/user/project/index.html)

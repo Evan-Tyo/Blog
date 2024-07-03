@@ -231,7 +231,6 @@ In this document we:
 - Configured the site
 - Published the site
 
-Uploading and deploying the site will be in separate posts.\
 Thank you for following along and I hope this document was helpful!
 
 ---
