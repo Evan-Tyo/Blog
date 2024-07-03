@@ -12,6 +12,15 @@ This does not mean pages cannot be updated later.
 
 ---
 
+### 5 - Setting Up GitLab
+
+[Setting Up GitLab]({{< ref "setting-up-gitlabs" >}})
+
+| Completion Date | 7 July 2024 |
+| --------------- | ----------- |
+
+---
+
 ### 4 - Template
 
 [Template]({{< ref "template" >}})

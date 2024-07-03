@@ -1,7 +1,7 @@
 +++
 title = 'Setting Up GitLab'
 date = 2024-06-10T20:51:59-04:00
-draft = true
+draft = false
 +++
 
 <style>

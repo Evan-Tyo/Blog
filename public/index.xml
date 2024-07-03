@@ -14,11 +14,11 @@
     
         <item>
         <title>Setting Up GitLab</title>
-        <link>http://localhost:1313/drafts/setting-up-gitlabs/</link>
+        <link>http://localhost:1313/posts/setting-up-gitlabs/</link>
         <pubDate>Mon, 10 Jun 2024 20:51:59 -0400</pubDate>
         
-        <guid>http://localhost:1313/drafts/setting-up-gitlabs/</guid>
-        <description>Tyo Talks http://localhost:1313/drafts/setting-up-gitlabs/ -&lt;style&gt;
+        <guid>http://localhost:1313/posts/setting-up-gitlabs/</guid>
+        <description>Tyo Talks http://localhost:1313/posts/setting-up-gitlabs/ -&lt;style&gt;
 .file-color {
     color: #3067FF;
 }
@@ -259,7 +259,7 @@ For my purposes, I&amp;rsquo;ll be connecting this project to an external GitHub
 &lt;li&gt;&lt;a href=&#34;https://docs.gitlab.com/ee/user/namespace/index.html&#34;&gt;Group Namespace&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.gitlab.com/ee/user/public_access.html&#34;&gt;Group Visibility Level&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-- http://localhost:1313/drafts/setting-up-gitlabs/ - </description>
+- http://localhost:1313/posts/setting-up-gitlabs/ - </description>
         </item>
     
     
@@ -381,6 +381,17 @@ To be private.&lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;Tracking page completion dates.&lt;br&gt;
 This does not mean pages cannot be updated later.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;5---setting-up-gitlab&#34;&gt;5 - Setting Up GitLab&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/drafts/setting-up-gitlabs/&#34;&gt;Setting Up GitLab&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Completion Date&lt;/th&gt;
+&lt;th&gt;7 July 2024&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;4---template&#34;&gt;4 - Template&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/notes/template/&#34;&gt;Template&lt;/a&gt;&lt;/p&gt;
