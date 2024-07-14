@@ -121,3 +121,5 @@ https://demo.stack.jimmycai.com/
 
 Still need to understand how the categories and tags work
 Can add links from the links page to the about page
+
+https://jimmycai.com/

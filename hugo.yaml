@@ -1,7 +1,7 @@
 baseurl: https://tyotalks.org/
 languageCode: en-us
 theme: hugo-theme-stack
-paginate: 3
+paginate: 10
 title: Tyo Talks
 enableEmoji: true
 
