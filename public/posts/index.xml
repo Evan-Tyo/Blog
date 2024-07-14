@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Tyo Talks</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Tyo Talks</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jun 2024 16:03:07 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Setting Up Hugo</title>
-      <link>http://localhost:1313/posts/setting-up-hugo/</link>
-      <pubDate>Sat, 01 Jun 2024 16:03:07 -0400</pubDate>
-      <guid>http://localhost:1313/posts/setting-up-hugo/</guid>
-      <description>Overview Documenting my process in setting up Hugo.&#xA;Includes additional information on Content Front Matter and Markdown.&#xA;Prerequisites Navigate to the hugo quick start page&#xA;Install Hugo Install Git Git and GitBash were already installed prior to hugo setup.&#xA;Installing Hugo Navigate to the hugo installation page for windows&#xA;I opted for the extended edition of hugo Git was already installed Go was then installed in order to use Hugo Modules Dart Sass was not installed, but might be at a later time Go installation Page</description>
-    </item>
-  </channel>
+    <channel>
+        <title>Posts on Example Site</title>
+        <link>http://localhost:1313/posts/</link>
+        <description>Recent content in Posts on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
 </rss>

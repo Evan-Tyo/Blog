@@ -109,3 +109,15 @@ These are the choices I made when creating my Project.
 | Project URL         | https://gitlab.com/tyo-blogs/tyo-talks                  |
 | Project description | A blog for documenting my projects, findings, and posts |
 | Visibility Level    | Private                                                 |
+
+---
+
+Currently working on setting up the stack theme.
+Updated hugo.toml to hugo.yaml
+Also consider updating or removing archives
+
+https://stack.jimmycai.com/config/menu
+https://demo.stack.jimmycai.com/
+
+Still need to understand how the categories and tags work
+Can add links from the links page to the about page
