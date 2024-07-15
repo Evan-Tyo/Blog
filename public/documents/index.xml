@@ -6,7 +6,87 @@
         <description>Recent content in Documents on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 07 Jun 2024 22:41:27 -0400</lastBuildDate><atom:link href="http://localhost:1313/documents/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 15 Jul 2024 00:03:16 -0400</lastBuildDate><atom:link href="http://localhost:1313/documents/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Groups and Projects</title>
+        <link>http://localhost:1313/documents/groups-and-projects/</link>
+        <pubDate>Mon, 15 Jul 2024 00:03:16 -0400</pubDate>
+        
+        <guid>http://localhost:1313/documents/groups-and-projects/</guid>
+        <description>&lt;style&gt;
+.file-color {
+    color: #3067FF;
+}
+&lt;/style&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this page&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;section-1&#34;&gt;Section 1
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;section-2&#34;&gt;Section 2
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-1-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2-1&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Summary list of this page&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;references&#34;&gt;References
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;A comprehensive list of page references&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;section-1-1&#34;&gt;Section 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;section-2-1&#34;&gt;Section 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Front Matter</title>
+        <link>http://localhost:1313/documents/front-matter/</link>
+        <pubDate>Mon, 15 Jul 2024 00:02:46 -0400</pubDate>
+        
+        <guid>http://localhost:1313/documents/front-matter/</guid>
+        <description>&lt;style&gt;
+.file-color {
+    color: #3067FF;
+}
+&lt;/style&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this page&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;section-1&#34;&gt;Section 1
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;section-2&#34;&gt;Section 2
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-1-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2-1&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Summary list of this page&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;references&#34;&gt;References
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;A comprehensive list of page references&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;section-1-1&#34;&gt;Section 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;section-2-1&#34;&gt;Section 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Markdown Example</title>
         <link>http://localhost:1313/documents/markdown-example/</link>
         <pubDate>Fri, 07 Jun 2024 22:41:27 -0400</pubDate>
