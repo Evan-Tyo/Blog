@@ -17,6 +17,27 @@ draft = true
 
 ---
 
+### Front Matter
+Open any one of the page files.  Notice there are a few auto populated fields at the top of each file.\
+These fields compose the [Front Matter](https://gohugo.io/content-management/front-matter/), which is used to add metadata to the page.
+
+```
++++
+title = 'Setting Up Hugo'
+date = 2024-06-01T16:03:07-04:00
+draft = true
++++
+```
+
+The [title](https://gohugo.io/methods/page/title/) and [date](https://gohugo.io/methods/page/date/) fields add their respective details to the page.
+
+The [draft](https://gohugo.io/methods/page/draft/) field is used to tell hugo whether or not this page is a draft.\
+By default, draft pages are not published when the site gets built.
+
+More fields can be added to the [Front Matter](https://gohugo.io/content-management/front-matter/) but for now these are the default fields.
+
+---
+
 # Section 1 
 `Information about this section`
 
