@@ -56,14 +56,24 @@
 &lt;h1 id=&#34;overview&#34;&gt;Overview
 &lt;/h1&gt;&lt;p&gt;Directory of the site for personal use.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;posts&#34;&gt;Posts
-&lt;/h3&gt;&lt;p&gt;Posts created and published to this site.&lt;br&gt;
+&lt;h3 id=&#34;page&#34;&gt;Page
+&lt;/h3&gt;&lt;p&gt;Default with hugo-theme-stack to handle it&amp;rsquo;s website structure.&lt;br&gt;
 To be public.&lt;/p&gt;
 &lt;p&gt;Includes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Blog posts&lt;/li&gt;
-&lt;li&gt;Process documentation&lt;/li&gt;
-&lt;li&gt;Findings&lt;/li&gt;
+&lt;li&gt;Search functionality&lt;/li&gt;
+&lt;li&gt;Archives to contain all posts&lt;/li&gt;
+&lt;li&gt;About and Links sections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup
+&lt;/h3&gt;&lt;p&gt;Posts documenting the setup of this site.&lt;br&gt;
+To be public.&lt;/p&gt;
+&lt;p&gt;Includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo setup&lt;/li&gt;
+&lt;li&gt;GitLabs setup&lt;/li&gt;
+&lt;li&gt;Deployment&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;documents&#34;&gt;Documents

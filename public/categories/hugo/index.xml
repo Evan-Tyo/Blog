@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo on Example Site</title>
+        <link>http://localhost:1313/categories/hugo/</link>
+        <description>Recent content in Hugo on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 01 Jun 2024 16:03:07 -0400</lastBuildDate><atom:link href="http://localhost:1313/categories/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Setting Up Hugo</title>
+        <link>http://localhost:1313/setup/setting-up-hugo/</link>
+        <pubDate>Sat, 01 Jun 2024 16:03:07 -0400</pubDate>
+        
+        <guid>http://localhost:1313/setup/setting-up-hugo/</guid>
+        <description>&lt;p&gt;file-color {
+color: #3067FF;
+}
+&lt;/style&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview
+&lt;/h1&gt;&lt;p&gt;Documenting my process in setting up Hugo.&lt;br&gt;
+Includes additional information on Content Front Matter and Markdown.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites
+&lt;/h1&gt;&lt;p&gt;Navigate to the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo quick start page&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Install Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.git-scm.com/download/win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Install Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Git and GitBash were already installed prior to hugo setup.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;installing-hugo&#34;&gt;Installing Hugo
+&lt;/h1&gt;&lt;p&gt;Navigate to the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo installation page for windows&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I opted for the extended edition of hugo&lt;/li&gt;
+&lt;li&gt;Git was already installed&lt;/li&gt;
+&lt;li&gt;Go was then installed in order to use &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/hugo-modules/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dart Sass was not installed, but might be at a later time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://go.dev/doc/install&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Go installation Page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I used the Package Manager option for downloading the extended edition of hugo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scoop was installed&lt;/li&gt;
+&lt;li&gt;The command &lt;code&gt;scoop install hugo-extended&lt;/code&gt; was ran&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://scoop.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Scoop installation Page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hugo was now installed&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;creating-a-site&#34;&gt;Creating a site
+&lt;/h1&gt;&lt;p&gt;Navigate back to the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo quick start page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It is recommended not to use Command Prompt or Windows PowerShell for hugo setup.&lt;br&gt;
+I decided to use Git Bash as it was already installed.&lt;/p&gt;
+&lt;p&gt;These are the recommended commands to run for quickly setting up an example hugo site:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site quickstart
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd quickstart
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;echo &amp;#34;theme = &amp;#39;ananke&amp;#39;&amp;#34; &amp;gt;&amp;gt; hugo.toml
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;By running these commands:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A new project will be created&lt;/li&gt;
+&lt;li&gt;It will be initialized as a git repository&lt;/li&gt;
+&lt;li&gt;The &amp;lsquo;ananke&amp;rsquo; theme &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; will be downloaded&lt;/li&gt;
+&lt;li&gt;The hugo server will be ran&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I named my site &amp;lsquo;blog&amp;rsquo; rather than &amp;lsquo;quickstart&amp;rsquo; but otherwise I ran the same commands.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site blog
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;add-content&#34;&gt;Add Content
+&lt;/h1&gt;&lt;p&gt;The following command will add a new page to the site.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new content posts/my-first-post.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This command will create two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A posts directory, if one does not already exist&lt;/li&gt;
+&lt;li&gt;A markdown file titled &amp;ldquo;My First Post&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Multiple pages can be created if running the command again but with a different page name.&lt;br&gt;
+For instance, I ran the following which created two pages under my posts directory:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new content posts/setting-up-hugo.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new content posts/notes.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;front-matter&#34;&gt;Front Matter
+&lt;/h3&gt;&lt;p&gt;Open any one of the page files.  Notice there are a few auto populated fields at the top of each file.&lt;br&gt;
+These fields compose the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/front-matter/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Front Matter&lt;/a&gt;, which is used to add metadata to the page.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+++
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title = &amp;#39;Setting Up Hugo&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date = 2024-06-01T16:03:07-04:00
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;draft = true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;+++
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/page/title/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;title&lt;/a&gt; and &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/page/date/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;date&lt;/a&gt; fields add their respective details to the page.&lt;/p&gt;
+&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/page/draft/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;draft&lt;/a&gt; field is used to tell hugo whether or not this page is a draft.&lt;br&gt;
+By default, draft pages are not published when the site gets built.&lt;/p&gt;
+&lt;p&gt;More fields can be added to the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/front-matter/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Front Matter&lt;/a&gt; but for now these are the default fields.&lt;/p&gt;
+&lt;h3 id=&#34;markdown&#34;&gt;Markdown
+&lt;/h3&gt;&lt;p&gt;Markdown is the primary language for formatting the .md files used for these pages.&lt;br&gt;
+Check out the &lt;a class=&#34;link&#34; href=&#34;https://www.markdownguide.org/getting-started/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown Getting Started&lt;/a&gt; guide for more information.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In Hugo we&amp;rsquo;ll mostly be using Markdown.  However, using HTML is also an option.  This would allow us to use JavaScript through script tags, use CSS through style tags, handle additional formatting, and more.  By default, HTML is unavailable but we are able to use other markdown processors in order to enable it.  I&amp;rsquo;ll include how I did that in a separate post.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I created a [Markdown Example]({{&amp;lt; ref &amp;ldquo;marhttp://localhost:1313/documents/markdown-example/examples of markdown formatting.&lt;/p&gt;
+&lt;h3 id=&#34;adding-markdown&#34;&gt;Adding Markdown
+&lt;/h3&gt;&lt;p&gt;Add some markdown to the nearly created page file.&lt;br&gt;
+Make sure to keep &lt;code&gt;draft = true&lt;/code&gt; while working on a draft page.&lt;/p&gt;
+&lt;p&gt;Here is an example of what I added from the top of this page.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;+++&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Setting Up Hugo&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2024&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;06&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;01&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;T16&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;03&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;07&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;04&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;draft&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;+++&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Prerequisites&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Navigate&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;quick&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;start&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;page&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gohugo&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;io&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;getting&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;started&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;quick&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;start&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Hugo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gohugo&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;io&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;installation&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;windows&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Git&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;www&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;scm&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;download&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;win&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Git&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GitBash&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;were&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;already&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;installed&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;prior&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;setup&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;run-the-server&#34;&gt;Run the Server
+&lt;/h3&gt;&lt;p&gt;Save the changes and start the Hugo development server.&lt;/p&gt;
+&lt;p&gt;To include draft pages run either of the following commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server --buildDrafts
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;To exclude draft pages run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The site URL will be printed in the terminal.&lt;br&gt;
+Navigate to the site and continue working while keeping the server running.  The site will update live as changes are made.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;From the Hugo Quick Start page:&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Hugo’s rendering engine conforms to the &lt;a class=&#34;link&#34; href=&#34;https://spec.commonmark.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CommonMark specification&lt;/a&gt; for Markdown. The CommonMark organization provides a useful &lt;a class=&#34;link&#34; href=&#34;https://spec.commonmark.org/dingus/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;live testing tool&lt;/a&gt; powered by the reference implementation.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;configure-the-site&#34;&gt;Configure the Site
+&lt;/h1&gt;&lt;p&gt;At the root of this project, open the &lt;span class=&#34;file-color&#34;&gt;hugo.toml&lt;/span&gt; file. This file handles the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo configuration&lt;/a&gt; fields for the site.&lt;br&gt;
+It was auto generated when we ran the &lt;code&gt;hugo new site&lt;/code&gt; command in the &lt;a class=&#34;link&#34; href=&#34;#creating-a-site&#34; &gt;Creating a Site&lt;/a&gt; section of this page.&lt;/p&gt;
+&lt;p&gt;These are the base fields added to the file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseURL = &amp;#39;https://example.org/&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;languageCode = &amp;#39;en-us&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title = &amp;#39;My New Hugo Site&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;theme = &amp;#39;ananke&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It is recommended to change the following fields when starting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/baseurl/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;baseUrl&lt;/a&gt;: Must begin with the protocol and end with a slash.  Customize it however desired.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/language/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;languageCode&lt;/a&gt;: Set this to your local launguage and region or a desired one.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/title/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;title&lt;/a&gt;: Update this to reflect on your site as the main title.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are the values I currently have in my configuration file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseURL = &amp;#39;https://tyotalks.org/&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;languageCode = &amp;#39;en-us&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title = &amp;#39;Tyo Talks&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;theme = &amp;#39;diary&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;enableEmoji = true
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Notice I changed the theme &lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; and added a new field to enable emojis.&lt;/p&gt;
+&lt;p&gt;To see the changes take effect, start the server once again.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;publish-the-site&#34;&gt;Publish the Site
+&lt;/h1&gt;&lt;p&gt;In order to deploy the site it will first need to be published.&lt;br&gt;
+Publishing the site and deploying the site are not the same thing.&lt;/p&gt;
+&lt;p&gt;To publish the site run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;When you publish your site:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The entire static site gets created in the public directory&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/usage/#draft-future-and-expired-content&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Draft, future, or expired pages&lt;/a&gt; should not be included&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary
+&lt;/h1&gt;&lt;p&gt;In this document we:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Installed Hugo and software&lt;/li&gt;
+&lt;li&gt;Created a new site project&lt;/li&gt;
+&lt;li&gt;Added page content to the site&lt;/li&gt;
+&lt;li&gt;Briefly discussed front matter&lt;/li&gt;
+&lt;li&gt;Introduced markdown&lt;/li&gt;
+&lt;li&gt;Added markdown to a page&lt;/li&gt;
+&lt;li&gt;Ran the local server&lt;/li&gt;
+&lt;li&gt;Configured the site&lt;/li&gt;
+&lt;li&gt;Published the site&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you for following along and I hope this document was helpful!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;references&#34;&gt;References
+&lt;/h1&gt;&lt;p&gt;A comprehensive list of page references&lt;/p&gt;
+&lt;h3 id=&#34;hugo-documents&#34;&gt;Hugo Documents
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Quick Start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/hugo-modules/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/front-matter/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Front Matter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Configure Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/usage/#draft-future-and-expired-content&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Draft, Future, and Expired Content&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hugo-methods&#34;&gt;Hugo Methods
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/page/title/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Title Page Method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/page/date/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Date Page Method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/page/draft/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Draft Page Method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/baseurl/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BaseURL Site Method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/language/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Language Site Method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/title/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Title Site Method&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;markdown-1&#34;&gt;Markdown
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.markdownguide.org/getting-started/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Markdown Example]({{&amp;lt; ref &amp;ldquo;marhttp://localhost:1313/documents/markdown-example/Mark Specification](&lt;a class=&#34;link&#34; href=&#34;https://spec.commonmark.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://spec.commonmark.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://spec.commonmark.org/dingus/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CommonMark Live Testing Tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;installs&#34;&gt;Installs
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Install Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://go.dev/doc/install&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Install Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://scoop.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Install Scoop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.git-scm.com/download/win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Install Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The chosen theme can easily be changed later.  I changed my theme to the diary theme, but I&amp;rsquo;ll have a separate post explaining that process.  To start, it&amp;rsquo;s worth getting familiar with the ananke theme.������������&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

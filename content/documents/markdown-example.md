@@ -2,6 +2,11 @@
 title = 'Markdown Example'
 date = 2024-06-07T22:41:27-04:00
 draft = false
+categories = [
+]
+tags = [
+    "Markdown"
+]
 +++
 
 ---
@@ -10,16 +15,6 @@ draft = false
 Examples of Markdown elements supported by Hugo.\
 Highlight, Subscript, and Superscript are not supported elements.\
 HTML is supported but is not included on this page.
-
----
-
-### Markdown
-Markdown is the primary language for formatting the .md files used for these pages.\
-Check out the [Markdown Getting Started](https://www.markdownguide.org/getting-started/) guide for more information.
-
-> In Hugo we'll mostly be using Markdown.  However, using HTML is also an option.  This would allow us to use JavaScript through script tags, use CSS through style tags, handle additional formatting, and more.  By default, HTML is unavailable but we are able to use other markdown processors in order to enable it.  I'll include how I did that in a separate post.
-
-I created a [Markdown Example]({{< ref "markdown-example" >}}) page with examples of markdown formatting.
 
 ---
 

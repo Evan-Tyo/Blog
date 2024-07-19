@@ -11,14 +11,25 @@ Directory of the site for personal use.
 
 ---
 
-### Posts
-Posts created and published to this site.\
+### Page
+Default with hugo-theme-stack to handle it's website structure.\
 To be public.
 
 Includes:
-- Blog posts
-- Process documentation
-- Findings
+- Search functionality
+- Archives to contain all posts
+- About and Links sections
+
+---
+
+### Setup
+Posts documenting the setup of this site.\
+To be public.
+
+Includes:
+- Hugo setup
+- GitLabs setup
+- Deployment
 
 ---
 
