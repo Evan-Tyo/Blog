@@ -7,37 +7,24 @@ draft = true
 ---
 
 # Overview
-General notes and ideas for personal use.
+General notes, ideas, and an information dump.
 
 ---
 
-# General Notes
+# Page Ideas
 
 **Changing the theme**
-Include both themes info and what failed / worked
+Include theme info and what failed / worked.\
+Add information for hugo-theme-stack and updating the scss.
 
 **Exploring HTML**
-To set up html needed to add goldmark
-
-**Random stuff**
-graphql
-web component
-Used Paint 3D to resize png with transparent
+To set up html needed to add goldmark.\
 
 ---
 
-# Pages to create
+# Project Ideas
 
-- ~~Setting up Hugo~~
-- Changing the theme for hugo
-- Exploring markdown and html
-- Setting up static gitlabs pages (uploaded to github)
-
----
-
-# Project ideas
-
-### Mock Discord
+**Mock Discord**
 A webpage with the ability to make a new category, a new channel, and new posts.\
 Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.
 
@@ -54,7 +41,7 @@ Nothing fancy but I think that’s a good simple showcase of CRUD functionality 
 
 ---
 
-# Configure CI/CD
+# Configure CI/CD (Include this in the deploying to gitlabs page)
 The resources being created here will be made to connect a GitHub repository to GitLabs.\
 This will utilize a GitLabs CI/CD project in order to make that connection.
 
@@ -73,17 +60,10 @@ https://docs.gitlab.com/ee/ci/quick_start/index.html
 6) Push your Hugo website to GitLab
 7) Wait for your page to build
 
-
-### Subsection 1
-`Content`
-
-### Subsection 2
-`Content`
-
 ---
 
 # -My Group and Project Choices-
-`Information about this section`
+Was considering adding these into the setting up gitlabs page, but I might remove them entirely.
 
 ### -My Group Choices-
 These are the choices I made when creating my Group.
@@ -112,14 +92,33 @@ These are the choices I made when creating my Project.
 
 ---
 
-Currently working on setting up the stack theme.
-Updated hugo.toml to hugo.yaml
-Also consider updating or removing archives
+# Hugo Theme Stack
+Updated hugo.toml to hugo.yaml.\
+Added custom.scss.\
+Created and added menu items.\
+Added categories and tags to pages.
 
+**To Do**
+Merge links and about pages.\
+Update about page, site name, personal description, and img.
+
+**Resources**
 https://stack.jimmycai.com/config/menu
 https://demo.stack.jimmycai.com/
-
-Still need to understand how the categories and tags work
-Can add links from the links page to the about page
-
 https://jimmycai.com/
+
+---
+
+# App Creation
+
+**MERN stack**
+https://www.mongodb.com/resources/languages/mern-stack
+
+**MongoDB Database**
+Amazon Web Services, Azure, or Google Cloud Platform.\
+I've already worked with Azure, although it's been some years.\
+We also work with AWS some at work.\
+Maybe I'll explore GCP first.
+
+Search how to create a MongoDB database.\
+https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp
