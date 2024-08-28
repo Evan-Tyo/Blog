@@ -70,8 +70,8 @@ These are the choices I made when creating my Group.
 
 | Field                            | Choices                                      |
 | -------------------------------- | -------------------------------------------- |
-| Group Name                       | Tyo Blogs                                    |
-| Group URL                        | https://gitlab.com/tyo-blogs                 |
+| Group Name                       | TyoPortfolio                                 |
+| Group URL                        | https://gitlab.com/TyoPortfolio              |
 | Visibility Level                 | Private Developer                            |
 | Add your Role                    | Software                                     |
 | Who will be using this group     | Just me                                      |
@@ -85,8 +85,8 @@ These are the choices I made when creating my Project.
 | Git repository URL  | https://github.com/Tyocelot/Blog                        |
 | Username            | Not necessary                                           |
 | Password            | Not necessary                                           |
-| Project name        | Tyo Talks                                               |
-| Project URL         | https://gitlab.com/tyo-blogs/tyo-talks                  |
+| Project name        | Docs                                                    |
+| Project URL         | https://gitlab.com/TyoPortfolio/Docs                    |
 | Project description | A blog for documenting my projects, findings, and posts |
 | Visibility Level    | Private                                                 |
 
