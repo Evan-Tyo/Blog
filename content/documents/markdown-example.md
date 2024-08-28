@@ -2,6 +2,11 @@
 title = 'Markdown Example'
 date = 2024-06-07T22:41:27-04:00
 draft = false
+categories = [
+]
+tags = [
+    "Markdown"
+]
 +++
 
 ---

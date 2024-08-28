@@ -1,40 +1,352 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Notes on Tyo Talks</title>
-    <link>http://localhost:1313/notes/</link>
-    <description>Recent content in Notes on Tyo Talks</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jun 2024 21:58:02 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Template</title>
-      <link>http://localhost:1313/notes/template/</link>
-      <pubDate>Sat, 08 Jun 2024 21:58:02 -0400</pubDate>
-      <guid>http://localhost:1313/notes/template/</guid>
-      <description>Overview Information about this page&#xA;Section 1 Information about this section&#xA;Subsection 1 Content&#xA;Subsection 2 Content&#xA;Section 2 Information about this section&#xA;Subsection 1 Content&#xA;Subsection 2 Content&#xA;Summary Summary list of this page&#xA;References A comprehensive list of page references&#xA;Section 1 List of section items&#xA;Section 2 List of section items</description>
-    </item>
-    <item>
-      <title>Site Nav</title>
-      <link>http://localhost:1313/notes/site-nav/</link>
-      <pubDate>Sat, 08 Jun 2024 21:28:57 -0400</pubDate>
-      <guid>http://localhost:1313/notes/site-nav/</guid>
-      <description>Overview Directory of the site for personal use.&#xA;Posts Posts created and published to this site.&#xA;To be public.&#xA;Includes:&#xA;Blog posts Process documentation Findings Documents Written documentation for frequent reference.&#xA;To be public.&#xA;Includes:&#xA;Examples of code or processes Frequently referenced documentation &amp;ldquo;Cheat sheets&amp;rdquo; Drafts Page drafts before being published.&#xA;To be private.&#xA;Includes:&#xA;Pages currently being worked on Pages that are not ready to be published Notes Any site related notes like this page.</description>
-    </item>
-    <item>
-      <title>Completion Dates</title>
-      <link>http://localhost:1313/notes/completion-dates/</link>
-      <pubDate>Sat, 08 Jun 2024 21:22:21 -0400</pubDate>
-      <guid>http://localhost:1313/notes/completion-dates/</guid>
-      <description> Overview Tracking page completion dates.&#xA;This does not mean pages cannot be updated later.&#xA;4 - Template Template&#xA;Completion Date 8 June 2024 3 - Site Nav Site Nav&#xA;Completion Date 8 June 2024 2 - Setting up Hugo Setting up Hugo&#xA;Completion Date 8 June 2024 1 - Markdown Example Markdown Example&#xA;Completion Date 7 June 2024 </description>
-    </item>
-    <item>
-      <title>Notes</title>
-      <link>http://localhost:1313/notes/notes/</link>
-      <pubDate>Wed, 05 Jun 2024 23:24:48 -0400</pubDate>
-      <guid>http://localhost:1313/notes/notes/</guid>
-      <description>Overview General notes and ideas for personal use.&#xA;General Notes Changing the theme Include both themes info and what failed / worked&#xA;Exploring HTML To set up html needed to add goldmark&#xA;Random stuff graphql web component Used Paint 3D to resize png with transparent&#xA;Pages to create Setting up Hugo Changing the theme for hugo Exploring markdown and html Setting up static gitlabs pages (uploaded to github) Project ideas Mock Discord A webpage with the ability to make a new category, a new channel, and new posts.</description>
-    </item>
-  </channel>
+    <channel>
+        <title>Notes on Example Site</title>
+        <link>http://localhost:1313/notes/</link>
+        <description>Recent content in Notes on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 08 Jun 2024 21:58:02 -0400</lastBuildDate><atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Template</title>
+        <link>http://localhost:1313/notes/template/</link>
+        <pubDate>Sat, 08 Jun 2024 21:58:02 -0400</pubDate>
+        
+        <guid>http://localhost:1313/notes/template/</guid>
+        <description>&lt;style&gt;
+.file-color {
+    color: #3067FF;
+}
+&lt;/style&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this page&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;section-1&#34;&gt;Section 1
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;section-2&#34;&gt;Section 2
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-1-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2-1&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Summary list of this page&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;references&#34;&gt;References
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;A comprehensive list of page references&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;section-1-1&#34;&gt;Section 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;section-2-1&#34;&gt;Section 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Site Nav</title>
+        <link>http://localhost:1313/notes/site-nav/</link>
+        <pubDate>Sat, 08 Jun 2024 21:28:57 -0400</pubDate>
+        
+        <guid>http://localhost:1313/notes/site-nav/</guid>
+        <description>&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview
+&lt;/h1&gt;&lt;p&gt;Directory of the site for personal use.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;page&#34;&gt;Page
+&lt;/h3&gt;&lt;p&gt;Default with hugo-theme-stack to handle it&amp;rsquo;s website structure.&lt;br&gt;
+To be public.&lt;/p&gt;
+&lt;p&gt;Includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search functionality&lt;/li&gt;
+&lt;li&gt;Archives to contain all posts&lt;/li&gt;
+&lt;li&gt;About and Links sections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup
+&lt;/h3&gt;&lt;p&gt;Posts documenting the setup of this site.&lt;br&gt;
+To be public.&lt;/p&gt;
+&lt;p&gt;Includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo setup&lt;/li&gt;
+&lt;li&gt;GitLabs setup&lt;/li&gt;
+&lt;li&gt;Deployment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;documents&#34;&gt;Documents
+&lt;/h3&gt;&lt;p&gt;Written documentation for frequent reference.&lt;br&gt;
+To be public.&lt;/p&gt;
+&lt;p&gt;Includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Examples of code or processes&lt;/li&gt;
+&lt;li&gt;Frequently referenced documentation&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Cheat sheets&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;drafts&#34;&gt;Drafts
+&lt;/h3&gt;&lt;p&gt;Page drafts before being published.&lt;br&gt;
+To be private.&lt;/p&gt;
+&lt;p&gt;Includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pages currently being worked on&lt;/li&gt;
+&lt;li&gt;Pages that are not ready to be published&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;notes&#34;&gt;Notes
+&lt;/h3&gt;&lt;p&gt;Any site related notes like this page.&lt;br&gt;
+To be private.&lt;/p&gt;
+&lt;p&gt;Includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General notes and information&lt;/li&gt;
+&lt;li&gt;Personal goals or achievements&lt;/li&gt;
+&lt;li&gt;Literally anything I feel like&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Completion Dates</title>
+        <link>http://localhost:1313/notes/completion-dates/</link>
+        <pubDate>Sat, 08 Jun 2024 21:22:21 -0400</pubDate>
+        
+        <guid>http://localhost:1313/notes/completion-dates/</guid>
+        <description>&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview
+&lt;/h1&gt;&lt;p&gt;Tracking page completion dates.&lt;br&gt;
+This does not mean pages cannot be updated later.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;5---setting-up-gitlab&#34;&gt;5 - Setting Up GitLab
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-gitlabs/&#34; &gt;Setting Up GitLab&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Completion Date&lt;/th&gt;
+&lt;th&gt;7 July 2024&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;4---template&#34;&gt;4 - Template
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/notes/template/&#34; &gt;Template&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Completion Date&lt;/th&gt;
+&lt;th&gt;8 June 2024&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3---site-nav&#34;&gt;3 - Site Nav
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/notes/site-nav/&#34; &gt;Site Nav&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Completion Date&lt;/th&gt;
+&lt;th&gt;8 June 2024&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2---setting-up-hugo&#34;&gt;2 - Setting up Hugo
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-hugo/&#34; &gt;Setting up Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Completion Date&lt;/th&gt;
+&lt;th&gt;8 June 2024&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;1---markdown-example&#34;&gt;1 - Markdown Example
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/documents/markdown-example/&#34; &gt;Markdown Example&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Completion Date&lt;/th&gt;
+&lt;th&gt;7 June 2024&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        <item>
+        <title>Notes</title>
+        <link>http://localhost:1313/notes/notes/</link>
+        <pubDate>Wed, 05 Jun 2024 23:24:48 -0400</pubDate>
+        
+        <guid>http://localhost:1313/notes/notes/</guid>
+        <description>&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview
+&lt;/h1&gt;&lt;p&gt;General notes and ideas for personal use.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;general-notes&#34;&gt;General Notes
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Changing the theme&lt;/strong&gt;
+Include both themes info and what failed / worked&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exploring HTML&lt;/strong&gt;
+To set up html needed to add goldmark&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Random stuff&lt;/strong&gt;
+graphql
+web component
+Used Paint 3D to resize png with transparent&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;pages-to-create&#34;&gt;Pages to create
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;Setting up Hugo&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Changing the theme for hugo&lt;/li&gt;
+&lt;li&gt;Exploring markdown and html&lt;/li&gt;
+&lt;li&gt;Setting up static gitlabs pages (uploaded to github)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;project-ideas&#34;&gt;Project ideas
+&lt;/h1&gt;&lt;h3 id=&#34;mock-discord&#34;&gt;Mock Discord
+&lt;/h3&gt;&lt;p&gt;A webpage with the ability to make a new category, a new channel, and new posts.&lt;br&gt;
+Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;references&#34;&gt;References
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/cross-references/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gohugo.io/content-management/cross-references/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://cheatsheets.zip/html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cheatsheets.zip/html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195/2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195/2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/33191744/how-to-add-new-line-in-markdown-presentation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://stackoverflow.com/questions/33191744/how-to-add-new-line-in-markdown-presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/20037279/inserting-tab-spaces-to-align-text-vertically-in-html-css&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://stackoverflow.com/questions/20037279/inserting-tab-spaces-to-align-text-vertically-in-html-css&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://jsfiddle.net/nzrHn/1/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://jsfiddle.net/nzrHn/1/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;configure-cicd&#34;&gt;Configure CI/CD
+&lt;/h1&gt;&lt;p&gt;The resources being created here will be made to connect a GitHub repository to GitLabs.&lt;br&gt;
+This will utilize a GitLabs CI/CD project in order to make that connection.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I already have a GitHub account with multiple repositories created.&lt;br&gt;
+I don&amp;rsquo;t plan to create any docs on setting that up, but if I do I&amp;rsquo;ll reference that here.&lt;br&gt;
+Either way I suggest setting up a GitHub account and aiming to use it frequently.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a Group&lt;/li&gt;
+&lt;li&gt;Create a Project&lt;/li&gt;
+&lt;li&gt;Conect With Personal Access Token&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Configure GitLab CI/CD&lt;br&gt;
+Can skip setting up runners since using GitLab.com&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/ci/quick_start/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.gitlab.com/ee/ci/quick_start/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;BaseURL&lt;/li&gt;
+&lt;li&gt;Push your Hugo website to GitLab&lt;/li&gt;
+&lt;li&gt;Wait for your page to build&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;subsection-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;-my-group-and-project-choices-&#34;&gt;-My Group and Project Choices-
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-my-group-choices-&#34;&gt;-My Group Choices-
+&lt;/h3&gt;&lt;p&gt;These are the choices I made when creating my Group.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Field&lt;/th&gt;
+&lt;th&gt;Choices&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Group Name&lt;/td&gt;
+&lt;td&gt;Tyo Blogs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Group URL&lt;/td&gt;
+&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/tyo-blogs&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gitlab.com/tyo-blogs&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Visibility Level&lt;/td&gt;
+&lt;td&gt;Private Developer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Add your Role&lt;/td&gt;
+&lt;td&gt;Software&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Who will be using this group&lt;/td&gt;
+&lt;td&gt;Just me&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;What will you use this group for&lt;/td&gt;
+&lt;td&gt;I want to use CI with my existing repository&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;-my-project-choices-&#34;&gt;-My Project Choices-
+&lt;/h3&gt;&lt;p&gt;These are the choices I made when creating my Project.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Field&lt;/th&gt;
+&lt;th&gt;Choices&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Git repository URL&lt;/td&gt;
+&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Tyocelot/Blog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/Tyocelot/Blog&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Username&lt;/td&gt;
+&lt;td&gt;Not necessary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Password&lt;/td&gt;
+&lt;td&gt;Not necessary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Project name&lt;/td&gt;
+&lt;td&gt;Tyo Talks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Project URL&lt;/td&gt;
+&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/tyo-blogs/tyo-talks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gitlab.com/tyo-blogs/tyo-talks&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Project description&lt;/td&gt;
+&lt;td&gt;A blog for documenting my projects, findings, and posts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Visibility Level&lt;/td&gt;
+&lt;td&gt;Private&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;Currently working on setting up the stack theme.
+Updated hugo.toml to hugo.yaml
+Also consider updating or removing archives&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://stack.jimmycai.com/config/menu&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://demo.stack.jimmycai.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Still need to understand how the categories and tags work
+Can add links from the links page to the about page&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://jimmycai.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

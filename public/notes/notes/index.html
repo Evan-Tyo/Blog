@@ -1,505 +1,462 @@
 <!DOCTYPE html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Overview\rGeneral notes, ideas, and an information dump. Page Ideas\rChanging the theme Include theme info and what failed / worked. Add information for hugo-theme-stack and updating the scss. Exploring HTML To set up html needed to add goldmark.\\ Project Ideas\rMock Discord A webpage with the ability to make a new category, a new channel, and new posts. Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.">
 <title>Notes</title>
 
+<link rel='canonical' href='http://localhost:1313/notes/notes/'>
 
-
-
-<meta charset="utf-8">
-<meta name="X-UA-Compatible" content="IE=edge">
-<meta name="google-site-verification" content="">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<meta content="telephone=no" name="format-detection">
-<meta name="description" content="">
-<meta name="renderer" content="webkit">
-<meta name="theme-color" content="#ffffff">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<link rel="stylesheet" href="/scss/style.min.8431aed413f49ebd38b032d1aea067eaf86cc844f60d54083ae48c694ef7ef50.css"><meta property='og:title' content="Notes">
+<meta property='og:description' content="Overview\rGeneral notes, ideas, and an information dump. Page Ideas\rChanging the theme Include theme info and what failed / worked. Add information for hugo-theme-stack and updating the scss. Exploring HTML To set up html needed to add goldmark.\\ Project Ideas\rMock Discord A webpage with the ability to make a new category, a new channel, and new posts. Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.">
+<meta property='og:url' content='http://localhost:1313/notes/notes/'>
+<meta property='og:site_name' content='Example Site'>
+<meta property='og:type' content='article'><meta property='article:section' content='Notes' /><meta property='article:published_time' content='2024-06-05T23:24:48-04:00'/><meta property='article:modified_time' content='2024-06-05T23:24:48-04:00'/>
+<meta name="twitter:title" content="Notes">
+<meta name="twitter:description" content="Overview\rGeneral notes, ideas, and an information dump. Page Ideas\rChanging the theme Include theme info and what failed / worked. Add information for hugo-theme-stack and updating the scss. Exploring HTML To set up html needed to add goldmark.\\ Project Ideas\rMock Discord A webpage with the ability to make a new category, a new channel, and new posts. Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.">
   
 
 
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-
-
-
-      <script src="/js/toc.js"></script>
-    
-    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="/scss/dark-mode.min.cb53f1bee2b8900cb4f082afbf00175d6618f281cf9a2fe8619e3b52d20b5721.css" integrity="sha256-y1PxvuK4kAy08IKvvwAXXWYY8oHPmi/oYZ47UtILVyE=" media="screen">
-
-
-<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Material+Icons">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</head>
-<body>
-    	<div id="app"><div class="single-column-drawer-container" id="drawer"
-     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
-    <div class="drawer-content">
-        <div class="drawer-menu">
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
             
-            
-                
-                
-                
-                
-                
-                <a class="a-block drawer-menu-item false" href="/posts">
-                    Posts
-                </a>
-                
-            
-                
-                
-                
-                
-                
-                <a class="a-block drawer-menu-item false" href="/documents">
-                    Documents
-                </a>
-                
-            
-                
-                
-                
-                
-                
-                <a class="a-block drawer-menu-item false" href="/drafts">
-                    Drafts
-                </a>
-                
-            
-                
-                
+            <figure class="site-avatar">
+                <a href="/">
                 
                     
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
                 
-                
-                
-                <a class="a-block drawer-menu-item active" href="/notes">
-                    Notes
                 </a>
                 
+                    <span class="emoji">🍥</span>
+                
+            </figure>
             
-            
-            <div class="toc">
-
-
-	<div class="toc-content">
-	
-		
-		
-		
-		<center>- CATALOG -</center>
-		
-		
-		<ul>
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#overview" class="nav-overview">
-									Overview
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#general-notes" class="nav-general-notes">
-									General Notes
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#pages-to-create" class="nav-pages-to-create">
-									Pages to create
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#project-ideas" class="nav-project-ideas">
-									Project ideas
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-							
-								
-									<ul>
-								
-							
-								
-									<ul>
-								
-							
-						
-						
-							<li>
-								<a href="#mock-discord" class="nav-mock-discord">
-									Mock Discord
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-							
-								</ul>
-							
-								</ul>
-							
-						
-						
-						
-							<li>
-								<a href="#references" class="nav-references">
-									References
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#configure-cicd" class="nav-configure-cicd">
-									Configure CI/CD
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-							
-								
-									<ul>
-								
-							
-								
-									<ul>
-								
-							
-						
-						
-							<li>
-								<a href="#subsection-1" class="nav-subsection-1">
-									Subsection 1
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#subsection-2" class="nav-subsection-2">
-									Subsection 2
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-							
-								</ul>
-							
-								</ul>
-							
-						
-						
-						
-							<li>
-								<a href="#-my-group-and-project-choices-" class="nav--my-group-and-project-choices-">
-									-My Group and Project Choices-
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-							
-								
-									<ul>
-								
-							
-								
-									<ul>
-								
-							
-						
-						
-							<li>
-								<a href="#-my-group-choices-" class="nav--my-group-choices-">
-									-My Group Choices-
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#-my-project-choices-" class="nav--my-project-choices-">
-									-My Project Choices-
-								</a>
-							</li>
-						
-						
-					
-				
-			
-		</ul>
-	</div>
-
-</div>
-            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Example Site</a></h1>
+            <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         </div>
-    </div>
-</div>
-<transition name="fade">
-    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
-</transition>
-<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
-    <div id="navBackground" class="nav-background"></div>
-    <div class="container container-narrow nav-content">
-        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
-            <i class="material-icons">
-                menu
-            </i>
-        </button>
-        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
-            Tyo Talks
-        </a>
-        
-        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
-            <i class="material-icons" id="darkModeToggleIcon2">
-                dark_mode
-            </i>
-        </button>
-        
-    </div>
-</nav>
-<div class="single-column-header-container" id="pageHead"
-     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
-    <a href="http://localhost:1313/">
-        <div class="single-column-header-title">Tyo Talks</div>
-        
-
-    </a>
-</div>
-
-            <div id="content">
-                <div id="streamContainer" class="stream-container">
-
-    <div class="post-list-container post-list-container-shadow">
-        <div class="post">
+    </header><ol class="menu-social">
             
-            
-            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
 
-            <div class="post-head-wrapper-text-only"
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
                 
-            >
-                <div class="post-title">
-                    Notes
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/setup' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Setup</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/documents' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Documents</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
                     
-                    <div class="post-meta">
-                        
-                        <time itemprop="datePublished">
-                            2024-06-05 23:24
-                        </time>
-                        
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
 
-                        
 
-                        
-                        
-                    </div>
-                </div>
-            </div>
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/" selected>English</option>
+                                
+                                    <option value="http://localhost:1313/zh-cn/" >中文</option>
+                                
+                                    <option value="http://localhost:1313/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
             
-            <div class="post-body-wrapper">
                 
-                <div class="post-body" v-pre>
-                
-                    <hr>
-<h1 id="overview">Overview</h1>
-<p>General notes and ideas for personal use.</p>
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#page-ideas">Page Ideas</a></li>
+    <li><a href="#project-ideas">Project Ideas</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#configure-cicd-include-this-in-the-deploying-to-gitlabs-page">Configure CI/CD (Include this in the deploying to gitlabs page)</a></li>
+    <li><a href="#-my-group-and-project-choices-">-My Group and Project Choices-</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#-my-group-choices-">-My Group Choices-</a></li>
+            <li><a href="#-my-project-choices-">-My Project Choices-</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#hugo-theme-stack">Hugo Theme Stack</a></li>
+    <li><a href="#app-creation">App Creation</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/notes/notes/">Notes</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 05, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <hr>
+<h1 id="overview">Overview
+</h1><p>General notes, ideas, and an information dump.</p>
 <hr>
-<h1 id="general-notes">General Notes</h1>
-<p><strong>Changing the theme</strong>
-Include both themes info and what failed / worked</p>
+<h1 id="page-ideas">Page Ideas
+</h1><p><strong>Changing the theme</strong>
+Include theme info and what failed / worked.<br>
+Add information for hugo-theme-stack and updating the scss.</p>
 <p><strong>Exploring HTML</strong>
-To set up html needed to add goldmark</p>
-<p><strong>Random stuff</strong>
-graphql
-web component
-Used Paint 3D to resize png with transparent</p>
+To set up html needed to add goldmark.\</p>
 <hr>
-<h1 id="pages-to-create">Pages to create</h1>
-<ul>
-<li><del>Setting up Hugo</del></li>
-<li>Changing the theme for hugo</li>
-<li>Exploring markdown and html</li>
-<li>Setting up static gitlabs pages (uploaded to github)</li>
-</ul>
-<hr>
-<h1 id="project-ideas">Project ideas</h1>
-<h3 id="mock-discord">Mock Discord</h3>
-<p>A webpage with the ability to make a new category, a new channel, and new posts.<br>
+<h1 id="project-ideas">Project Ideas
+</h1><p><strong>Mock Discord</strong>
+A webpage with the ability to make a new category, a new channel, and new posts.<br>
 Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.</p>
 <hr>
-<h1 id="references">References</h1>
-<ul>
-<li><a href="https://gohugo.io/content-management/cross-references/">https://gohugo.io/content-management/cross-references/</a></li>
-<li><a href="https://cheatsheets.zip/html">https://cheatsheets.zip/html</a></li>
-<li><a href="https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195/2">https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195/2</a></li>
-<li><a href="https://stackoverflow.com/questions/33191744/how-to-add-new-line-in-markdown-presentation">https://stackoverflow.com/questions/33191744/how-to-add-new-line-in-markdown-presentation</a></li>
-<li><a href="https://stackoverflow.com/questions/20037279/inserting-tab-spaces-to-align-text-vertically-in-html-css">https://stackoverflow.com/questions/20037279/inserting-tab-spaces-to-align-text-vertically-in-html-css</a></li>
-<li><a href="https://jsfiddle.net/nzrHn/1/">https://jsfiddle.net/nzrHn/1/</a></li>
-<li><a href="https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195">https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195</a></li>
+<h1 id="references">References
+</h1><ul>
+<li><a class="link" href="https://gohugo.io/content-management/cross-references/"  target="_blank" rel="noopener"
+    >https://gohugo.io/content-management/cross-references/</a></li>
+<li><a class="link" href="https://cheatsheets.zip/html"  target="_blank" rel="noopener"
+    >https://cheatsheets.zip/html</a></li>
+<li><a class="link" href="https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195/2"  target="_blank" rel="noopener"
+    >https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195/2</a></li>
+<li><a class="link" href="https://stackoverflow.com/questions/33191744/how-to-add-new-line-in-markdown-presentation"  target="_blank" rel="noopener"
+    >https://stackoverflow.com/questions/33191744/how-to-add-new-line-in-markdown-presentation</a></li>
+<li><a class="link" href="https://stackoverflow.com/questions/20037279/inserting-tab-spaces-to-align-text-vertically-in-html-css"  target="_blank" rel="noopener"
+    >https://stackoverflow.com/questions/20037279/inserting-tab-spaces-to-align-text-vertically-in-html-css</a></li>
+<li><a class="link" href="https://jsfiddle.net/nzrHn/1/"  target="_blank" rel="noopener"
+    >https://jsfiddle.net/nzrHn/1/</a></li>
+<li><a class="link" href="https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195"  target="_blank" rel="noopener"
+    >https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195</a></li>
 </ul>
 <hr>
-<h1 id="configure-cicd">Configure CI/CD</h1>
-<p>The resources being created here will be made to connect a GitHub repository to GitLabs.<br>
+<h1 id="configure-cicd-include-this-in-the-deploying-to-gitlabs-page">Configure CI/CD (Include this in the deploying to gitlabs page)
+</h1><p>The resources being created here will be made to connect a GitHub repository to GitLabs.<br>
 This will utilize a GitLabs CI/CD project in order to make that connection.</p>
 <blockquote>
 <p>I already have a GitHub account with multiple repositories created.<br>
@@ -510,24 +467,22 @@ Either way I suggest setting up a GitHub account and aiming to use it frequently
 <li>Create a Group</li>
 <li>Create a Project</li>
 <li>Conect With Personal Access Token<br>
-<a href="https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html">https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html</a></li>
+<a class="link" href="https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html"  target="_blank" rel="noopener"
+    >https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html</a></li>
 <li>Configure GitLab CI/CD<br>
 Can skip setting up runners since using GitLab.com<br>
-<a href="https://docs.gitlab.com/ee/ci/quick_start/index.html">https://docs.gitlab.com/ee/ci/quick_start/index.html</a></li>
+<a class="link" href="https://docs.gitlab.com/ee/ci/quick_start/index.html"  target="_blank" rel="noopener"
+    >https://docs.gitlab.com/ee/ci/quick_start/index.html</a></li>
 <li>BaseURL</li>
 <li>Push your Hugo website to GitLab</li>
 <li>Wait for your page to build</li>
 </ol>
-<h3 id="subsection-1">Subsection 1</h3>
-<p><code>Content</code></p>
-<h3 id="subsection-2">Subsection 2</h3>
-<p><code>Content</code></p>
 <hr>
-<h1 id="-my-group-and-project-choices-">-My Group and Project Choices-</h1>
-<p><code>Information about this section</code></p>
-<h3 id="-my-group-choices-">-My Group Choices-</h3>
-<p>These are the choices I made when creating my Group.</p>
-<table>
+<h1 id="-my-group-and-project-choices-">-My Group and Project Choices-
+</h1><p>Was considering adding these into the setting up gitlabs page, but I might remove them entirely.</p>
+<h3 id="-my-group-choices-">-My Group Choices-
+</h3><p>These are the choices I made when creating my Group.</p>
+<div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Field</th>
@@ -541,7 +496,8 @@ Can skip setting up runners since using GitLab.com<br>
 </tr>
 <tr>
 <td>Group URL</td>
-<td><a href="https://gitlab.com/tyo-blogs">https://gitlab.com/tyo-blogs</a></td>
+<td><a class="link" href="https://gitlab.com/tyo-blogs"  target="_blank" rel="noopener"
+    >https://gitlab.com/tyo-blogs</a></td>
 </tr>
 <tr>
 <td>Visibility Level</td>
@@ -560,10 +516,10 @@ Can skip setting up runners since using GitLab.com<br>
 <td>I want to use CI with my existing repository</td>
 </tr>
 </tbody>
-</table>
-<h3 id="-my-project-choices-">-My Project Choices-</h3>
-<p>These are the choices I made when creating my Project.</p>
-<table>
+</table></div>
+<h3 id="-my-project-choices-">-My Project Choices-
+</h3><p>These are the choices I made when creating my Project.</p>
+<div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Field</th>
@@ -573,7 +529,8 @@ Can skip setting up runners since using GitLab.com<br>
 <tbody>
 <tr>
 <td>Git repository URL</td>
-<td><a href="https://github.com/Tyocelot/Blog">https://github.com/Tyocelot/Blog</a></td>
+<td><a class="link" href="https://github.com/Tyocelot/Blog"  target="_blank" rel="noopener"
+    >https://github.com/Tyocelot/Blog</a></td>
 </tr>
 <tr>
 <td>Username</td>
@@ -589,7 +546,8 @@ Can skip setting up runners since using GitLab.com<br>
 </tr>
 <tr>
 <td>Project URL</td>
-<td><a href="https://gitlab.com/tyo-blogs/tyo-talks">https://gitlab.com/tyo-blogs/tyo-talks</a></td>
+<td><a class="link" href="https://gitlab.com/tyo-blogs/tyo-talks"  target="_blank" rel="noopener"
+    >https://gitlab.com/tyo-blogs/tyo-talks</a></td>
 </tr>
 <tr>
 <td>Project description</td>
@@ -600,435 +558,168 @@ Can skip setting up runners since using GitLab.com<br>
 <td>Private</td>
 </tr>
 </tbody>
-</table>
+</table></div>
+<hr>
+<h1 id="hugo-theme-stack">Hugo Theme Stack
+</h1><p>Updated hugo.toml to hugo.yaml.<br>
+Added custom.scss.<br>
+Created and added menu items.<br>
+Added categories and tags to pages.</p>
+<p><strong>To Do</strong>
+Merge links and about pages.<br>
+Update about page, site name, personal description, and img.</p>
+<p><strong>Resources</strong>
+<a class="link" href="https://stack.jimmycai.com/config/menu"  target="_blank" rel="noopener"
+    >https://stack.jimmycai.com/config/menu</a>
+<a class="link" href="https://demo.stack.jimmycai.com/"  target="_blank" rel="noopener"
+    >https://demo.stack.jimmycai.com/</a>
+<a class="link" href="https://jimmycai.com/"  target="_blank" rel="noopener"
+    >https://jimmycai.com/</a></p>
+<hr>
+<h1 id="app-creation">App Creation
+</h1><p><strong>MERN stack</strong>
+<a class="link" href="https://www.mongodb.com/resources/languages/mern-stack"  target="_blank" rel="noopener"
+    >https://www.mongodb.com/resources/languages/mern-stack</a></p>
+<p><strong>MongoDB Database</strong>
+Amazon Web Services, Azure, or Google Cloud Platform.<br>
+I&rsquo;ve already worked with Azure, although it&rsquo;s been some years.<br>
+We also work with AWS some at work.<br>
+Maybe I&rsquo;ll explore GCP first.</p>
+<p>Search how to create a MongoDB database.<br>
+<a class="link" href="https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp"  target="_blank" rel="noopener"
+    >https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp</a></p>
 
-                    
-                    <HR width="100%" id="EOF">
-		    <p style="color:#777;">Last modified on 2024-06-05</p>
-                    
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 Example Site
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            
-            <nav class="post-pagination">
 
-                
-                <a class="newer-posts" href="/documents/markdown-example/">
-			Next<br>Markdown Example
-                </a>
-                
-                
-                
-                <a class="older-posts" href="/posts/setting-up-hugo/">
-			Previous<br>Setting Up Hugo
-                </a>
-                
-            </nav>
-            <div class="post-comment-wrapper">
-                
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
             </div>
-        </div>
-    </div>
 
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
 
-                    </div>
-            </div><div id="sideContainer" class="side-container">
-    
-    <a class="a-block nav-head false" href="http://localhost:1313/">
-    
-        <div class="nav-title">
-            Tyo Talks
-        </div>
-        
-    </a>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
 
-    <div class="nav-link-list">
-        
-        
-            
-            
-            
-            
-            
-            <a class="a-block nav-link-item false" href="/posts">
-                Posts
-            </a>
-            
-        
-            
-            
-            
-            
-            
-            <a class="a-block nav-link-item false" href="/documents">
-                Documents
-            </a>
-            
-        
-            
-            
-            
-            
-            
-            <a class="a-block nav-link-item false" href="/drafts">
-                Drafts
-            </a>
-            
-        
-            
-            
-            
-                
-            
-            
-            
-            <a class="a-block nav-link-item active" href="/notes">
-                Notes
-            </a>
-            
-        
-    </div>
-
-    
-
-    <div class="nav-footer">
-        
-Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
-<br>
-Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
-<br>
-
-&copy;
-	
-	2024 Tyo Talks
-	
-
-    </div>
-    
-</div><div id="extraContainer" class="extra-container">
-    <div class="toc-wrapper">
-        
-
-        
-        <div class="toc">
-
-
-	<div class="toc-content">
-	
-		
-		
-		
-		<center>- CATALOG -</center>
-		
-		
-		<ul>
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#overview" class="nav-overview">
-									Overview
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#general-notes" class="nav-general-notes">
-									General Notes
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#pages-to-create" class="nav-pages-to-create">
-									Pages to create
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#project-ideas" class="nav-project-ideas">
-									Project ideas
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-							
-								
-									<ul>
-								
-							
-								
-									<ul>
-								
-							
-						
-						
-							<li>
-								<a href="#mock-discord" class="nav-mock-discord">
-									Mock Discord
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-							
-								</ul>
-							
-								</ul>
-							
-						
-						
-						
-							<li>
-								<a href="#references" class="nav-references">
-									References
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#configure-cicd" class="nav-configure-cicd">
-									Configure CI/CD
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-							
-								
-									<ul>
-								
-							
-								
-									<ul>
-								
-							
-						
-						
-							<li>
-								<a href="#subsection-1" class="nav-subsection-1">
-									Subsection 1
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#subsection-2" class="nav-subsection-2">
-									Subsection 2
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-							
-								</ul>
-							
-								</ul>
-							
-						
-						
-						
-							<li>
-								<a href="#-my-group-and-project-choices-" class="nav--my-group-and-project-choices-">
-									-My Group and Project Choices-
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-							
-								
-									<ul>
-								
-							
-								
-									<ul>
-								
-							
-						
-						
-							<li>
-								<a href="#-my-group-choices-" class="nav--my-group-choices-">
-									-My Group Choices-
-								</a>
-							</li>
-						
-						
-					
-				
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#-my-project-choices-" class="nav--my-project-choices-">
-									-My Project Choices-
-								</a>
-							</li>
-						
-						
-					
-				
-			
-		</ul>
-	</div>
-
-</div>
-        
-    </div>
-    <div class="pagination">
-        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
-            :class="{ invisible: scrollY == 0 }">
-            <i class="material-icons pagination-action-icon">
-                keyboard_arrow_up
-            </i>
-        </a>
-        
-        <a type="button" class="pagination-action" id="darkModeToggleButton">
-            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
-                dark_mode
-            </span>
-        </a>
-        
-        
-    </div>
-</div>
-
-<div id="single-column-footer">
-Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
-<br>
-Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
-<br>
-
-&copy;
-	
-	2024 Tyo Talks
-	
-</div>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
             </div>
-    
-    <script src="/js/journal.js"></script></body>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
 </html>
