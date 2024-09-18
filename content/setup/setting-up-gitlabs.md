@@ -30,7 +30,6 @@ Includes additional information on Groups and Projects.
 Navigate to the [host on gitlab page](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/).
 
 - Have familiarity with Git versioning
-- Create a [GitLab account](https://gitlab.com/)
 - Complete [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 
 Completing the hugo quick start turtorial will produce a local, ready to publish, Hugo website.\

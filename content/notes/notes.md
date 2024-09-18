@@ -82,12 +82,12 @@ These are the choices I made when creating my Project.
 
 | Field               | Choices                                                 |
 | ------------------- | ------------------------------------------------------- |
-| Git repository URL  | https://github.com/Tyocelot/Blog                        |
+| Git repository URL  | https://github.com/Evan-Tyo/Blog                        |
 | Username            | Not necessary                                           |
 | Password            | Not necessary                                           |
 | Project name        | Docs                                                    |
 | Project URL         | https://gitlab.com/TyoPortfolio/Docs                    |
-| Project description | A blog for documenting my projects, findings, and posts |
+| Project description | Posts and documentation for projects, findings, and my personal process of work. |
 | Visibility Level    | Private                                                 |
 
 ---
@@ -122,3 +122,9 @@ Maybe I'll explore GCP first.
 
 Search how to create a MongoDB database.\
 https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp
+
+---
+
+# Stuff
+- Put a ling break at the bottom of each page to section off the tags from the theme
+- Update the css for the right column table of contents to remove so much white space between bullets
