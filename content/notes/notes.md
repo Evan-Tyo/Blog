@@ -128,3 +128,8 @@ https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp
 # Stuff
 - Put a ling break at the bottom of each page to section off the tags from the theme
 - Update the css for the right column table of contents to remove so much white space between bullets
+
+
+FOLLOW THIS
+Will probably have to make a new project and correctly outline those steps
+https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html

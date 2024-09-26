@@ -5,7 +5,7 @@ draft = true
 categories = [
 ]
 tags = [
-    "GitLabs"
+    "GitLab"
 ]
 +++
 
@@ -24,7 +24,7 @@ This will follow a GitLab deployment using CI/CD from a GitHub repository.
 ---
 
 # Prerequisites
-Follow the steps outlined on the [Setting Up Gitlabs]({{< ref "setting-up-gitlabs" >}}) page.
+Follow the steps outlined on the [Setting Up Gitlab]({{< ref "setting-up-gitlabs" >}}) page.
 
 - Create a [GitLab account](https://gitlab.com/)
 - Have a group created

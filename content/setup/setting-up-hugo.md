@@ -25,7 +25,7 @@ Includes additional information on Content Front Matter and Markdown.
 ---
 
 # Prerequisites
-Navigate to the [hugo quick start page](https://gohugo.io/getting-started/quick-start/)
+Navigate to the [hugo quick start page](https://gohugo.io/getting-started/quick-start/).
 
 - [Install Hugo](https://gohugo.io/installation/windows/)
 - [Install Git](https://www.git-scm.com/download/win)
@@ -35,7 +35,7 @@ Git and GitBash were already installed prior to hugo setup.
 ---
 
 # Installing Hugo
-Navigate to the [hugo installation page for windows](https://gohugo.io/installation/windows/)
+Navigate to the [hugo installation page for windows](https://gohugo.io/installation/windows/).
 
 - I opted for the extended edition of hugo
 - Git was already installed
@@ -56,7 +56,7 @@ Hugo was now installed
 ---
 
 # Creating a site {#creating-a-site}
-Navigate back to the [hugo quick start page](https://gohugo.io/getting-started/quick-start/)
+Navigate back to the [hugo quick start page](https://gohugo.io/getting-started/quick-start/).
 
 It is recommended not to use Command Prompt or Windows PowerShell for hugo setup.\
 I decided to use Git Bash as it was already installed.
@@ -190,7 +190,7 @@ theme = 'ananke'
 
 It is recommended to change the following fields when starting:
 - [baseUrl](https://gohugo.io/methods/site/baseurl/): Must begin with the protocol and end with a slash.  Customize it however desired.
-- [languageCode](https://gohugo.io/methods/site/language/): Set this to your local launguage and region or a desired one.
+- [languageCode](https://gohugo.io/methods/site/language/): Set this to your local language and region or a desired one.
 - [title](https://gohugo.io/methods/site/title/): Update this to reflect on your site as the main title.
 
 Here are the values I currently have in my configuration file:
