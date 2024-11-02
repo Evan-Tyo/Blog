@@ -158,6 +158,14 @@ menu:
         #       icon: home
         #       newTab: false
 
+        # - identifier: old
+        #   name: Old
+        #   url: /old
+        #   weight: 5
+        #   params:
+        #       icon: home
+        #       newTab: false
+
     social:
         - identifier: github
           name: GitHub

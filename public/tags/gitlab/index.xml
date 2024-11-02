@@ -8,10 +8,10 @@
         <language>en</language>
         <lastBuildDate>Wed, 25 Sep 2024 16:20:36 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/gitlab/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Connect Github and Gitlab</title>
-        <link>http://localhost:1313/setup/connect-github-and-gitlab/</link>
+        <link>http://localhost:1313/old/connect-github-and-gitlab/</link>
         <pubDate>Wed, 25 Sep 2024 16:20:36 -0400</pubDate>
         
-        <guid>http://localhost:1313/setup/connect-github-and-gitlab/</guid>
+        <guid>http://localhost:1313/old/connect-github-and-gitlab/</guid>
         <description>&lt;style&gt;
 .file-color {
     color: #3067FF;
@@ -26,7 +26,7 @@
 This will allow for a CI/CD pipeline between a GitHub repository and a GitLab project.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites
-&lt;/h1&gt;&lt;p&gt;Follow the steps outlined on the &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-gitlabs/&#34; &gt;Setting Up Gitlab&lt;/a&gt; page.&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;Follow the steps outlined on the &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/old/setting-up-gitlabs/&#34; &gt;Setting Up Gitlab&lt;/a&gt; page.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a &lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitLab account&lt;/a&gt; with at least one group&lt;/li&gt;
@@ -94,7 +94,7 @@ A new token will then need to be created and setup in order for the connection t
 &lt;h3 id=&#34;section-2-1&#34;&gt;Section 2
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-gitlabs/&#34; &gt;Setting Up Gitlabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/old/setting-up-gitlabs/&#34; &gt;Setting Up Gitlabs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/ci/quick_start/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -104,11 +104,11 @@ A new token will then need to be created and setup in order for the connection t
 </description>
         </item>
         <item>
-        <title>Deploying to Gitlabs</title>
-        <link>http://localhost:1313/setup/deploying-to-gitlabs/</link>
+        <title>Deploying to Gitlab</title>
+        <link>http://localhost:1313/old/deploying-to-gitlab/</link>
         <pubDate>Sat, 13 Jul 2024 23:52:04 -0400</pubDate>
         
-        <guid>http://localhost:1313/setup/deploying-to-gitlabs/</guid>
+        <guid>http://localhost:1313/old/deploying-to-gitlab/</guid>
         <description>&lt;style&gt;
 .file-color {
     color: #3067FF;
@@ -120,7 +120,7 @@ A new token will then need to be created and setup in order for the connection t
 This will follow a GitLab deployment using CI/CD from a GitHub repository.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites
-&lt;/h1&gt;&lt;p&gt;Follow the steps outlined on the &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-gitlabs/&#34; &gt;Setting Up Gitlab&lt;/a&gt; page.&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;Follow the steps outlined on the &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/old/setting-up-gitlabs/&#34; &gt;Setting Up Gitlab&lt;/a&gt; page.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a &lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitLab account&lt;/a&gt;&lt;/li&gt;
@@ -154,17 +154,17 @@ It will be used to configure a CI/CD pipeline between the GitHub repository and 
 &lt;h3 id=&#34;section-2-1&#34;&gt;Section 2
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-gitlabs/&#34; &gt;Setting Up Gitlabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/old/setting-up-gitlabs/&#34; &gt;Setting Up Gitlabs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 </description>
         </item>
         <item>
         <title>Setting Up GitLab</title>
-        <link>http://localhost:1313/setup/setting-up-gitlabs/</link>
+        <link>http://localhost:1313/old/setting-up-gitlabs/</link>
         <pubDate>Mon, 10 Jun 2024 20:51:59 -0400</pubDate>
         
-        <guid>http://localhost:1313/setup/setting-up-gitlabs/</guid>
+        <guid>http://localhost:1313/old/setting-up-gitlabs/</guid>
         <description>&lt;style&gt;
 .file-color {
     color: #3067FF;
