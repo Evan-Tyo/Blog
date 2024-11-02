@@ -14,6 +14,9 @@ tags = [
 .file-color {
     color: #3067FF;
 }
+.direction-color {
+    color: #9746DA;
+}
 </style>
 
 ---

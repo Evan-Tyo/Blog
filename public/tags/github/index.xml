@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>GitHub on Example Site</title>
+        <link>http://localhost:1313/tags/github/</link>
+        <description>Recent content in GitHub on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 25 Sep 2024 16:20:36 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Connect Github and Gitlab</title>
+        <link>http://localhost:1313/setup/connect-github-and-gitlab/</link>
+        <pubDate>Wed, 25 Sep 2024 16:20:36 -0400</pubDate>
+        
+        <guid>http://localhost:1313/setup/connect-github-and-gitlab/</guid>
+        <description>&lt;style&gt;
+.file-color {
+    color: #3067FF;
+}
+.direction-color {
+    color: #9746DA;
+}
+&lt;/style&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview
+&lt;/h1&gt;&lt;p&gt;Documenting my process in creating a connection between GitHub and GitLab.&lt;br&gt;
+This will allow for a CI/CD pipeline between a GitHub repository and a GitLab project.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites
+&lt;/h1&gt;&lt;p&gt;Follow the steps outlined on the &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-gitlabs/&#34; &gt;Setting Up Gitlab&lt;/a&gt; page.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a &lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitLab account&lt;/a&gt; with at least one group&lt;/li&gt;
+&lt;li&gt;Have a &lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub account&lt;/a&gt; with at least one repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using the group, a project will be created and connected to an external GitHub repository.&lt;br&gt;
+It will be used to configure a CI/CD pipeline between the GitHub repository and the GitLab project.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;github-creating-a-personal-access-token&#34;&gt;GitHub: Creating a personal access token
+&lt;/h1&gt;&lt;p&gt;Navigate to the &lt;a class=&#34;link&#34; href=&#34;https://github.com/settings/tokens/new&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;github personal access tokens page&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;token-creation&#34;&gt;Token Creation
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Enter a description in the note section&lt;/li&gt;
+&lt;li&gt;Choose an expiration time&lt;/li&gt;
+&lt;li&gt;Select &amp;ldquo;repo&amp;rdquo; under the scopes section&lt;/li&gt;
+&lt;li&gt;Select &amp;ldquo;admin:repo_hook&amp;rdquo; under the scopes section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When a token reaches the expiration time the token will no longer work.&lt;br&gt;
+A new token will then need to be created and setup in order for the connection to continue.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;gitlab-creating-a-project&#34;&gt;GitLab: Creating a project
+&lt;/h1&gt;&lt;p&gt;Navigate to the &lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;gitlab home page&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;project-creation&#34;&gt;Project Creation
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Click &lt;span class=&#34;direction-color&#34;&gt;Projects&lt;/span&gt; on the left sidebar&lt;/li&gt;
+&lt;li&gt;Click the &lt;span class=&#34;direction-color&#34;&gt;Create new project&lt;/span&gt; button&lt;/li&gt;
+&lt;li&gt;Click the &lt;span class=&#34;direction-color&#34;&gt;Run CI/CD for external repository&lt;/span&gt; button&lt;/li&gt;
+&lt;li&gt;Click the &lt;span class=&#34;direction-color&#34;&gt;Repository by URL&lt;/span&gt; button&lt;/li&gt;
+&lt;li&gt;Add a Git Repository URL&lt;/li&gt;
+&lt;li&gt;Add a Username (optional)&lt;/li&gt;
+&lt;li&gt;Add a Password (optional)&lt;/li&gt;
+&lt;li&gt;Set a Project name&lt;/li&gt;
+&lt;li&gt;Set a Project slug&lt;/li&gt;
+&lt;li&gt;Provide a Project description (optional)&lt;/li&gt;
+&lt;li&gt;Pick a Visibility level&lt;/li&gt;
+&lt;li&gt;When finished, click the &lt;span class=&#34;direction-color&#34;&gt;Create project&lt;/span&gt; button&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;subsection-2&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;github-adding-a-cicd-config-file&#34;&gt;GitHub: Adding a CI/CD config file
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2-1&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;section-2&#34;&gt;Section 2
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-1-1&#34;&gt;Subsection 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;subsection-2-2&#34;&gt;Subsection 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Summary list of this page&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;references&#34;&gt;References
+&lt;/h1&gt;&lt;p&gt;A comprehensive list of page references&lt;/p&gt;
+&lt;h3 id=&#34;section-1&#34;&gt;Section 1
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;section-2-1&#34;&gt;Section 2
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;List of section items&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-gitlabs/&#34; &gt;Setting Up Gitlabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/ci/quick_start/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;config info&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

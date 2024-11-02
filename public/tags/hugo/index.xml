@@ -24,7 +24,7 @@ Includes additional information on Content Front Matter and Markdown.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites
 &lt;/h1&gt;&lt;p&gt;Navigate to the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo quick start page&lt;/a&gt;&lt;/p&gt;
+    &gt;hugo quick start page&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Install Hugo&lt;/a&gt;&lt;/li&gt;
@@ -35,7 +35,7 @@ Includes additional information on Content Front Matter and Markdown.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;installing-hugo&#34;&gt;Installing Hugo
 &lt;/h1&gt;&lt;p&gt;Navigate to the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo installation page for windows&lt;/a&gt;&lt;/p&gt;
+    &gt;hugo installation page for windows&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I opted for the extended edition of hugo&lt;/li&gt;
 &lt;li&gt;Git was already installed&lt;/li&gt;
@@ -56,7 +56,7 @@ Includes additional information on Content Front Matter and Markdown.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;creating-a-site&#34;&gt;Creating a site
 &lt;/h1&gt;&lt;p&gt;Navigate back to the &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo quick start page&lt;/a&gt;&lt;/p&gt;
+    &gt;hugo quick start page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It is recommended not to use Command Prompt or Windows PowerShell for hugo setup.&lt;br&gt;
 I decided to use Git Bash as it was already installed.&lt;/p&gt;
 &lt;p&gt;These are the recommended commands to run for quickly setting up an example hugo site:&lt;/p&gt;
@@ -247,7 +247,7 @@ It was auto generated when we ran the &lt;code&gt;hugo new site&lt;/code&gt; com
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/baseurl/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;baseUrl&lt;/a&gt;: Must begin with the protocol and end with a slash.  Customize it however desired.&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/language/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;languageCode&lt;/a&gt;: Set this to your local launguage and region or a desired one.&lt;/li&gt;
+    &gt;languageCode&lt;/a&gt;: Set this to your local language and region or a desired one.&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/methods/site/title/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;title&lt;/a&gt;: Update this to reflect on your site as the main title.&lt;/li&gt;
 &lt;/ul&gt;

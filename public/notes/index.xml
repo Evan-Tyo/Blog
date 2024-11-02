@@ -310,7 +310,7 @@ Can skip setting up runners since using GitLab.com&lt;br&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Project description&lt;/td&gt;
-&lt;td&gt;A blog for documenting my projects, findings, and posts&lt;/td&gt;
+&lt;td&gt;Posts and documentation for projects, findings, and my personal process of work.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Visibility Level&lt;/td&gt;
@@ -347,6 +347,16 @@ Maybe I&amp;rsquo;ll explore GCP first.&lt;/p&gt;
 &lt;p&gt;Search how to create a MongoDB database.&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;stuff&#34;&gt;Stuff
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Put a ling break at the bottom of each page to section off the tags from the theme&lt;/li&gt;
+&lt;li&gt;Update the css for the right column table of contents to remove so much white space between bullets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;FOLLOW THIS
+Will probably have to make a new project and correctly outline those steps
+&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         
