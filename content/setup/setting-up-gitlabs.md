@@ -5,7 +5,7 @@ draft = false
 categories = [
 ]
 tags = [
-    "GitLabs"
+    "GitLab"
 ]
 +++
 
@@ -30,10 +30,9 @@ Includes additional information on Groups and Projects.
 Navigate to the [host on gitlab page](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/).
 
 - Have familiarity with Git versioning
-- Create a [GitLab account](https://gitlab.com/)
 - Complete [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 
-Completing the hugo quick start turtorial will produce a local, ready to publish, Hugo website.\
+Completing the hugo quick start tutorial will produce a local, ready to publish, Hugo website.\
 If this has not been completed, take a look at my [Setting Up Hugo]({{< ref "setting-up-hugo" >}}) page for more information.
 
 ---
@@ -56,7 +55,7 @@ Groups and Projects will be explained in more detail in the following sections.
 ---
 
 # Understanding Groups and Projects
-This section is meant to breifly explain what Groups and Projects are.
+This section is meant to briefly explain what Groups and Projects are.
 
 ### Groups
 Groups are used to categorize one or more projects together that have a shared purpose.
@@ -110,7 +109,6 @@ This is where Groups and Projects can be created.
 
 ### Group Creation
 The following steps outline my process in creating a group.\
-For my purposes, I'll be creating a new group.
 
 Steps to create a group:\
 *More details on each field will be listed below.*

@@ -182,29 +182,18 @@ This does not mean pages cannot be updated later.&lt;/p&gt;
         <guid>http://localhost:1313/notes/notes/</guid>
         <description>&lt;hr&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview
-&lt;/h1&gt;&lt;p&gt;General notes and ideas for personal use.&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;General notes, ideas, and an information dump.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;general-notes&#34;&gt;General Notes
+&lt;h1 id=&#34;page-ideas&#34;&gt;Page Ideas
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Changing the theme&lt;/strong&gt;
-Include both themes info and what failed / worked&lt;/p&gt;
+Include theme info and what failed / worked.&lt;br&gt;
+Add information for hugo-theme-stack and updating the scss.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Exploring HTML&lt;/strong&gt;
-To set up html needed to add goldmark&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Random stuff&lt;/strong&gt;
-graphql
-web component
-Used Paint 3D to resize png with transparent&lt;/p&gt;
+To set up html needed to add goldmark.\&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;pages-to-create&#34;&gt;Pages to create
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;Setting up Hugo&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Changing the theme for hugo&lt;/li&gt;
-&lt;li&gt;Exploring markdown and html&lt;/li&gt;
-&lt;li&gt;Setting up static gitlabs pages (uploaded to github)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;project-ideas&#34;&gt;Project ideas
-&lt;/h1&gt;&lt;h3 id=&#34;mock-discord&#34;&gt;Mock Discord
-&lt;/h3&gt;&lt;p&gt;A webpage with the ability to make a new category, a new channel, and new posts.&lt;br&gt;
+&lt;h1 id=&#34;project-ideas&#34;&gt;Project Ideas
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Mock Discord&lt;/strong&gt;
+A webpage with the ability to make a new category, a new channel, and new posts.&lt;br&gt;
 Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;references&#34;&gt;References
@@ -225,7 +214,7 @@ Nothing fancy but I think that’s a good simple showcase of CRUD functionality 
     &gt;https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;configure-cicd&#34;&gt;Configure CI/CD
+&lt;h1 id=&#34;configure-cicd-include-this-in-the-deploying-to-gitlabs-page&#34;&gt;Configure CI/CD (Include this in the deploying to gitlabs page)
 &lt;/h1&gt;&lt;p&gt;The resources being created here will be made to connect a GitHub repository to GitLabs.&lt;br&gt;
 This will utilize a GitLabs CI/CD project in order to make that connection.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -247,13 +236,9 @@ Can skip setting up runners since using GitLab.com&lt;br&gt;
 &lt;li&gt;Push your Hugo website to GitLab&lt;/li&gt;
 &lt;li&gt;Wait for your page to build&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;subsection-1&#34;&gt;Subsection 1
-&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;subsection-2&#34;&gt;Subsection 2
-&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;-my-group-and-project-choices-&#34;&gt;-My Group and Project Choices-
-&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this section&lt;/code&gt;&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;Was considering adding these into the setting up gitlabs page, but I might remove them entirely.&lt;/p&gt;
 &lt;h3 id=&#34;-my-group-choices-&#34;&gt;-My Group Choices-
 &lt;/h3&gt;&lt;p&gt;These are the choices I made when creating my Group.&lt;/p&gt;
 &lt;table&gt;
@@ -266,12 +251,12 @@ Can skip setting up runners since using GitLab.com&lt;br&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Group Name&lt;/td&gt;
-&lt;td&gt;Tyo Blogs&lt;/td&gt;
+&lt;td&gt;TyoPortfolio&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Group URL&lt;/td&gt;
-&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/tyo-blogs&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://gitlab.com/tyo-blogs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/TyoPortfolio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gitlab.com/TyoPortfolio&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Visibility Level&lt;/td&gt;
@@ -303,8 +288,8 @@ Can skip setting up runners since using GitLab.com&lt;br&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Git repository URL&lt;/td&gt;
-&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Tyocelot/Blog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/Tyocelot/Blog&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Evan-Tyo/Blog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/Evan-Tyo/Blog&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Username&lt;/td&gt;
@@ -316,16 +301,16 @@ Can skip setting up runners since using GitLab.com&lt;br&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Project name&lt;/td&gt;
-&lt;td&gt;Tyo Talks&lt;/td&gt;
+&lt;td&gt;Docs&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Project URL&lt;/td&gt;
-&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/tyo-blogs/tyo-talks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://gitlab.com/tyo-blogs/tyo-talks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/TyoPortfolio/Docs&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gitlab.com/TyoPortfolio/Docs&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Project description&lt;/td&gt;
-&lt;td&gt;A blog for documenting my projects, findings, and posts&lt;/td&gt;
+&lt;td&gt;Posts and documentation for projects, findings, and my personal process of work.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Visibility Level&lt;/td&gt;
@@ -334,17 +319,44 @@ Can skip setting up runners since using GitLab.com&lt;br&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;p&gt;Currently working on setting up the stack theme.
-Updated hugo.toml to hugo.yaml
-Also consider updating or removing archives&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h1 id=&#34;hugo-theme-stack&#34;&gt;Hugo Theme Stack
+&lt;/h1&gt;&lt;p&gt;Updated hugo.toml to hugo.yaml.&lt;br&gt;
+Added custom.scss.&lt;br&gt;
+Created and added menu items.&lt;br&gt;
+Added categories and tags to pages.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To Do&lt;/strong&gt;
+Merge links and about pages.&lt;br&gt;
+Update about page, site name, personal description, and img.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://stack.jimmycai.com/config/menu&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://demo.stack.jimmycai.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Still need to understand how the categories and tags work
-Can add links from the links page to the about page&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://demo.stack.jimmycai.com/&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://jimmycai.com/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;app-creation&#34;&gt;App Creation
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;MERN stack&lt;/strong&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.mongodb.com/resources/languages/mern-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.mongodb.com/resources/languages/mern-stack&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MongoDB Database&lt;/strong&gt;
+Amazon Web Services, Azure, or Google Cloud Platform.&lt;br&gt;
+I&amp;rsquo;ve already worked with Azure, although it&amp;rsquo;s been some years.&lt;br&gt;
+We also work with AWS some at work.&lt;br&gt;
+Maybe I&amp;rsquo;ll explore GCP first.&lt;/p&gt;
+&lt;p&gt;Search how to create a MongoDB database.&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;stuff&#34;&gt;Stuff
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Put a ling break at the bottom of each page to section off the tags from the theme&lt;/li&gt;
+&lt;li&gt;Update the css for the right column table of contents to remove so much white space between bullets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;FOLLOW THIS
+Will probably have to make a new project and correctly outline those steps
+&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         

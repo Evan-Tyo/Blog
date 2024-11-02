@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/setup/deploying-to-gitlabs/</loc>
-    <lastmod>2024-07-13T23:52:04-04:00</lastmod>
+    <loc>http://localhost:1313/setup/connect-github-and-gitlab/</loc>
+    <lastmod>2024-09-25T16:20:36-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-13T23:52:04-04:00</lastmod>
+    <lastmod>2024-09-25T16:20:36-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -23,14 +23,17 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/gitlabs/</loc>
-    <lastmod>2024-07-13T23:52:04-04:00</lastmod>
+    <loc>http://localhost:1313/tags/github/</loc>
+    <lastmod>2024-09-25T16:20:36-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gitlab/</loc>
+    <lastmod>2024-09-25T16:20:36-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/setup/</loc>
-    <lastmod>2024-07-13T23:52:04-04:00</lastmod>
+    <lastmod>2024-09-25T16:20:36-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-07-13T23:52:04-04:00</lastmod>
+    <lastmod>2024-09-25T16:20:36-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -46,6 +49,9 @@
                 hreflang="en"
                 href="http://localhost:1313/tags/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/setup/deploying-to-gitlabs/</loc>
+    <lastmod>2024-07-13T23:52:04-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/setup/setting-up-gitlabs/</loc>
     <lastmod>2024-06-10T20:51:59-04:00</lastmod>

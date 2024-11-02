@@ -6,12 +6,20 @@
         <description>Recent content in Tags on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 13 Jul 2024 23:52:04 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>GitLabs</title>
-        <link>http://localhost:1313/tags/gitlabs/</link>
-        <pubDate>Sat, 13 Jul 2024 23:52:04 -0400</pubDate>
+        <lastBuildDate>Wed, 25 Sep 2024 16:20:36 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>GitHub</title>
+        <link>http://localhost:1313/tags/github/</link>
+        <pubDate>Wed, 25 Sep 2024 16:20:36 -0400</pubDate>
         
-        <guid>http://localhost:1313/tags/gitlabs/</guid>
+        <guid>http://localhost:1313/tags/github/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>GitLab</title>
+        <link>http://localhost:1313/tags/gitlab/</link>
+        <pubDate>Wed, 25 Sep 2024 16:20:36 -0400</pubDate>
+        
+        <guid>http://localhost:1313/tags/gitlab/</guid>
         <description></description>
         </item>
         <item>
