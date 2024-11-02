@@ -133,3 +133,18 @@ https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp
 FOLLOW THIS
 Will probably have to make a new project and correctly outline those steps
 https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html
+
+---
+
+# Moving away from Gitlab
+Originally, my plan was to use a github repository with gitlab pages as a means to better learn and understand each. However, after understanding the pipeline structure between a github repo and gitlab pages, I decided to move away from this method. Gitlab does not allow for pull mirroring without a paid tier, and I saw no benefit in using it if I weren't planning to use gitlab fully. I am merging the current changes, then I will create a branch to remove the gitlab related content and move forward with a different static hosting method.
+
+---
+
+# Static site hosting options
+Check options. Consider github pages first since it's the most direct. Maybe deploy to a few sites as a learning exercise.
+
+https://gohugo.io/hosting-and-deployment/
+https://developers.cloudflare.com/
+https://pages.github.com/
+https://www.netlify.com/
