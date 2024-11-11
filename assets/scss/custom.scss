@@ -1,4 +1,4 @@
-.article-content {
+.article-content { // Customize article content
 
     h1,
     h2,
@@ -23,4 +23,8 @@
         width: calc(100% + var(--card-padding) * 1);
     }
     
+}
+
+#i18n-switch { // Hide language selector
+    visibility: hidden;
 }
