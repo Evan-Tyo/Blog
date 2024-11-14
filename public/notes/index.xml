@@ -384,25 +384,28 @@ Will probably have to make a new project and correctly outline those steps
 &lt;p&gt;Remove Language selector&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Update Information&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;Update Links&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Update About page&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update Links page&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Find Additional Icons&lt;/p&gt;
+&lt;p&gt;Update Link Icons&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Include Github&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Include LinkedIn&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove Search Page from Nav&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Information&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update About page&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Links page&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Include Resume?&lt;/p&gt;
@@ -444,6 +447,11 @@ Will probably have to make a new project and correctly outline those steps
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Buy Domain&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;hugo-stack-theme&#34;&gt;Hugo Stack Theme
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/CaiJimmy/hugo-theme-stack&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>

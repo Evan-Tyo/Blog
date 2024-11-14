@@ -271,4 +271,4 @@ A comprehensive list of page references
 - [Install Scoop](https://scoop.sh/)
 - [Install Git](https://www.git-scm.com/download/win)
 
-[^1]: The chosen theme can easily be changed later.  I changed my theme to the diary theme, but I'll have a separate post explaining that process.  To start, it's worth getting familiar with the ananke theme.
+[^1]: The chosen theme can be changed later. To start, it's worth getting familiar with the default ananke theme.

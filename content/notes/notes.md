@@ -155,14 +155,15 @@ https://www.netlify.com/
 - Update Picture
 - Update Site Name
 - Remove Language selector
-
-- Update Information
 - Update Links
-- Update About page
-- Update Links page
-- Find Additional Icons
+- Update Link Icons
 - Include Github
 - Include LinkedIn
+- Remove Search from Menu
+
+- Update Information
+- Update About page
+- Update Links page
 - Include Resume?
 
 # Small Updates:
@@ -187,3 +188,6 @@ https://www.netlify.com/
     - https://pages.github.com/
     - https://www.netlify.com/
 - Buy Domain
+
+# Hugo Stack Theme
+- https://github.com/CaiJimmy/hugo-theme-stack
