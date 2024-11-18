@@ -167,8 +167,11 @@ https://www.netlify.com/
 - Include Resume?
 
 # Small Updates:
-- Change "Setup" to "Site Setup"
-- Change "Old" to "Legacy"
+- Change "old" to "legacy"
+- Add "gitlab" under "legacy"
+- Delete completion dates file
+
+- Change "setup" to < something >
 
 # Hmm:
 - Consider how to document general information
