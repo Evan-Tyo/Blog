@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Overview\rGeneral notes, ideas, and an information dump. Page Ideas\rChanging the theme Include theme info and what failed / worked. Add information for hugo-theme-stack and updating the scss. Exploring HTML To set up html needed to add goldmark.\\ Project Ideas\rMock Discord A webpage with the ability to make a new category, a new channel, and new posts. Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.">
-<title>Notes</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Overview\rDocumenting my process in setting up a GitLab account, creating a Group, and creating a Project. Includes additional information on Groups and Projects. Prerequisites\rNavigate to the host on gitlab page. Have familiarity with Git versioning Complete Hugo Quick Start Completing the hugo quick start tutorial will produce a local, ready to publish, Hugo website. If this has not been completed, take a look at my Setting Up Hugo page for more information.">
+<title>Setting Up GitLab</title>
 
-<link rel='canonical' href='http://localhost:1313/notes/notes/'>
+<link rel='canonical' href='http://localhost:1313/legacy/gitlab/setting-up-gitlabs/'>
 
-<link rel="stylesheet" href="/scss/style.min.29f650717180e85c42b4d97ac4a84c41b2e51c4b9fe0ba1a81c178847f0ee1ad.css"><meta property='og:title' content="Notes">
-<meta property='og:description' content="Overview\rGeneral notes, ideas, and an information dump. Page Ideas\rChanging the theme Include theme info and what failed / worked. Add information for hugo-theme-stack and updating the scss. Exploring HTML To set up html needed to add goldmark.\\ Project Ideas\rMock Discord A webpage with the ability to make a new category, a new channel, and new posts. Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.">
-<meta property='og:url' content='http://localhost:1313/notes/notes/'>
+<link rel="stylesheet" href="/scss/style.min.29f650717180e85c42b4d97ac4a84c41b2e51c4b9fe0ba1a81c178847f0ee1ad.css"><meta property='og:title' content="Setting Up GitLab">
+<meta property='og:description' content="Overview\rDocumenting my process in setting up a GitLab account, creating a Group, and creating a Project. Includes additional information on Groups and Projects. Prerequisites\rNavigate to the host on gitlab page. Have familiarity with Git versioning Complete Hugo Quick Start Completing the hugo quick start tutorial will produce a local, ready to publish, Hugo website. If this has not been completed, take a look at my Setting Up Hugo page for more information.">
+<meta property='og:url' content='http://localhost:1313/legacy/gitlab/setting-up-gitlabs/'>
 <meta property='og:site_name' content='Evan Tyo'>
-<meta property='og:type' content='article'><meta property='article:section' content='Notes' /><meta property='article:published_time' content='2024-06-05T23:24:48-04:00'/><meta property='article:modified_time' content='2024-06-05T23:24:48-04:00'/>
-<meta name="twitter:title" content="Notes">
-<meta name="twitter:description" content="Overview\rGeneral notes, ideas, and an information dump. Page Ideas\rChanging the theme Include theme info and what failed / worked. Add information for hugo-theme-stack and updating the scss. Exploring HTML To set up html needed to add goldmark.\\ Project Ideas\rMock Discord A webpage with the ability to make a new category, a new channel, and new posts. Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.">
+<meta property='og:type' content='article'><meta property='article:section' content='Legacy' /><meta property='article:tag' content='GitLab' /><meta property='article:published_time' content='2024-06-10T20:51:59-04:00'/><meta property='article:modified_time' content='2024-06-10T20:51:59-04:00'/>
+<meta name="twitter:title" content="Setting Up GitLab">
+<meta name="twitter:description" content="Overview\rDocumenting my process in setting up a GitLab account, creating a Group, and creating a Project. Includes additional information on Groups and Projects. Prerequisites\rNavigate to the host on gitlab page. Have familiarity with Git versioning Complete Hugo Quick Start Completing the hugo quick start tutorial will produce a local, ready to publish, Hugo website. If this has not been completed, take a look at my Setting Up Hugo page for more information.">
   
 
 
@@ -290,31 +290,48 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#overview">Overview</a></li>
-    <li><a href="#page-ideas">Page Ideas</a></li>
-    <li><a href="#project-ideas">Project Ideas</a></li>
-    <li><a href="#references">References</a></li>
-    <li><a href="#configure-cicd">Configure CI/CD</a></li>
-    <li><a href="#-my-group-and-project-choices-">-My Group and Project Choices-</a>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#creating-a-gitlab-account">Creating A GitLab Account</a>
       <ol>
         <li>
           <ol>
-            <li><a href="#-my-group-choices-">-My Group Choices-</a></li>
-            <li><a href="#-my-project-choices-">-My Project Choices-</a></li>
+            <li><a href="#account-creation">Account Creation</a></li>
           </ol>
         </li>
       </ol>
     </li>
-    <li><a href="#hugo-theme-stack">Hugo Theme Stack</a></li>
-    <li><a href="#app-creation">App Creation</a></li>
-    <li><a href="#stuff">Stuff</a></li>
-    <li><a href="#moving-away-from-gitlab">Moving away from Gitlab</a></li>
-    <li><a href="#static-site-hosting-options">Static site hosting options</a></li>
-    <li><a href="#site-cleanup">Site Cleanup:</a></li>
-    <li><a href="#small-updates">Small Updates:</a></li>
-    <li><a href="#hmm">Hmm:</a></li>
-    <li><a href="#additional-docs">Additional Docs:</a></li>
-    <li><a href="#live-deployment">Live Deployment:</a></li>
-    <li><a href="#hugo-stack-theme">Hugo Stack Theme</a></li>
+    <li><a href="#understanding-groups-and-projects">Understanding Groups and Projects</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#groups">Groups</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#creating-groups-and-projects">Creating Groups and Projects</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#group-creation">Group Creation</a></li>
+            <li><a href="#project-creation">Project Creation</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#references">References</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#hugo">Hugo</a></li>
+            <li><a href="#gitlab-documents">GitLab Documents</a></li>
+            <li><a href="#gitlab-groups--projects">GitLab Groups / Projects</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -334,7 +351,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/notes/notes/">Notes</a>
+            <a href="/legacy/gitlab/setting-up-gitlabs/">Setting Up GitLab</a>
         </h2>
     
         
@@ -356,7 +373,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jun 05, 2024</time>
+                <time class="article-time--published">Jun 10, 2024</time>
             </div>
         
 
@@ -371,7 +388,7 @@
 
 
                 <time class="article-time--reading">
-                    4 minute read
+                    5 minute read
                 </time>
             </div>
         
@@ -388,293 +405,256 @@
     
     <hr>
 <h1 id="overview">Overview
-</h1><p>General notes, ideas, and an information dump.</p>
+</h1><p>Documenting my process in setting up a GitLab account, creating a Group, and creating a Project.<br>
+Includes additional information on Groups and Projects.</p>
 <hr>
-<h1 id="page-ideas">Page Ideas
-</h1><p><strong>Changing the theme</strong>
-Include theme info and what failed / worked.<br>
-Add information for hugo-theme-stack and updating the scss.</p>
-<p><strong>Exploring HTML</strong>
-To set up html needed to add goldmark.\</p>
-<hr>
-<h1 id="project-ideas">Project Ideas
-</h1><p><strong>Mock Discord</strong>
-A webpage with the ability to make a new category, a new channel, and new posts.<br>
-Nothing fancy but I think that’s a good simple showcase of CRUD functionality and full stack development.</p>
-<hr>
-<h1 id="references">References
-</h1><ul>
-<li><a class="link" href="https://gohugo.io/content-management/cross-references/"  target="_blank" rel="noopener"
-    >https://gohugo.io/content-management/cross-references/</a></li>
-<li><a class="link" href="https://cheatsheets.zip/html"  target="_blank" rel="noopener"
-    >https://cheatsheets.zip/html</a></li>
-<li><a class="link" href="https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195/2"  target="_blank" rel="noopener"
-    >https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195/2</a></li>
-<li><a class="link" href="https://stackoverflow.com/questions/33191744/how-to-add-new-line-in-markdown-presentation"  target="_blank" rel="noopener"
-    >https://stackoverflow.com/questions/33191744/how-to-add-new-line-in-markdown-presentation</a></li>
-<li><a class="link" href="https://stackoverflow.com/questions/20037279/inserting-tab-spaces-to-align-text-vertically-in-html-css"  target="_blank" rel="noopener"
-    >https://stackoverflow.com/questions/20037279/inserting-tab-spaces-to-align-text-vertically-in-html-css</a></li>
-<li><a class="link" href="https://jsfiddle.net/nzrHn/1/"  target="_blank" rel="noopener"
-    >https://jsfiddle.net/nzrHn/1/</a></li>
-<li><a class="link" href="https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195"  target="_blank" rel="noopener"
-    >https://discourse.gohugo.io/t/html-code-in-md-files-not-working/22195</a></li>
+<h1 id="prerequisites">Prerequisites
+</h1><p>Navigate to the <a class="link" href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/"  target="_blank" rel="noopener"
+    >host on gitlab page</a>.</p>
+<ul>
+<li>Have familiarity with Git versioning</li>
+<li>Complete <a class="link" href="https://gohugo.io/getting-started/quick-start/"  target="_blank" rel="noopener"
+    >Hugo Quick Start</a></li>
 </ul>
+<p>Completing the hugo quick start tutorial will produce a local, ready to publish, Hugo website.<br>
+If this has not been completed, take a look at my <a class="link" href="http://localhost:1313/setup/setting-up-hugo/" >Setting Up Hugo</a> page for more information.</p>
 <hr>
-<h1 id="configure-cicd">Configure CI/CD
-</h1><p>The resources being created here will be made to connect a GitHub repository to GitLabs.<br>
-This will utilize a GitLabs CI/CD project in order to make that connection.</p>
-<blockquote>
-<p>I already have a GitHub account with multiple repositories created.<br>
-I don&rsquo;t plan to create any docs on setting that up, but if I do I&rsquo;ll reference that here.<br>
-Either way I suggest setting up a GitHub account and aiming to use it frequently.</p>
-</blockquote>
-<ol>
-<li>Create a Group</li>
-<li>Create a Project</li>
-<li>Connect With Personal Access Token<br>
-<a class="link" href="https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html"  target="_blank" rel="noopener"
-    >https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html</a></li>
-<li>Configure GitLab CI/CD<br>
-Can skip setting up runners since using GitLab.com<br>
-<a class="link" href="https://docs.gitlab.com/ee/ci/quick_start/index.html"  target="_blank" rel="noopener"
-    >https://docs.gitlab.com/ee/ci/quick_start/index.html</a></li>
-<li>BaseURL</li>
-<li>Push your Hugo website to GitLab</li>
-<li>Wait for your page to build</li>
-</ol>
+<h1 id="creating-a-gitlab-account">Creating A GitLab Account
+</h1><p>Navigate to the <a class="link" href="https://gitlab.com/"  target="_blank" rel="noopener"
+    >gitlab home page</a>.</p>
+<h3 id="account-creation">Account Creation
+</h3><ul>
+<li>Click the <span class="direction-color">Sign in</span> button on the top right</li>
+<li>Click the <span class="direction-color">Register now</span> button under &ldquo;Sign in&rdquo;</li>
+<li>Enter your account information and click the <span class="direction-color">Register</span> button</li>
+<li>Locate the code sent to your registered email</li>
+<li>Enter the code to complete account creation</li>
+</ul>
+<p>You should now have an account set up with GitLab.</p>
+<p>GitLab will immediately ask if you want to create, or import, a new Group and a new Project.<br>
+Groups and Projects will be explained in more detail in the following sections.</p>
 <hr>
-<h1 id="-my-group-and-project-choices-">-My Group and Project Choices-
-</h1><p>Was considering adding these into the setting up gitlabs page, but I might remove them entirely.</p>
-<h3 id="-my-group-choices-">-My Group Choices-
-</h3><p>These are the choices I made when creating my Group.</p>
+<h1 id="understanding-groups-and-projects">Understanding Groups and Projects
+</h1><p>This section is meant to briefly explain what Groups and Projects are.</p>
+<h3 id="groups">Groups
+</h3><p>Groups are used to categorize one or more projects together that have a shared purpose.</p>
+<p>There are many different ways to structure a group, but there is no single correct way.<br>
+Here are a few common group structures:</p>
+<ul>
+<li><u>Simple</u>: One group including all projects</li>
+<li><u>Team</u>: Each team has their own group</li>
+<li><u>Client</u>: Each client has their own group</li>
+<li><u>Functionality</u>: Each functionality has it&rsquo;s own group</li>
+</ul>
+<p>Using groups allows for:</p>
+<ul>
+<li>Managing permissions for projects included in the group</li>
+<li>Viewing all issues, requests, and analytics for projects in the group</li>
+<li>Communicate with all group members within a group</li>
+<li>Creating subgroups for additional structuring</li>
+</ul>
+<p>There are two options for creating a group:</p>
+<ul>
+<li>Create Group: Design a group from scratch</li>
+<li>Import Group: Pull in a group from another GitLab instance</li>
+</ul>
+<p>For more details involving groups navigate to the <a class="link" href="https://docs.gitlab.com/ee/user/group/"  target="_blank" rel="noopener"
+    >GitLab Groups</a> page.</p>
+<h3 id="projects">Projects
+</h3><p>Projects are used to host the data related to the associated development work.</p>
+<p>They provide a variety of great benefits to help streamline the development process.<br>
+Using projects allows for:</p>
+<ul>
+<li>Collaboration between project members</li>
+<li>Version control for more secure releases</li>
+<li>Project management to assist with planning</li>
+<li>The use of a dedicated environment</li>
+</ul>
+<p>While all projects have the same functionality, there are different ways to create a project.<br>
+A few ways to create a project are by:</p>
+<ul>
+<li>Creating a blank project</li>
+<li>Using a template</li>
+<li>Utilizing Git push</li>
+<li>Including SHA-256 hashing</li>
+</ul>
+<p>For more general details involving projects navigate to the <a class="link" href="https://docs.gitlab.com/ee/user/get_started/get_started_projects.html"  target="_blank" rel="noopener"
+    >GitLab Projects</a> page.<br>
+Additionally, the <a class="link" href="https://docs.gitlab.com/ee/user/project/index.html"  target="_blank" rel="noopener"
+    >GitLab Create a Project</a> page provides more information on project creation.</p>
+<hr>
+<h1 id="creating-groups-and-projects">Creating Groups and Projects
+</h1><p>Navigate back to the <a class="link" href="https://gitlab.com/"  target="_blank" rel="noopener"
+    >gitlab home page</a>.</p>
+<p>Sign in, if not already, and the page will redirect to the account&rsquo;s projects page.<br>
+This is where Groups and Projects can be created.</p>
+<h3 id="group-creation">Group Creation
+</h3><p>The following steps outline my process in creating a group.\</p>
+<p>Steps to create a group:<br>
+<em>More details on each field will be listed below.</em></p>
+<ul>
+<li>Click the <span class="direction-color">Create a group</span> button</li>
+<li>Click the <span class="direction-color">Create group</span> button</li>
+<li>Choose a Group name</li>
+<li>Choose a Group URL</li>
+<li>Pick a Visibility level</li>
+<li>Add a Role</li>
+<li>Pick who will be using this group</li>
+<li>Choose what will you use this group for</li>
+<li>When finished, click the <span class="direction-color">Create group</span> button</li>
+</ul>
+<p>Brief details on each field:</p>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Field</th>
-<th>Choices</th>
+<th>Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Group Name</td>
-<td>TyoPortfolio</td>
+<td>Group name</td>
+<td>The name of the group. Some are <a class="link" href="https://docs.gitlab.com/ee/user/reserved_names.html"  target="_blank" rel="noopener"
+    >reserved names</a>.</td>
 </tr>
 <tr>
-<td>Group URL</td>
-<td><a class="link" href="https://gitlab.com/TyoPortfolio"  target="_blank" rel="noopener"
-    >https://gitlab.com/TyoPortfolio</a></td>
+<td>Group URL ( <a class="link" href="https://docs.gitlab.com/ee/user/namespace/index.html"  target="_blank" rel="noopener"
+    >Namespace</a> )</td>
+<td>The path for the group. If not specified, it will use the group name.</td>
 </tr>
 <tr>
-<td>Visibility Level</td>
-<td>Private Developer</td>
+<td><a class="link" href="https://docs.gitlab.com/ee/user/public_access.html"  target="_blank" rel="noopener"
+    >Visibility Level</a></td>
+<td>Limits who has group access. Private, Internal, or Public visibility.</td>
 </tr>
 <tr>
 <td>Add your Role</td>
-<td>Software</td>
+<td>Team Role or Job Title.</td>
 </tr>
 <tr>
 <td>Who will be using this group</td>
-<td>Just me</td>
+<td>For company, team, or personal use.</td>
 </tr>
 <tr>
 <td>What will you use this group for</td>
-<td>I want to use CI with my existing repository</td>
+<td>Choose from a selection of generalized uses.</td>
 </tr>
 </tbody>
 </table></div>
-<h3 id="-my-project-choices-">-My Project Choices-
-</h3><p>These are the choices I made when creating my Project.</p>
+<h3 id="project-creation">Project Creation
+</h3><p>The following steps outline my process in creating a project.<br>
+For my purposes, I&rsquo;ll be connecting this project to an external GitHub repository.</p>
+<p>Steps to create a project:<br>
+<em>More details on each field will be listed below.</em></p>
+<ul>
+<li>Click the <span class="direction-color">Create new project</span> button</li>
+<li>Click the <span class="direction-color">Run CI/CD for external repository</span> button</li>
+<li>Click the <span class="direction-color">Repository by URL</span> button</li>
+<li>Add a Git Repository URL</li>
+<li>Add a Username (optional)</li>
+<li>Add a Password (optional)</li>
+<li>Set a Project name</li>
+<li>Set a Project slug</li>
+<li>Provide a Project description (optional)</li>
+<li>Pick a Visibility level</li>
+<li>When finished, click the <span class="direction-color">Create project</span> button</li>
+</ul>
+<p>Brief details on each field:</p>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Field</th>
-<th>Choices</th>
+<th>Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Git repository URL</td>
-<td><a class="link" href="https://github.com/Evan-Tyo/Blog"  target="_blank" rel="noopener"
-    >https://github.com/Evan-Tyo/Blog</a></td>
+<td>For the git repository to be connected.</td>
 </tr>
 <tr>
 <td>Username</td>
-<td>Not necessary</td>
+<td>If the git repository is not public, add the username.</td>
 </tr>
 <tr>
 <td>Password</td>
-<td>Not necessary</td>
+<td>If the git repository is not public, add the password.</td>
 </tr>
 <tr>
 <td>Project name</td>
-<td>Docs</td>
+<td>The name of the group. Some are <a class="link" href="https://docs.gitlab.com/ee/user/reserved_names.html"  target="_blank" rel="noopener"
+    >reserved names</a>.</td>
 </tr>
 <tr>
-<td>Project URL</td>
-<td><a class="link" href="https://gitlab.com/TyoPortfolio/Docs"  target="_blank" rel="noopener"
-    >https://gitlab.com/TyoPortfolio/Docs</a></td>
+<td>Project URL ( <a class="link" href="https://docs.gitlab.com/ee/user/namespace/index.html"  target="_blank" rel="noopener"
+    >Namespace</a> )</td>
+<td>The path for the project. If not specified, it will use the group name.</td>
 </tr>
 <tr>
 <td>Project description</td>
-<td>Posts and documentation for projects, findings, and my personal process of work.</td>
+<td>An optional description for the project.</td>
 </tr>
 <tr>
-<td>Visibility Level</td>
-<td>Private</td>
+<td><a class="link" href="https://docs.gitlab.com/ee/user/public_access.html"  target="_blank" rel="noopener"
+    >Visibility Level</a></td>
+<td>Limits who has project access. Private, Internal, or Public visibility.</td>
 </tr>
 </tbody>
 </table></div>
 <hr>
-<h1 id="hugo-theme-stack">Hugo Theme Stack
-</h1><p>Updated hugo.toml to hugo.yaml.<br>
-Added custom.scss.<br>
-Created and added menu items.<br>
-Added categories and tags to pages.</p>
-<p><strong>To Do</strong>
-Merge links and about pages.<br>
-Update about page, site name, personal description, and img.</p>
-<p><strong>Resources</strong>
-<a class="link" href="https://stack.jimmycai.com/config/menu"  target="_blank" rel="noopener"
-    >https://stack.jimmycai.com/config/menu</a>
-<a class="link" href="https://demo.stack.jimmycai.com/"  target="_blank" rel="noopener"
-    >https://demo.stack.jimmycai.com/</a>
-<a class="link" href="https://jimmycai.com/"  target="_blank" rel="noopener"
-    >https://jimmycai.com/</a></p>
-<hr>
-<h1 id="app-creation">App Creation
-</h1><p><strong>MERN stack</strong>
-<a class="link" href="https://www.mongodb.com/resources/languages/mern-stack"  target="_blank" rel="noopener"
-    >https://www.mongodb.com/resources/languages/mern-stack</a></p>
-<p><strong>MongoDB Database</strong>
-Amazon Web Services, Azure, or Google Cloud Platform.<br>
-I&rsquo;ve already worked with Azure, although it&rsquo;s been some years.<br>
-We also work with AWS some at work.<br>
-Maybe I&rsquo;ll explore GCP first.</p>
-<p>Search how to create a MongoDB database.<br>
-<a class="link" href="https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp"  target="_blank" rel="noopener"
-    >https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp</a></p>
-<hr>
-<h1 id="stuff">Stuff
-</h1><ul>
-<li>Put a ling break at the bottom of each page to section off the tags from the theme</li>
-<li>Update the css for the right column table of contents to remove so much white space between bullets</li>
-</ul>
-<p>FOLLOW THIS
-Will probably have to make a new project and correctly outline those steps
-<a class="link" href="https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html"  target="_blank" rel="noopener"
-    >https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html</a></p>
-<hr>
-<h1 id="moving-away-from-gitlab">Moving away from Gitlab
-</h1><p>Originally, my plan was to use a github repository with gitlab pages as a means to better learn and understand each. However, after understanding the pipeline structure between a github repo and gitlab pages, I decided to move away from this method. Gitlab does not allow for pull mirroring without a paid tier, and I saw no benefit in using it if I weren&rsquo;t planning to use gitlab fully. I am merging the current changes, then I will create a branch to remove the gitlab related content and move forward with a different static hosting method.</p>
-<hr>
-<h1 id="static-site-hosting-options">Static site hosting options
-</h1><p>Check options. Consider github pages first since it&rsquo;s the most direct. Maybe deploy to a few sites as a learning exercise.</p>
-<p><a class="link" href="https://gohugo.io/hosting-and-deployment/"  target="_blank" rel="noopener"
-    >https://gohugo.io/hosting-and-deployment/</a>
-<a class="link" href="https://developers.cloudflare.com/"  target="_blank" rel="noopener"
-    >https://developers.cloudflare.com/</a>
-<a class="link" href="https://pages.github.com/"  target="_blank" rel="noopener"
-    >https://pages.github.com/</a>
-<a class="link" href="https://www.netlify.com/"  target="_blank" rel="noopener"
-    >https://www.netlify.com/</a></p>
-<hr>
-<h1 id="site-cleanup">Site Cleanup:
-</h1><ul>
-<li>
-<p>Update Picture</p>
-</li>
-<li>
-<p>Update Site Name</p>
-</li>
-<li>
-<p>Remove Language selector</p>
-</li>
-<li>
-<p>Update Links</p>
-</li>
-<li>
-<p>Update Link Icons</p>
-</li>
-<li>
-<p>Include Github</p>
-</li>
-<li>
-<p>Include LinkedIn</p>
-</li>
-<li>
-<p>Remove Search from Menu</p>
-</li>
-<li>
-<p>Update Information</p>
-</li>
-<li>
-<p>Update About page</p>
-</li>
-<li>
-<p>Update Links page</p>
-</li>
-<li>
-<p>Include Resume?</p>
-</li>
-</ul>
-<h1 id="small-updates">Small Updates:
-</h1><ul>
-<li>
-<p>Change &ldquo;old&rdquo; to &ldquo;legacy&rdquo;</p>
-</li>
-<li>
-<p>Add &ldquo;gitlab&rdquo; under &ldquo;legacy&rdquo;</p>
-</li>
-<li>
-<p>Delete completion dates file</p>
-</li>
-<li>
-<p>Change &ldquo;setup&rdquo; to &lt; something &gt;</p>
-</li>
-</ul>
-<h1 id="hmm">Hmm:
-</h1><ul>
-<li>Consider how to document general information</li>
-</ul>
-<h1 id="additional-docs">Additional Docs:
-</h1><ul>
-<li>Create page for HTML integration into Hugo (goldmark)</li>
-<li>Create page for theme setup in Hugo
+<h1 id="summary">Summary
+</h1><p>In this document we:</p>
 <ul>
-<li>ananke</li>
-<li>diary</li>
-<li>hugo-theme-stack</li>
-<li>hugo.toml to hugo.yaml</li>
+<li>Created a GitLab account</li>
+<li>Briefly discussed groups and projects</li>
+<li>Created a new Group</li>
+<li>Created a new Project</li>
 </ul>
-</li>
+<p>Thank you for following along and I hope this document was helpful!</p>
+<hr>
+<h1 id="references">References
+</h1><p>A comprehensive list of page references</p>
+<h3 id="hugo">Hugo
+</h3><ul>
+<li><a class="link" href="https://gohugo.io/getting-started/quick-start/"  target="_blank" rel="noopener"
+    >Hugo Quick Start</a></li>
+<li><a class="link" href="http://localhost:1313/setup/setting-up-hugo/" >Setting Up Hugo</a></li>
 </ul>
-<h1 id="live-deployment">Live Deployment:
-</h1><ul>
-<li>Options:
-<ul>
-<li><a class="link" href="https://gohugo.io/hosting-and-deployment/"  target="_blank" rel="noopener"
-    >https://gohugo.io/hosting-and-deployment/</a></li>
-<li><a class="link" href="https://developers.cloudflare.com/"  target="_blank" rel="noopener"
-    >https://developers.cloudflare.com/</a></li>
-<li><a class="link" href="https://pages.github.com/"  target="_blank" rel="noopener"
-    >https://pages.github.com/</a></li>
-<li><a class="link" href="https://www.netlify.com/"  target="_blank" rel="noopener"
-    >https://www.netlify.com/</a></li>
+<h3 id="gitlab-documents">GitLab Documents
+</h3><ul>
+<li><a class="link" href="https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/"  target="_blank" rel="noopener"
+    >Hosting on GitLab</a></li>
+<li><a class="link" href="https://gitlab.com/"  target="_blank" rel="noopener"
+    >GitLab Home Page</a></li>
 </ul>
-</li>
-<li>Buy Domain</li>
+<h3 id="gitlab-groups--projects">GitLab Groups / Projects
+</h3><ul>
+<li><a class="link" href="https://docs.gitlab.com/ee/user/group/"  target="_blank" rel="noopener"
+    >GitLab Groups</a></li>
+<li><a class="link" href="https://docs.gitlab.com/ee/user/get_started/get_started_projects.html"  target="_blank" rel="noopener"
+    >GitLab Projects</a></li>
+<li><a class="link" href="https://docs.gitlab.com/ee/user/project/index.html"  target="_blank" rel="noopener"
+    >GitLab Create a Project</a></li>
+<li><a class="link" href="https://docs.gitlab.com/ee/user/reserved_names.html"  target="_blank" rel="noopener"
+    >Group and Project Reserved Names</a></li>
+<li><a class="link" href="https://docs.gitlab.com/ee/user/namespace/index.html"  target="_blank" rel="noopener"
+    >Group Namespace</a></li>
+<li><a class="link" href="https://docs.gitlab.com/ee/user/public_access.html"  target="_blank" rel="noopener"
+    >Group Visibility Level</a></li>
 </ul>
-<h1 id="hugo-stack-theme">Hugo Stack Theme
-</h1><ul>
-<li><a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack"  target="_blank" rel="noopener"
-    >https://github.com/CaiJimmy/hugo-theme-stack</a></li>
-</ul>
+<hr>
 
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/gitlab/">GitLab</a>
+        
+    </section>
+
 
     </footer>
 

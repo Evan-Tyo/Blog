@@ -4,12 +4,6 @@ date = 2024-06-08T21:58:02-04:00
 draft = true
 +++
 
-<style>
-.file-color {
-    color: #3067FF;
-}
-</style>
-
 ---
 
 # Overview

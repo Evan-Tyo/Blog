@@ -9,12 +9,6 @@ tags = [
 ]
 +++
 
-<style>
-.file-color {
-    color: #3067FF;
-}
-</style>
-
 ---
 
 # Overview

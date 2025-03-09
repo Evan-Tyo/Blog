@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>GitLab on Evan Tyo</title>
-        <link>http://localhost:1313/tags/gitlab/</link>
-        <description>Recent content in GitLab on Evan Tyo</description>
+        <title>Legacies on Evan Tyo</title>
+        <link>http://localhost:1313/legacy/</link>
+        <description>Recent content in Legacies on Evan Tyo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 25 Sep 2024 16:20:36 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/gitlab/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 25 Sep 2024 16:20:36 -0400</lastBuildDate><atom:link href="http://localhost:1313/legacy/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Connect Github and Gitlab</title>
         <link>http://localhost:1313/legacy/gitlab/connect-github-and-gitlab/</link>
         <pubDate>Wed, 25 Sep 2024 16:20:36 -0400</pubDate>
@@ -391,7 +391,6 @@ For my purposes, I&amp;rsquo;ll be connecting this project to an external GitHub
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitlab.com/ee/user/public_access.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Group Visibility Level&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 </description>
         </item>
         

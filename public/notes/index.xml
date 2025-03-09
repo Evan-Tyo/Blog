@@ -12,12 +12,7 @@
         <pubDate>Sat, 08 Jun 2024 21:58:02 -0400</pubDate>
         
         <guid>http://localhost:1313/notes/template/</guid>
-        <description>&lt;style&gt;
-.file-color {
-    color: #3067FF;
-}
-&lt;/style&gt;
-&lt;hr&gt;
+        <description>&lt;hr&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview
 &lt;/h1&gt;&lt;p&gt;&lt;code&gt;Information about this page&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -104,74 +99,6 @@ To be private.&lt;/p&gt;
 &lt;li&gt;Personal goals or achievements&lt;/li&gt;
 &lt;li&gt;Literally anything I feel like&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>Completion Dates</title>
-        <link>http://localhost:1313/notes/completion-dates/</link>
-        <pubDate>Sat, 08 Jun 2024 21:22:21 -0400</pubDate>
-        
-        <guid>http://localhost:1313/notes/completion-dates/</guid>
-        <description>&lt;hr&gt;
-&lt;h1 id=&#34;overview&#34;&gt;Overview
-&lt;/h1&gt;&lt;p&gt;Tracking page completion dates.&lt;br&gt;
-This does not mean pages cannot be updated later.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;5---setting-up-gitlab&#34;&gt;5 - Setting Up GitLab
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/old/setting-up-gitlabs/&#34; &gt;Setting Up GitLab&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Completion Date&lt;/th&gt;
-&lt;th&gt;7 July 2024&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;4---template&#34;&gt;4 - Template
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/notes/template/&#34; &gt;Template&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Completion Date&lt;/th&gt;
-&lt;th&gt;8 June 2024&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;3---site-nav&#34;&gt;3 - Site Nav
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/notes/site-nav/&#34; &gt;Site Nav&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Completion Date&lt;/th&gt;
-&lt;th&gt;8 June 2024&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;2---setting-up-hugo&#34;&gt;2 - Setting up Hugo
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/setup/setting-up-hugo/&#34; &gt;Setting up Hugo&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Completion Date&lt;/th&gt;
-&lt;th&gt;8 June 2024&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1---markdown-example&#34;&gt;1 - Markdown Example
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/documents/markdown-example/&#34; &gt;Markdown Example&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Completion Date&lt;/th&gt;
-&lt;th&gt;7 June 2024&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;/table&gt;
-&lt;hr&gt;
 </description>
         </item>
         <item>
@@ -396,7 +323,7 @@ Will probably have to make a new project and correctly outline those steps
 &lt;p&gt;Include LinkedIn&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Remove Search Page from Nav&lt;/p&gt;
+&lt;p&gt;Remove Search from Menu&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Update Information&lt;/p&gt;
@@ -413,8 +340,18 @@ Will probably have to make a new project and correctly outline those steps
 &lt;/ul&gt;
 &lt;h1 id=&#34;small-updates&#34;&gt;Small Updates:
 &lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Change &amp;ldquo;Setup&amp;rdquo; to &amp;ldquo;Site Setup&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Change &amp;ldquo;Old&amp;rdquo; to &amp;ldquo;Legacy&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Change &amp;ldquo;old&amp;rdquo; to &amp;ldquo;legacy&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add &amp;ldquo;gitlab&amp;rdquo; under &amp;ldquo;legacy&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Delete completion dates file&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Change &amp;ldquo;setup&amp;rdquo; to &amp;lt; something &amp;gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;hmm&#34;&gt;Hmm:
 &lt;/h1&gt;&lt;ul&gt;

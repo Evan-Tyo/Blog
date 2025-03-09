@@ -9,15 +9,6 @@ tags = [
 ]
 +++
 
-<style>
-.file-color {
-    color: #3067FF;
-}
-.direction-color {
-    color: #9746DA;
-}
-</style>
-
 ---
 
 # Overview
@@ -192,3 +183,5 @@ A comprehensive list of page references
 - [Group and Project Reserved Names](https://docs.gitlab.com/ee/user/reserved_names.html)
 - [Group Namespace](https://docs.gitlab.com/ee/user/namespace/index.html)
 - [Group Visibility Level](https://docs.gitlab.com/ee/user/public_access.html)
+
+---

@@ -12,12 +12,7 @@
         <pubDate>Sat, 01 Jun 2024 16:03:07 -0400</pubDate>
         
         <guid>http://localhost:1313/setup/setting-up-hugo/</guid>
-        <description>&lt;style&gt;
-.file-color {
-    color: #3067FF;
-}
-&lt;/style&gt;
-&lt;hr&gt;
+        <description>&lt;hr&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview
 &lt;/h1&gt;&lt;p&gt;Documenting my process in setting up Hugo.&lt;br&gt;
 Includes additional information on Content Front Matter and Markdown.&lt;/p&gt;
