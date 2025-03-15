@@ -41,7 +41,7 @@ Nothing fancy but I think that’s a good simple showcase of CRUD functionality 
 
 ---
 
-# Configure CI/CD (Include this in the deploying to gitlabs page)
+# Configure CI/CD
 The resources being created here will be made to connect a GitHub repository to GitLabs.\
 This will utilize a GitLabs CI/CD project in order to make that connection.
 
@@ -51,7 +51,7 @@ Either way I suggest setting up a GitHub account and aiming to use it frequently
 
 1) Create a Group
 2) Create a Project
-3) Conect With Personal Access Token\
+3) Connect With Personal Access Token\
 https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html
 4) Configure GitLab CI/CD\
 Can skip setting up runners since using GitLab.com\
@@ -148,3 +148,49 @@ https://gohugo.io/hosting-and-deployment/
 https://developers.cloudflare.com/
 https://pages.github.com/
 https://www.netlify.com/
+
+---
+
+# Site Cleanup:
+- Update Picture
+- Update Site Name
+- Remove Language selector
+- Update Links
+- Update Link Icons
+- Include Github
+- Include LinkedIn
+- Remove Search from Menu
+
+- Update Information
+- Update About page
+- Update Links page
+- Include Resume?
+
+# Small Updates:
+- Change "old" to "legacy"
+- Add "gitlab" under "legacy"
+- Delete completion dates file
+
+- Change "setup" to < something >
+
+# Hmm:
+- Consider how to document general information
+
+# Additional Docs:
+- Create page for HTML integration into Hugo (goldmark)
+- Create page for theme setup in Hugo
+    - ananke
+    - diary
+    - hugo-theme-stack
+    - hugo.toml to hugo.yaml
+
+# Live Deployment:
+- Options:
+    - https://gohugo.io/hosting-and-deployment/
+    - https://developers.cloudflare.com/
+    - https://pages.github.com/
+    - https://www.netlify.com/
+- Buy Domain
+
+# Hugo Stack Theme
+- https://github.com/CaiJimmy/hugo-theme-stack
