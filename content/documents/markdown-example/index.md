@@ -123,13 +123,14 @@ Horizontal Rule
 ---
 
 Image\
-![Sora Standing Sprite](/img/soraStand.png)\
+![Sora Standing Sprite](img/soraStand.png)\
 Gif\
-![Sora Side Sprite](/gifs/soraRun.gif)
+![Sora Side Sprite](img/soraRun.gif)
 
 ```
-![Sora Standing Sprite](/img/soraStand.png)\
-![Sora Side Sprite](/gifs/soraRun.gif)
+/*   Structure using Leaf Bundle   */
+![Sora Standing Sprite](img/soraStand.png)\
+![Sora Side Sprite](img/soraRun.gif)
 ```
 
 ---
