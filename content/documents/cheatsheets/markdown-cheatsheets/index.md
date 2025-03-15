@@ -1,5 +1,5 @@
 +++
-title = 'Markdown Example'
+title = 'Markdown | CheatSheet'
 date = 2024-06-07T22:41:27-04:00
 draft = false
 categories = [
@@ -114,7 +114,7 @@ Horizontal Rule
 
 ---
 
-[Link]({{< ref "markdown-example" >}})
+[Link]({{< ref "markdown-cheatsheets" >}})
 
 ```
 [Link](/posts/markdown-example)

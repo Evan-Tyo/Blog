@@ -145,10 +145,10 @@ menu:
         #       icon: home
         #       newTab: false
 
-        # - identifier: old
-        #   name: Old
-        #   url: /old
-        #   weight: 5
+        # - identifier: misc
+        #   name: Misc
+        #   url: /misc
+        #   weight: 4
         #   params:
         #       icon: home
         #       newTab: false

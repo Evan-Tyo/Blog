@@ -24,7 +24,7 @@ Navigate to the [host on gitlab page](https://gohugo.io/hosting-and-deployment/h
 - Complete [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
 
 Completing the hugo quick start tutorial will produce a local, ready to publish, Hugo website.\
-If this has not been completed, take a look at my [Setting Up Hugo]({{< ref "setting-up-hugo" >}}) page for more information.
+If this has not been completed, take a look at my [Hugo | Setup]({{< ref "hugo-setup" >}}) page for more information.
 
 ---
 
@@ -170,7 +170,7 @@ A comprehensive list of page references
 
 ### Hugo
 - [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
-- [Setting Up Hugo]({{< ref "setting-up-hugo" >}})
+- [Hugo | Setup]({{< ref "hugo-setup" >}})
 
 ### GitLab Documents
 - [Hosting on GitLab](https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/)
