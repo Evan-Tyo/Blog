@@ -1,14 +1,14 @@
-+++
-title = 'Connect Github and Gitlab'
-date = 2024-09-25T16:20:36-04:00
-draft = true
-categories = [
+---
+title: 'Connect Github and Gitlab'
+date: 2024-09-25T16:20:36-04:00
+categories: [
 ]
-tags = [
+tags: [
     "GitLab",
     "GitHub"
 ]
-+++
+draft: true
+---
 
 ---
 

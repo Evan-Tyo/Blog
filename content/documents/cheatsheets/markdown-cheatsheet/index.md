@@ -1,13 +1,13 @@
-+++
-title = 'Markdown | CheatSheet'
-date = 2024-06-07T22:41:27-04:00
-draft = false
-categories = [
+---
+title: 'Markdown | Cheatsheet'
+date: 2024-06-07T22:41:27-04:00
+categories: [
 ]
-tags = [
+tags: [
     "Markdown"
 ]
-+++
+draft: false
+---
 
 ---
 
@@ -114,10 +114,13 @@ Horizontal Rule
 
 ---
 
-[Link]({{< ref "markdown-cheatsheets" >}})
+[Link]({{< ref "markdown-cheatsheet" >}})\
+[Link](/documents/cheatsheets/markdown-cheatsheet)
 
 ```
-[Link](/posts/markdown-example)
+/*   Structure using Leaf Bundle   */
+[Link]({{< ref "markdown-cheatsheet" >}})
+[Link](/documents/cheatsheets/markdown-cheatsheet)
 ```
 
 ---
@@ -227,6 +230,7 @@ Emoji :smile:
 - [Hugo Markdown Support](https://www.markdownguide.org/tools/hugo/)
 - [Commonmark Cheat Sheet](https://commonmark.org/help/)
 - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+- [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 - [Markdown Extended Syntax](https://www.markdownguide.org/extended-syntax/#subscript)
 - [Configure Markup](https://gohugo.io/getting-started/configuration-markup/#highlight)
 - [Emojis Shortcode](https://gohugo.io/quick-reference/emojis/)
