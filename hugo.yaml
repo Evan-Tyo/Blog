@@ -116,7 +116,7 @@ menu:
         - identifier: home
           name: Home
           url: /
-          weight: -100
+          weight: 1
           params:
               icon: home
               newTab: false
@@ -124,15 +124,15 @@ menu:
         - identifier: setup
           name: Setup
           url: /setup
-          weight: 1
+          weight: 2
           params:
               icon: home
               newTab: false
 
         - identifier: documents
-          name: Documents
+          name: Document
           url: /documents
-          weight: 2
+          weight: 3
           params:
               icon: home
               newTab: false
