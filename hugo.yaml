@@ -121,21 +121,29 @@ menu:
               icon: home
               newTab: false
 
-        - identifier: setup
-          name: Setup
-          url: /setup
+        - identifier: documents
+          name: Document
+          url: /documents
           weight: 2
           params:
               icon: home
               newTab: false
 
-        - identifier: documents
-          name: Document
-          url: /documents
+        - identifier: projects
+          name: Projects
+          url: /projects
           weight: 3
           params:
               icon: home
               newTab: false
+
+        # - identifier: setup
+        #   name: Setup
+        #   url: /setup
+        #   weight: 4
+        #   params:
+        #       icon: home
+        #       newTab: false
 
         # - identifier: notes
         #   name: Notes
