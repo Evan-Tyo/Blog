@@ -116,26 +116,34 @@ menu:
         - identifier: home
           name: Home
           url: /
-          weight: -100
-          params:
-              icon: home
-              newTab: false
-
-        - identifier: setup
-          name: Setup
-          url: /setup
           weight: 1
           params:
               icon: home
               newTab: false
 
         - identifier: documents
-          name: Documents
+          name: Document
           url: /documents
           weight: 2
           params:
               icon: home
               newTab: false
+
+        - identifier: projects
+          name: Projects
+          url: /projects
+          weight: 3
+          params:
+              icon: home
+              newTab: false
+
+        # - identifier: setup
+        #   name: Setup
+        #   url: /setup
+        #   weight: 4
+        #   params:
+        #       icon: home
+        #       newTab: false
 
         # - identifier: notes
         #   name: Notes
@@ -145,10 +153,10 @@ menu:
         #       icon: home
         #       newTab: false
 
-        # - identifier: old
-        #   name: Old
-        #   url: /old
-        #   weight: 5
+        # - identifier: misc
+        #   name: Misc
+        #   url: /misc
+        #   weight: 4
         #   params:
         #       icon: home
         #       newTab: false

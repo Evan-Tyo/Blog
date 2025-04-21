@@ -1,20 +1,21 @@
-+++
-title = 'Setting Up Hugo'
-date = 2024-06-01T16:03:07-04:00
-draft = false
-categories = [
+---
+title: 'Hugo | Setup'
+date: 2024-06-01T16:03:07-04:00
+categories: [
 ]
-tags = [
+tags: [
     "Hugo",
     "Markdown"
 ]
-+++
+draft: false
+---
 
 ---
 
 # Overview
 Documenting my process in setting up Hugo.\
-Includes additional information on Content Front Matter and Markdown.
+Includes additional information on Content Front Matter and Markdown.\
+This page is based on my initial setup, but things have since changed.
 
 ---
 
@@ -125,7 +126,7 @@ Check out the [Markdown Getting Started](https://www.markdownguide.org/getting-s
 
 > In Hugo we'll mostly be using Markdown.  However, using HTML is also an option.  This would allow us to use JavaScript through script tags, use CSS through style tags, handle additional formatting, and more.  By default, HTML is unavailable but we are able to use other markdown processors in order to enable it.  I'll include how I did that in a separate post.
 
-I created a [Markdown Example]({{< ref "markdown-example" >}}) page with examples of markdown formatting.
+I created a [Markdown Example]({{< ref "markdown-cheatsheet" >}}) page with examples of markdown formatting.
 
 ### Adding Markdown
 Add some markdown to the nearly created page file.\
@@ -255,7 +256,7 @@ A comprehensive list of page references
 
 ### Markdown
 - [Markdown Getting Started](https://www.markdownguide.org/getting-started/)
-- [Markdown Example]({{< ref "markdown-example" >}})
+- [Markdown Example]({{< ref "markdown-cheatsheet" >}})
 - [CommonMark Specification](https://spec.commonmark.org/)
 - [CommonMark Live Testing Tool](https://spec.commonmark.org/dingus/)
 

@@ -1,8 +1,8 @@
-+++
-title = 'Notes'
-date = 2024-06-05T23:24:48-04:00
-draft = true
-+++
+---
+title: 'Notes'
+date: 2024-06-05T23:24:48-04:00
+draft: true
+---
 
 ---
 
