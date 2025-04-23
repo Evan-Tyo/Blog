@@ -1,7 +1,8 @@
 ---
-title: 'Template'
-date: 2024-06-08T21:58:02-04:00
+title: 'Hugo | Themes'
+date: 2025-04-21T19:45:04-04:00
 categories: [
+    "Hugo"
 ]
 tags: [
     "draft"

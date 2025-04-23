@@ -121,7 +121,7 @@ menu:
               icon: home
               newTab: false
 
-        - identifier: documents
+        - identifier: document
           name: Document
           url: /documents
           weight: 2
@@ -129,9 +129,9 @@ menu:
               icon: home
               newTab: false
 
-        - identifier: projects
-          name: Projects
-          url: /projects
+        - identifier: battleship
+          name: Battleship | Project
+          url: /battleship
           weight: 3
           params:
               icon: home
@@ -202,3 +202,7 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+
+caches:
+  images:
+    dir: :cacheDir/images

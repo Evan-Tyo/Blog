@@ -4,8 +4,6 @@ date: 2024-09-25T16:20:36-04:00
 categories: [
 ]
 tags: [
-    "GitLab",
-    "GitHub"
 ]
 draft: true
 ---
