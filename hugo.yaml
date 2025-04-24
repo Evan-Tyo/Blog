@@ -2,7 +2,7 @@ baseurl: https://tyotalks.org/
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 10
-title: Tyo Talks
+title: Evan Tyo
 enableEmoji: true
 
 # Theme i18n support
@@ -190,6 +190,13 @@ markup:
         renderer:
             ## Set to true if you have HTML content inside Markdown
             unsafe: true
+        renderHooks:
+            image:
+                enableDefault: true
+        parser:
+            attribute:
+                block: true
+            wrapStandAloneImageWithinParagraph: true
     tableOfContents:
         endLevel: 4
         ordered: true

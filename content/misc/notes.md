@@ -102,3 +102,15 @@ Use Github pages to start
 - https://github.com/CaiJimmy/hugo-theme-stack
 
 ---
+
+# Goldmark image updates
+- https://gohugo.io/render-hooks/images/#default
+- https://tracknut.ca/tech/markdown-image-handling/
+- https://github.com/gohugoio/hugo/releases/tag/v0.108.0
+
+# GO HUGO WEBSITE REPO
+- https://github.com/gohugoio/hugoDocs/
+- https://gohugo.io/host-and-deploy/host-on-github-pages/
+- https://gohugo.io/configuration/caches/
+- https://gohugo.io/contribute/documentation/#shortcodes
+- https://github.com/Evan-Tyo/Blog/settings/pages

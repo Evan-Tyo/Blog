@@ -2,7 +2,8 @@
 title: 'Hugo | Deployment'
 date: 2025-04-21T19:42:43-04:00
 categories: [
-    "Hugo"
+    "Hugo",
+    "GitHub"
 ]
 tags: [
     "draft"
@@ -16,7 +17,8 @@ draft: true
 Documenting my process in deploying my Hugo site.\
 GitHub Pages will be used for this deployment process.
 
-I will be following Hugo's [Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/) Guide.
+I will be following Hugo's [Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/) Guide.\
+For my examples I'll be using hugo.yaml.
 
 ---
 
@@ -45,36 +47,237 @@ Follow the steps below:
 
 This will automatically update the repository.
 
----
-
-# Change the image cache
-In the local repository navigate to your [hugo.yaml](https://github.com/Evan-Tyo/Blog/blob/main/hugo.yaml) file.
-
-### Image cache update
-As a prerequisite, the image cache directory location will need to be updated.
-
-In 
-
-### Subsection 2
-`Content`
+![Build and Deployment Location](img/buildAndDeployment.png)
+{class="build-and-deployment-image-class"}
 
 ---
 
-# Create the Hugo workflow
-A Hugo 
+# Update the Hugo caches setting
+The caches images directory setting will need an update.\
+In the local repository navigate to your hugo site configuration file.
 
-### Image cache update
-As a prerequisite, the image cache directory location will need to be updated.
+### Default caches setting value 
+The default setting value is shown below:
 
-In 
+```
+caches:
+    images:
+        dir: :resourceDir/_gen
+```
 
-### Subsection 2
-`Content`
+This setting may not be part of your hugo site configuration file, but it will still show as default.\
+To check what the current setting value is, run the following command:
+
+```
+hugo config
+```
+
+The command will display every setting in your hugo config.\
+Find the caches section to see what that default value is:
+
+![Caches Setting Default](img/cachesImagesDirectoryDefaultSettingValue.png)
+{class="caches-settings-image-class"}
+
+### Update caches setting value
+To update the setting value, add the following to the config:
+
+```
+caches:
+    images:
+        dir: :cacheDir/images
+```
+
+Save the config, and run the ``` hugo config ``` command again to check the new setting value:
+
+![Caches Setting Updated](img/cachesImagesDirectoryUpdatedSettingValue.png)
+{class="caches-settings-image-class"}
+
+More information on the caches settings can be found at the [Configure file caches](https://gohugo.io/configuration/caches/) page.
+
+<!-- {{< code-toggle file=hugo >}}
+    [caches.images]
+    dir = ":resourceDir/_gen"
+{{< /code-toggle >}} -->
+
+---
+
+# Setup the Hugo workflow
+To deploy the site to GitHub pages, a Hugo config file will be added to a workflow directory.
+
+### GitHub Workflows
+Workflows are yaml config files used to trigger jobs for a project repository.\
+Jobs define a series of steps to be executed, and can utilize actions to reduce repeatable code.
+
+More information on GitHub Workflows and GitHub Actions can be found below:
+- [GitHub Workflows](https://docs.github.com/en/actions/writing-workflows/about-workflows)
+- [GitHub Actions](https://docs.github.com/en/actions/about-github-actions/understanding-github-actions)
+
+### Create the workflow
+At the root of the project create a ``` .github/workflows ``` directory with the following command:
+
+```
+mkdir -p .github/workflows
+```
+
+Now, create a ``` hugo.yaml ``` file within that directory with the following command:
+
+```
+touch .github/workflows/hugo.yaml
+```
+
+### Populate the workflow
+Paste the below YAML into the newly created file.
+
+```
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.145.0
+      HUGO_ENVIRONMENT: production
+      TZ: America/Los_Angeles
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Cache Restore
+        id: cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ github.run_id }}
+          restore-keys:
+            hugo-
+      - name: Configure Git
+        run: git config core.quotepath false
+      - name: Build with Hugo
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Cache Save
+        id: cache-save
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ${{ runner.temp }}/hugo_cache
+          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+### Check the Hugo version
+I recommend using the same version of Hugo both locally and in the workflow.\
+This can be beneficial in keeping behavior consistent across different environments.
+
+To check the local version of Hugo, run the following:
+
+```
+hugo version
+```
+
+Consider updating your local version, or the workflow version, to match the two.
+
+---
+
+### Push the changes
+Create a commit and push these changes to your GitHub repository.\
+The following commands can be ran:
+
+```
+git add .
+git commit -m "Create hugo.yaml"
+git push
+```
+
+Running these commands will
+- Stage every file changes
+- Commit those staged changes using the commit message
+- Push the committed changes to the remote repository
+
+---
+
+# Check GitHub Actions
+Some Information
+
+---
+
+# Navigate to the Hugo static website
+Some Information
 
 ---
 
 # Summary
-`Summary list of this page`
+In this document we:
+- Updated the GitHub repo pages source
+- Updated the Hugo config caches setting value
+- Briefly explained GitHub workflows
+- Created the Hugo workflow file for GitHub
+- Pushed the new file and changes
+- Checked GitHub Actions
+- Navigated to the Hugo static site
+
+Thank you for following along and I hope this document was helpful.
 
 ---
 
@@ -86,6 +289,9 @@ A comprehensive list of page references
 - [Create a GitHub Account](https://github.com/)
 - [Create a GitHub Repository](https://github.com/new)
 - [GitHub's Quickstart Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories)
+- [GitHub Workflows](https://docs.github.com/en/actions/writing-workflows/about-workflows)
+- [GitHub Actions](https://docs.github.com/en/actions/about-github-actions/understanding-github-actions)
 
 ### Hugo
 - [Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/)
+- [Configure file caches](https://gohugo.io/configuration/caches/)
