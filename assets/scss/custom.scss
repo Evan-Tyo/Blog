@@ -36,3 +36,40 @@
 .direction-color {
     color: #9746DA;
 }
+
+.build-and-deployment-image-class {
+    .gallery {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.caches-settings-image-class {
+    .gallery {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.widget--toc #TableOfContents li {
+    margin: 10px;
+}
+
+.widget--toc #TableOfContents li ol {
+    margin-top: -3px;
+    margin-bottom: -1px;
+}
+
+// .shortcode-code {
+//     background-color: green;
+// }
+
+// ol#main-menu.menu {
+//     li:nth-child(1) + li:nth-child(2)::before {
+//         content: '';
+//         display: block;
+//         height: 5px;
+//         background: orange;
+//     }
+//     background-color: transparent;
+// }

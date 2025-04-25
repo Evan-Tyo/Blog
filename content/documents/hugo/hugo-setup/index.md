@@ -2,9 +2,9 @@
 title: 'Hugo | Setup'
 date: 2024-06-01T16:03:07-04:00
 categories: [
+    "Hugo"
 ]
 tags: [
-    "Hugo",
     "Markdown"
 ]
 draft: false
@@ -13,7 +13,7 @@ draft: false
 ---
 
 # Overview
-Documenting my process in setting up Hugo.\
+Documenting my process in setting up my Hugo site.\
 Includes additional information on Content Front Matter and Markdown.\
 This page is based on my initial setup, but things have since changed.
 
@@ -232,7 +232,7 @@ In this document we:
 - Configured the site
 - Published the site
 
-Thank you for following along and I hope this document was helpful!
+Thank you for following along and I hope this document was helpful.
 
 ---
 

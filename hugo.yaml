@@ -2,7 +2,7 @@ baseurl: https://tyotalks.org/
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 10
-title: Tyo Talks
+title: Evan Tyo
 enableEmoji: true
 
 # Theme i18n support
@@ -121,7 +121,7 @@ menu:
               icon: home
               newTab: false
 
-        - identifier: documents
+        - identifier: document
           name: Document
           url: /documents
           weight: 2
@@ -129,9 +129,9 @@ menu:
               icon: home
               newTab: false
 
-        - identifier: projects
-          name: Projects
-          url: /projects
+        - identifier: battleship
+          name: Battleship | Project
+          url: /battleship
           weight: 3
           params:
               icon: home
@@ -190,6 +190,13 @@ markup:
         renderer:
             ## Set to true if you have HTML content inside Markdown
             unsafe: true
+        renderHooks:
+            image:
+                enableDefault: true
+        parser:
+            attribute:
+                block: true
+            wrapStandAloneImageWithinParagraph: true
     tableOfContents:
         endLevel: 4
         ordered: true
@@ -202,3 +209,7 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+
+caches:
+  images:
+    dir: :cacheDir/images
