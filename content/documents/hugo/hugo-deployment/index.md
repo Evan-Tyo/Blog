@@ -257,13 +257,34 @@ Running these commands will
 
 ---
 
-# Check GitHub Actions
-Some Information
+# Access the deployed site
+When the workflow event triggers, the workflow jobs will start running.\
+If your branch is set to the main branch then the jobs will only trigger when pushed to main.
 
----
+> I have been branching off the main branch for all of my changes, so my workflow will not trigger until I merge my branch into the main branch.
 
-# Navigate to the Hugo static website
-Some Information
+Once the workflow jobs have completed, the static site will be live.
+
+### Locate the static site link
+The link will be attached to the workflow build action.\
+In order to locate it, follow these steps:
+
+- Navigate to the GitHub repository
+- In the top menu, go to Actions
+- There should be a workflow in progress colored orange
+- Once the workflow is complete it will be colored green
+- Click into that workflow
+- Click the static site link listed until "deploy"
+
+( placeholder pictures )
+
+Now you should have access to the live site.\
+Whenever new changes are pushed to the specified branch:
+
+- The workflow will trigger
+- The build will start
+- The changes will then be deployed
+- The site will be updated
 
 ---
 
@@ -274,7 +295,6 @@ In this document we:
 - Briefly explained GitHub workflows
 - Created the Hugo workflow file for GitHub
 - Pushed the new file and changes
-- Checked GitHub Actions
 - Navigated to the Hugo static site
 
 Thank you for following along and I hope this document was helpful.
