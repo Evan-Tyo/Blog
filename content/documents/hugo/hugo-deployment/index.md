@@ -2,13 +2,12 @@
 title: 'Hugo | Deployment'
 date: 2025-04-21T19:42:43-04:00
 categories: [
-    "Hugo",
-    "GitHub"
+    "Hugo"
 ]
 tags: [
-    "draft"
+    "GitHub"
 ]
-draft: true
+draft: false
 ---
 
 ---
