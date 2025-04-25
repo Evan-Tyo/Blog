@@ -275,7 +275,14 @@ In order to locate it, follow these steps:
 - Click into that workflow
 - Click the static site link listed until "deploy"
 
-( placeholder pictures )
+![Workflow in Progress](img/workflow-building.png)
+{class="workflow-image-class"}
+
+![Workflow Completed](img/workflow-successful.png)
+{class="workflow-image-class"}
+
+![Deploy Link Location](img/workflow-deploy-link.png)
+{class="workflow-image-class"}
 
 Now you should have access to the live site.\
 Whenever new changes are pushed to the specified branch:
