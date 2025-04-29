@@ -47,7 +47,7 @@ Follow the steps below:
 This will automatically update the repository.
 
 ![Build and Deployment Location](img/buildAndDeployment.png)
-{class="build-and-deployment-image-class"}
+{class="custom-image-size-class"}
 
 ---
 
@@ -75,7 +75,7 @@ The command will display every setting in your hugo config.\
 Find the caches section to see what that default value is:
 
 ![Caches Setting Default](img/cachesImagesDirectoryDefaultSettingValue.png)
-{class="caches-settings-image-class"}
+{class="custom-image-size-class"}
 
 ### Update caches setting value
 To update the setting value, add the following to the config:
@@ -89,7 +89,7 @@ caches:
 Save the config, and run the ``` hugo config ``` command again to check the new setting value:
 
 ![Caches Setting Updated](img/cachesImagesDirectoryUpdatedSettingValue.png)
-{class="caches-settings-image-class"}
+{class="custom-image-size-class"}
 
 More information on the caches settings can be found at the [Configure file caches](https://gohugo.io/configuration/caches/) page.
 
@@ -276,13 +276,13 @@ In order to locate it, follow these steps:
 - Click the static site link listed until "deploy"
 
 ![Workflow in Progress](img/workflow-building.png)
-{class="workflow-image-class"}
+{class="custom-image-size-class"}
 
 ![Workflow Completed](img/workflow-successful.png)
-{class="workflow-image-class"}
+{class="custom-image-size-class"}
 
 ![Deploy Link Location](img/workflow-deploy-link.png)
-{class="workflow-image-class"}
+{class="custom-image-size-class"}
 
 Now you should have access to the live site.\
 Whenever new changes are pushed to the specified branch:
