@@ -30,6 +30,10 @@ Features:
 - Filter options to allow for filtering on characters, abilities, roles, etc.
 - Tables for visualization of data
 
+Considerations:
+- Character calculations for health, damage, ability power, etc.
+- Clean UI similar to the OW in game UI
+
 ---
 
 # Planning

@@ -24,7 +24,7 @@ For my examples I'll be using hugo.yaml.
 # Prerequisites
 In order to deploy to GitHub pages a few things will need to be completed.
 
-- [Setup a Hugo site]({{< ref "hugo-setup" >}})
+- [Hugo | Setup]({{< ref "hugo-setup" >}})
 - [Create a GitHub Account](https://github.com/)
 - [Create a GitHub Repository](https://github.com/new)
 - Push the local hugo project to the GitHub repository
@@ -302,8 +302,6 @@ In this document we:
 - Created the Hugo workflow file for GitHub
 - Pushed the new file and changes
 - Navigated to the Hugo static site
-
-Thank you for following along and I hope this document was helpful.
 
 ---
 

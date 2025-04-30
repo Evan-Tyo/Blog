@@ -232,8 +232,6 @@ In this document we:
 - Configured the site
 - Published the site
 
-Thank you for following along and I hope this document was helpful.
-
 ---
 
 # References
