@@ -14,13 +14,12 @@ draft: true
 ---
 
 # Overview
-Documenting and learning PostgreSQL.
+Downloading, installing, and documenting PostgreSQL introductory content.
 
 ---
 
-# Download and install
-Process in downloading and installing PostgreSQL.\
-These steps will also include downloading pgAdmin, a PostgreSQL tool.
+# Setup
+Process for downloading and installing PostgreSQL. These steps will also include downloading pgAdmin, a PostgreSQL tool.
 
 ### Download PostgreSQL
 Navigate to the [PostgreSQL Website](https://www.postgresql.org/).
@@ -60,7 +59,19 @@ Once the install is completed, click "Finish" and the application will close.
 
 ---
 
+# Introductory content
+
+
+### Video resources
+
+
+### Written resources
+
+
+---
+
 # Summary
+In this document we:
 - Downloaded PostgreSQL
 - Installed PostgreSQL
 - Downloaded pgAdmin
@@ -73,3 +84,6 @@ A comprehensive list of page references
 ### PostgreSQL
 - [PostgreSQL Website](https://www.postgresql.org/)
 - [PostgreSQL Docs](https://www.postgresql.org/docs/)
+
+### Videos
+- [Introduction to PostgreSQL Playlist | Database Star](https://youtube.com/playlist?list=PLZDOU071E4v4FgpBkMeRTYUK1LG9677xl&si=dTE805MSJnDMBvpj)

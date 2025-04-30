@@ -15,15 +15,12 @@ draft: true
 ---
 
 # Overview
-Documenting the process and details on setting up Supabase and PostgreSQL.
+Documenting the process and details on setting up Supabase for PostgreSQL.
 
 ---
 
 # Account Creation
-Process in setting up a Supabase account for PostgreSQL use.
-
-### Process
-Navigate to the [Supabase Website](https://supabase.com/).
+To create an account, navigate to the [Supabase Website](https://supabase.com/).
 
 > I would recommend reading up on the [Supabase Docs](https://supabase.com/docs) to familiarize with the service. Considering I'll be hosting a PostgreSQL database on Supabase, I took a look through the [Supabase Database Docs](https://supabase.com/docs/guides/database/overview).
 
@@ -58,7 +55,7 @@ I decided to keep the defaults for my project.
 ![Supabase New Project Form](img/supabase_new_project_form.png)
 {class="custom-image-size-class"}
 
-Click "Create new project" to finalize the form.
+Click "Create new project" to finalize the form. The page will then redirect to the newly created project dashboard for the new account.
 
 ---
 

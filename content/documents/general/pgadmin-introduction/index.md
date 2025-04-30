@@ -51,8 +51,8 @@ Check out the [pgAdmin Download](https://www.pgadmin.org/download/) page for mor
 
 ---
 
-# Intro to pgAdmin
-Consider checking out the [pgAdmin Getting Started](https://www.pgadmin.org/docs/pgadmin4/latest/getting_started.html) page in the pgAdmin docs. Their docs are very information, but are also very bulky. Because of this I'll reference them as needed.
+# Introductory content
+Consider checking out the [pgAdmin Getting Started](https://www.pgadmin.org/docs/pgadmin4/latest/getting_started.html) page in the pgAdmin docs. Their docs are very informative, but are also very bulky. Because of this I'll reference them as needed.
 
 ### Video resources
 The below YouTube videos were beneficial resources for introducing me to pgAdmin. They are relatively short and only dive into the basics. I suggest giving them a watch as a starting point.
@@ -61,13 +61,16 @@ The below YouTube videos were beneficial resources for introducing me to pgAdmin
 - [pgAdmin Tutorial - How to Use pgAdmin | Database Star](https://youtu.be/WFT5MaZN6g4?si=pogijNMuaDmjA-cS)
 - [8 Tips for pgAdmin (To Save You Time) | Database Star](https://youtu.be/PF1ikycEfj8?si=ReN6v1GDlZG_n8MQ)
 
-### Subsection 2
+### Written resources
 `Content`
 
 ---
 
 # Summary
-`Summary list of this page`
+In this document we:
+- Learned about pgAdmin
+- Installed pgAdmin
+- Explored introductory content
 
 ---
 
@@ -87,8 +90,6 @@ A comprehensive list of page references
 - [How to Install PostgreSQL on Windows 11 (2025) | ProgrammingKnowledge](https://youtu.be/GpqJzWCcQXY?si=ASPkrid_iGvvOMCo)
 - [pgAdmin Tutorial - How to Use pgAdmin | Database Star](https://youtu.be/WFT5MaZN6g4?si=pogijNMuaDmjA-cS)
 - [8 Tips for pgAdmin (To Save You Time) | Database Star](https://youtu.be/PF1ikycEfj8?si=ReN6v1GDlZG_n8MQ)
-
-- [Introduction to PostgreSQL Playlist | Database Star](https://youtube.com/playlist?list=PLZDOU071E4v4FgpBkMeRTYUK1LG9677xl&si=dTE805MSJnDMBvpj)
 
 ### Site Docs
 - [PostgreSQL | Introduction]({{< ref "postgresql-introduction" >}})
