@@ -42,7 +42,7 @@ There are a few methods that pgAdmin can be installed.
 #### PostgreSQL
 During the PostgreSQL installation, pgAdmin can be chosen as a component for download. This is a convenient way to start using pgAdmin since no additional steps are necessary.
 
-Check out the [PostgreSQL | Introduction]({{< ref "postgresql-introduction" >}}) page for steps on the PostgreSQL install.
+Check out the [PostgreSQL | Setup]({{< ref "postgresql-setup" >}}) page for steps on the PostgreSQL install.
 
 #### pgAdmin
 The pgAdmin application can also be directly downloaded and installed from their website. This might be preferred for decoupled downloads, or version updates.
@@ -60,9 +60,6 @@ The below YouTube videos were beneficial resources for introducing me to pgAdmin
 - [How to Install PostgreSQL on Windows 11 (2025) | ProgrammingKnowledge](https://youtu.be/GpqJzWCcQXY?si=ASPkrid_iGvvOMCo)
 - [pgAdmin Tutorial - How to Use pgAdmin | Database Star](https://youtu.be/WFT5MaZN6g4?si=pogijNMuaDmjA-cS)
 - [8 Tips for pgAdmin (To Save You Time) | Database Star](https://youtu.be/PF1ikycEfj8?si=ReN6v1GDlZG_n8MQ)
-
-### Written resources
-`Content`
 
 ---
 
@@ -92,4 +89,4 @@ A comprehensive list of page references
 - [8 Tips for pgAdmin (To Save You Time) | Database Star](https://youtu.be/PF1ikycEfj8?si=ReN6v1GDlZG_n8MQ)
 
 ### Site Docs
-- [PostgreSQL | Introduction]({{< ref "postgresql-introduction" >}})
+- [PostgreSQL | Setup]({{< ref "postgresql-setup" >}})

@@ -114,3 +114,7 @@ Use Github pages to start
 - https://gohugo.io/configuration/caches/
 - https://gohugo.io/contribute/documentation/#shortcodes
 - https://github.com/Evan-Tyo/Blog/settings/pages
+
+
+### Videos
+- [Introduction to PostgreSQL Playlist | Database Star](https://youtube.com/playlist?list=PLZDOU071E4v4FgpBkMeRTYUK1LG9677xl&si=dTE805MSJnDMBvpj)

@@ -20,8 +20,8 @@ Documenting the process and details on setting up the database for the Overwatch
 
 ---
 
-# Research ( Placeholder )
-`Information about this section`
+# Prerequisites
+This database project will be using 
 
 ### Subsection 1
 `Content`

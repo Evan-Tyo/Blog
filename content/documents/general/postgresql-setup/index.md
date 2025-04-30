@@ -1,5 +1,5 @@
 ---
-title: 'PostgreSQL | Introduction'
+title: 'PostgreSQL | Setup'
 date: 2025-04-29T22:56:51-04:00
 categories: [
     "Introduction"
@@ -14,14 +14,11 @@ draft: true
 ---
 
 # Overview
-Downloading, installing, and documenting PostgreSQL introductory content.
+Downloading and installing PostgreSQL. This page will also include downloading pgAdmin, a PostgreSQL tool, if opted in. Take a look at the [pgAdmin | Introduction]({{< ref "pgadmin-introduction" >}}) page for more information on pgAdmin.
 
 ---
 
-# Setup
-Process for downloading and installing PostgreSQL. These steps will also include downloading pgAdmin, a PostgreSQL tool.
-
-### Download PostgreSQL
+# Download PostgreSQL
 Navigate to the [PostgreSQL Website](https://www.postgresql.org/).
 
 Click the "Download" button.\
@@ -37,14 +34,15 @@ There should be a "Download the installer" link on the page which will reroute t
 
 Download the preferred program version, typically the latest version.
 
-### Install components
-Execute the downloaded application.\
-The app will open to a setup wizard.
+---
+
+# Install components
+Execute the downloaded application. The app will open to a setup wizard.
 
 Setup wizard steps:
 - Click the "Next" button to get started
 - Specify the directory for the PostgreSQL install
-- Select the components to install ( make sure pgAdmin is chosen )
+- Select the components to install ( pgAdmin optional )
 - Specify a directory to store PostgreSQL data
 - Provide a password for the database superuser
 - Select a port number
@@ -56,17 +54,6 @@ The setup wizard should now be installing the chosen components.\
 I kept all of the defaults for my install
 
 Once the install is completed, click "Finish" and the application will close.
-
----
-
-# Introductory content
-
-
-### Video resources
-
-
-### Written resources
-
 
 ---
 
@@ -85,5 +72,5 @@ A comprehensive list of page references
 - [PostgreSQL Website](https://www.postgresql.org/)
 - [PostgreSQL Docs](https://www.postgresql.org/docs/)
 
-### Videos
-- [Introduction to PostgreSQL Playlist | Database Star](https://youtube.com/playlist?list=PLZDOU071E4v4FgpBkMeRTYUK1LG9677xl&si=dTE805MSJnDMBvpj)
+### Site Docs
+- [pgAdmin | Introduction]({{< ref "pgadmin-introduction" >}})
