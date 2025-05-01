@@ -2,7 +2,7 @@
 title: 'PostgreSQL | Setup'
 date: 2025-04-29T22:56:51-04:00
 categories: [
-    "Introduction"
+    "Setup"
 ]
 tags: [
     "PostgreSQL",

@@ -51,8 +51,22 @@ Each section will have their own planning and steps.
 Contains the data structures and data.
 
 #### Technical
-- PostgreSQL / SQL
+- PostgreSQL
+- pgAdmin
 - Supabase
+
+#### Steps
+- Install PostgreSQL
+- Install pgAdmin
+- Create a Supabase account & project
+- Register a local server through pgAdmin
+- Connect the local server to Supabase
+- -
+- Outline the data organization and structure
+- Create the tables and relational data
+- Write SQL
+- Input data
+- Test database
 
 ### Backend
 Handles functionality, database entires, and API calls.
