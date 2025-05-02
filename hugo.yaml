@@ -129,9 +129,9 @@ menu:
               icon: home
               newTab: false
 
-        - identifier: battleship
-          name: Battleship | Project
-          url: /battleship
+        - identifier: overwatch-stadium-api
+          name: Overwatch Stadium API | Project
+          url: /overwatch-stadium-api
           weight: 3
           params:
               icon: home

@@ -144,7 +144,7 @@ Once all of the above steps have been completed, click the save button to the bo
 In this document we:
 - Registered a new server in pgAdmin
 - Connected the new server to Supabase
-- Used SSL to connect said server
+- Used SSL to connect with the server
 
 ---
 
